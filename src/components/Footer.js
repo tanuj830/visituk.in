@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
     <div className='xl:container bg-slate-800 p-6 text-slate-300'>
-      <div className=' flex items-center justify-between gap-32'>
+      <div className=' flex md:flex-row flex-col items-center justify-between gap-6 md:gap-32'>
         {/* section1 */}
         <div className='flex items-center justify-center'>
             <div>
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         {/* section2 */}
         <div className='flex items-center justify-center'>
-          <div className='flex items-center justify-center gap-32'>
+          <div className='flex  items-center justify-center gap-3 md:gap-32'>
               <div className=''>
                 <div ><h3 className='text-xl text-white'>Discover us</h3></div>
                 <div className='flex  justify-center flex-col mt-2 '>
@@ -46,12 +46,12 @@ const Footer = () => {
 
       </div>
         {/* section3 */}
-        <div className='text-justify w-full my-2'>
+        <div className='text-justify w-full my-2 mt-8 md:mt-0'>
       <hr />
         <div className='mt-2'>
-        <p className='font-semibold text-[13px] w-[60%] mt-2'>*Caution: Beware of Fake Promotions or Offers</p>
-          <p className='text-[13px] w-[60%] mt-2'>*Please do not believe or engage with any promotional emails, SMS or Web-link which ask you to click on a link and fill . All ARTravellers authorized email communications are delivered from domain @artravellers.co.in.</p>
-          <p className='text-[13px] w-[60%] mt-2'>*ARTravells bears no liability or responsibility whatsoever for any communication which is fraudulent or misleading in nature and not received from registered domain</p>
+        <p className='font-semibold text-[13px] md:w-[60%] mt-2'>*Caution: Beware of Fake Promotions or Offers</p>
+          <p className='text-[13px] md:w-[60%] mt-2'>*Please do not believe or engage with any promotional emails, SMS or Web-link which ask you to click on a link and fill . All ARTravellers authorized email communications are delivered from domain @artravellers.co.in.</p>
+          <p className='text-[13px] md:w-[60%] mt-2'>*ARTravells bears no liability or responsibility whatsoever for any communication which is fraudulent or misleading in nature and not received from registered domain</p>
         </div>
         </div>
         {/* section4 */}
