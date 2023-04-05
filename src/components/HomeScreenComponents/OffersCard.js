@@ -4,10 +4,10 @@ import {FiExternalLink} from 'react-icons/fi'
 
 export default function OffersCard({ plan }) {
     return (
-                        <Link className='' href={`/details/${encodeURIComponent(plan.slug)}`}>
+                        <Link className='hover:shadow-lg ' href={`/details/${encodeURIComponent(plan.slug)}`}>
         <div className=' rounded-lg border bg-white'>
-            <div className=''>
-                <img className='h-fit w-fit' src="https://assets.cntraveller.in/photos/60ba1486002baf698cc67003/16:9/pass/GettyImages-539105384.jpg" alt="" />
+            <div className='overflow-hidden'>
+                <img className='h-fit w-fit hover:scale-125 duration-1000' src="https://assets.cntraveller.in/photos/60ba1486002baf698cc67003/16:9/pass/GettyImages-539105384.jpg" alt="" />
             </div>
             <div className='mx-5 my-3'>
                 <div className='flex flex-row'>

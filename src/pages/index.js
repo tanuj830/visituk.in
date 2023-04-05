@@ -35,7 +35,7 @@ export default function Home({ data }) {
 
         {/* group plans */}
         <div className='mt-10'>
-          <h1 className='text-2xl font-semibold mb-2 text-center'>Group Plans</h1>
+          <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
           {
             data.groupPlans.map((gplan) => {
@@ -45,7 +45,7 @@ export default function Home({ data }) {
         </div>
         </div>
         <div className='mt-10'>
-          <h1 className='text-2xl font-semibold mb-2 text-center'>Plans</h1>
+          <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>PLANS</h1>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {data.plans.map((plan) => {
             return <OffersCard plan={plan}/>
