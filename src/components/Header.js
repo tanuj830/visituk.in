@@ -24,8 +24,8 @@ const Navbar = () => {
   return (
     <>
       {/* for mobile */}
-      <div className=" inline md:hidden ">
-        <div className=" container flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 ">
+      <div className="xl:container inline md:hidden ">
+        <div className="  flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 ">
         <div className="flex items-center  py-4">
             <Link className="text-md md:text-2xl text-themecol flex items-center justify-center" href="/home">
               <BsAirplaneEngines /><span className="ml-2">ARTravells</span>

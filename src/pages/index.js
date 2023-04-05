@@ -21,7 +21,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <div className='w-full'>
-          <img className='w-full' src="https://i1.wp.com/www.ecouttarakhand.com/wp-content/uploads/2020/12/char-dham-yatra.jpeg?w=880&ssl=1" alt="" />
+          <img className='w-full' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
         </div>
       <main className='xl:container'>
         <section className='mx-2 md:mx-10 my-10 rounded-md px-4 py-5 bg-slate-100'>
