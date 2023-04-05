@@ -20,11 +20,19 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <div className='w-full'>
-          <img className='w-full' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
+        <div className='w-full relative'>
+          <img className='w-full brightness-50' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
+          <div className='absolute px-10 md:px-0 top-1 md:top-[50%] w-full'>
+          <div className='flex items-center justify-center  w-full'>
+         <div className=''>
+         <h2 className='text-white font-semibold tracking-wider text-lg md:text-5xl '>Uttarakhand Tourism</h2>
+<h3 className='text-white font-semibold tracking-wider text-sm md:text-lg text-justify md:w-[70%] md:mt-4'>The Himalayan Mountains, Crisp Air, Sacred Temples, and Enthralling Adventure Call You to Uttarakhand</h3>
+       
+          </div>   </div>
+          </div>
         </div>
       <main className='xl:container'>
-        <section className='mx-2 md:mx-10 my-10 rounded-md px-4 py-5 bg-slate-100'>
+        <section className='mx-2 md:mx-0 my-10 rounded-md px-4 py-5 bg-slate-100'>
           <h1 className='font-bold text-2xl text-justify'>We At AR Travels</h1>
           <p className='text-justify mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?
             Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam odio asperiores voluptate error tenetur vero et repellat ipsam! Illum architecto asperiores perspiciatis?
