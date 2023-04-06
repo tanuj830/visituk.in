@@ -27,7 +27,7 @@ export default function Slug() {
             <>
  {
    plan.slug === slug ?   <div className=''>
-   <section className='flex flex-col md:relative  text-white  bg-slate-800 p-4 '>
+   <section className='flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 '>
     
     <div className='xl:container'>
     <h1 className='text-3xl font-semibold'>{plan.title}</h1>

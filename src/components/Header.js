@@ -78,7 +78,7 @@ const Navbar = () => {
 
       {/* forpc */}
       <div className=" bg-white  hidden md:inline tracking-widest ">
-        <div className=" py-3 xl:container shadow-md container flex items-center justify-between w-100 ">
+        <div className=" py-5 xl:container shadow-md container flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center" href="/">
               <BsAirplaneEngines/><span className="ml-2">ARTravells</span>
@@ -87,7 +87,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center ">
                             {/* <Link className="flex items-center gap-1" href='/video/create'> <h3 className="ml-8"><AiOutlineVideoCameraAdd/></h3><h3>Create</h3></Link>                      */}
                             {/* <Link className="flex items-center gap-1" href='/'> <h3 className="ml-8"><GrChannel/></h3><h3>Your Channel</h3></Link>                      */}
-                            <Link className="flex items-center gap-1" href='/'> <h3 className="ml-8"><TbBrandBlogger/></h3><h3>Blogs</h3></Link>                     
+                            {/* <Link className="flex items-center gap-1" href='/'> <h3 className="ml-8"><TbBrandBlogger/></h3><h3>Blogs</h3></Link>                      */}
                             <Link className="flex items-center gap-1" href='/contact'> <h3 className="ml-8 text-xl"><AiOutlineContacts/></h3><h3>About Us</h3></Link>                     
                             <Link className="flex items-center gap-1" href='/contact'> <h3 className="ml-8 text-xl"><AiOutlineContacts/></h3><h3>Contact Us</h3></Link>                     
                   <hr />
