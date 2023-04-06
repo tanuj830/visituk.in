@@ -1,11 +1,11 @@
 {
     "plans":[
         {
-            "title":"Char Dham Yatra1",
+            "title":"Char Dham Yatra",
             "isgroupplan":false,
             "exit":"Haridwar",
             "disp":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
-            "img":"https://tse1.mm.bing.net/th?id=OIP.zgh6ehRnhWdCacmbi86HbQHaE5&pid=Api&P=0"
+            "img":"https://tse3.mm.bing.net/th?id=OIP.nKp40vvDwMhUNPHYfukqPgHaEK&pid=Api&P=0"
             ,"slug":"char-dham-car",
             "via":[
                 "Haridwar",
@@ -17,11 +17,11 @@
             "persons":"3",
             "days":"6",
             "nights":"5",
-            "exPrice":"29000",
-            "price":"19,000"
+            "exPrice":"49000",
+            "price":"39,000"
         },
         {
-            "title":"Ek Dham Yatra2",
+            "title":"Ek Dham Yatra",
             "isgroupplan":false,
             "via":[
                 "Haridwar",
@@ -32,16 +32,16 @@
             ],
             "exit":"Haridwar",
             "disp":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
-            "img":"https://tse1.mm.bing.net/th?id=OIP.zgh6ehRnhWdCacmbi86HbQHaE5&pid=Api&P=0"
+            "img":"https://tse3.mm.bing.net/th?id=OIP.5uNAKkePizEUVKd-o7IqcwHaD6&pid=Api&P=0"
             ,"slug":"ek-dham-car",
             "persons":"3",
             "days":"6",
             "nights":"5",
-            "exPrice":"29000",
-            "price":"19,000"
+            "exPrice":"54000",
+            "price":"49,000"
         },
         {
-            "title":"Char Dham Yatra3",
+            "title":"Char Dham Yatra",
             "isgroupplan":false,
             "via":[
                 "Haridwar",
@@ -57,11 +57,11 @@
             "persons":"3",
             "days":"6",
             "nights":"5",
-            "exPrice":"29000",
-            "price":"19,000"
+            "exPrice":"51000",
+            "price":"43,000"
         },
         {
-            "title":"Char Dham Yatra4",
+            "title":"Char Dham Yatra",
             "isgroupplan":true,
             "via":[
                 "Haridwar",
@@ -81,7 +81,7 @@
             "price":"19,000"
         },
         {
-            "title":"Ek Dham Yatra5",
+            "title":"Ek Dham Yatra",
             "isgroupplan":true,
             "via":[
                 "Haridwar",
@@ -92,13 +92,13 @@
             ],
             "exit":"Haridwar",
             "disp":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
-            "img":"https://tse1.mm.bing.net/th?id=OIP.zgh6ehRnhWdCacmbi86HbQHaE5&pid=Api&P=0"
+            "img":"https://tse2.mm.bing.net/th?id=OIP.TwBqcLk16883wPn6cAZyCgHaEK&pid=Api&P=0"
             ,"slug":"ek-dham-group",
             "persons":"3",
             "days":"6",
             "nights":"5",
-            "exPrice":"29000",
-            "price":"19,000"
+            "exPrice":"25,000",
+            "price":"18,000"
         }
     ]
 }

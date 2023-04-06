@@ -35,13 +35,16 @@ export default function Slug() {
           <small className='font-semibold text-sm'>{" -> " + v}</small>
         ))
       }</small>
-      <div className='overflow-hidden text-black md:absolute w-full border shadow rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0'>
+      <div className='overflow-hidden text-black md:absolute w-full border shadow-md rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0'>
         <img className='overflow-hidden' src={plan.img} alt="" />
-          <div className='p-5'>
+          <div className='py-2 px-3'>
           <h2 className='text-xl text-justify font-semibold text-slate-600'>Book {plan.title}</h2>
-        <small className='mt-2 text-slate-600'><strike> ₹ {plan.exPrice}</strike></small>
-        <small className='mt-2 text-lg font-semibold text-green-700'>  <small>now at</small> ₹{plan.price}</small>
-        <div className='flex flex-col justify-between mt-4'>
+       <div className=''>
+       <small className=' text-slate-600'><strike> ₹ {plan.exPrice}</strike></small>
+        <small className=' text-lg font-semibold text-green-700'>  <small>now at</small> ₹{plan.price}</small><br />
+        {/* <small className=' text-lg font-semibold text-green-600'>  <small>You are saving</small> ₹{(plan.exPrice) - (plan.price)}</small> */}
+       </div>
+        <div className='flex flex-col justify-between mt-4 mb-4'>
         <Link href='tel:7668088539' className='bg-slate-200 px-3 py-2 mt-2 border rounded-md hover:bg-slate-300 flex items-center justify-center gap-2'><h2 className='text-xl'><FiPhoneCall/></h2><h2>Book on call</h2></Link>
         <button className='bg-slate-200 px-3 py-2 mt-2 border rounded-md hover:bg-slate-300 flex items-center justify-center gap-2'><h2 className='text-xl'><FcOnlineSupport/></h2><h2>Book Online</h2></button>
         </div>

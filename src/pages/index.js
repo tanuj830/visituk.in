@@ -56,7 +56,7 @@ export default function Home({ data }) {
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>PLANS</h1>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {data.plans.map((plan) => {
-            return <OffersCard plan={plan}/>
+            return (plan.isgroupplan === false ? <OffersCard plan={plan}/>: null)
           })}
         </div>
         </div>
