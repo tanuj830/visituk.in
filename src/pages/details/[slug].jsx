@@ -78,7 +78,7 @@ export default function Slug() {
 
    <section className='mt-4 xl:container'>
     <div><h2 className='text-2xl font-semibold '>This tour includes:</h2></div>
-    <div className='w-[50%] grid grid-cols-2 text-slate-700'>
+    <div className='md:w-[50%] grid grid-cols-2 text-slate-700'>
         <div className='flex items-center gap-1 py-4 '>
           <h1 className='text-2xl text-black'><BiTrip/></h1><h1>{plan.days} days and {plan.nights} nights </h1>
         </div>
