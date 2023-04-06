@@ -10,6 +10,7 @@ import {BsFillPersonFill, BsStarHalf} from "react-icons/bs"
 import {BiTrip} from "react-icons/bi"
 import {MdUpdate} from "react-icons/md"
 import Link from 'next/link'
+import OffersCard from '@/components/HomeScreenComponents/OffersCard'
 export default function Slug() {
   const router=useRouter();
   const slug = router.query.slug
@@ -29,7 +30,8 @@ export default function Slug() {
    plan.slug === slug ?   <div className=''>
    <section className='flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 '>
     
-    <div className='xl:container'>
+   <div className='xl:container'>
+   <div className='px-3 md:px-0'>
     <h1 className='text-3xl font-semibold'>{plan.title}</h1>
      <small className='text-lg mt-1 text-justify'>Embark on a divine adventure with {plan.title}, the journey of a lifetime <br /> that will lift your spirit and lift your heart!
 </small>
@@ -52,8 +54,9 @@ export default function Slug() {
         <div><h6>Last Updated 3/2023</h6></div>
       </div>
     </div>
+   </div>
 
-      <div className='overflow-hidden text-black md:absolute w-full border shadow-md rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0'>
+      <div className='mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0'>
         <img className='overflow-hidden' src={plan.img} alt="" />
           <div className='py-2 px-3'>
           <h2 className='text-xl text-justify font-semibold text-slate-600'>Book {plan.title}</h2>
@@ -69,14 +72,16 @@ export default function Slug() {
           </div>
       </div>
    </section>
-   <section className='xl:container p-6 w-full'>
+   <section className='xl:container mt-20  w-full'>
+     <div className='p-3 md:p-6'>
       <div className='md:w-[50%] border p-5 rounded-lg'>
         <h3 className='text-2xl font-semibold  my-3'>About Tour</h3>
       <h6>{plan.disp}</h6>
       </div>
+     </div>
    </section>
 
-   <section className='mt-4 xl:container'>
+   <section className='mt-4 px-3  xl:container'>
     <div><h2 className='text-2xl font-semibold '>This tour includes:</h2></div>
     <div className='md:w-[50%] grid grid-cols-2 text-slate-700'>
         <div className='flex items-center gap-1 py-4 '>
@@ -95,6 +100,19 @@ export default function Slug() {
            </>
            )):null
         }
+
+
+        {/* other plans */}
+        <section className='xl:container px-3 mt-6'>
+          <h1 className='text-2xl font-semibold my-3'>Popular packages</h1>
+          <div className='grid grid-cols-1 md:grid-cols-4 w-full gap-4'>
+              {
+                data.plans.map(plan=>(
+                  <OffersCard plan={plan}/>
+                ))
+              }
+          </div>
+        </section>
       </>
   )
 }
