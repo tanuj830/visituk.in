@@ -24,7 +24,7 @@ export default function OffersCard({ plan }) {
                     
                 </div>
                 <h2>Exit: {plan.exit}</h2>
-                <p>{plan.description.slice(0, 50) + "..."}</p>
+                <p>{plan.disp.slice(0, 50) + "..."}</p>
 
             </div>
         </div>

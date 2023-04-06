@@ -4,7 +4,7 @@ import {BsAirplaneEngines} from 'react-icons/bs'
 const Footer = () => {
   return (
     <>
-    <div className='xl:container bg-slate-800 p-6 text-slate-300'>
+    <div className='xl:container bg-slate-800 p-6 text-slate-300 mt-10'>
       <div className=' flex md:flex-row flex-col items-center justify-between gap-6 md:gap-32'>
         {/* section1 */}
         <div className='flex items-center justify-center'>
