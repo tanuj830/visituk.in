@@ -18,27 +18,27 @@ const Footer = () => {
             </div>
         </div>
         {/* section2 */}
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center mb-2 md:mb-10'>
           <div className='flex  items-center justify-center gap-3 md:gap-32'>
               <div className=''>
-                <div ><h3 className='text-xl text-white'>Discover us</h3></div>
+                <div ><h3 className='text-md md:text-lg text-white'>Discover us</h3></div>
                 <div className='flex  justify-center flex-col mt-2 '>
-                  <Link className='hover:scale-110 hover:text-white' href="/about">About Us</Link>
-                  <Link className='hover:scale-110 hover:text-white' href="/about">Our Team</Link>
+                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/about">About Us</Link>
+                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/about">Our Team</Link>
                 </div>
               </div>
               <div className=''>
-                <div ><h3 className='text-xl text-white'>Support</h3></div>
+                <div ><h3 className='text-md md:text-lg text-white'>Support</h3></div>
                 <div className='flex  justify-center flex-col mt-2 '>
-                  <Link className='hover:scale-110 hover:text-white' href="/contact">Contact Us</Link>
-                  <Link className='hover:scale-110 hover:text-white' href="/aboutus">How To Book</Link>
+                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/contact">Contact Us</Link>
+                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/aboutus">How To Book</Link>
                 </div>
               </div>
               <div className=''>
-                <div ><h3 className='text-xl text-white'>Resources</h3></div>
+                <div ><h3 className='text-md md:text-lg text-white'>Resources</h3></div>
                 <div className='flex  justify-center flex-col mt-2 '>
-                  <Link className='hover:scale-110 hover:text-white' href="/aboutus">Guest Reviews</Link>
-                  <Link className='hover:scale-110 hover:text-white' href="/aboutus">Blog</Link>
+                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/aboutus">Guest Reviews</Link>
+                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/aboutus">Blog</Link>
                 </div>
               </div>
           </div>
