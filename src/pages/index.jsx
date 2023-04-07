@@ -35,8 +35,8 @@ export default function Home({ data }) {
             </div>   </div>
         </div>
       </div>
-      <main className='mx-14'>
-        <section className='mx-2 md:mx-0 my-10 rounded-md px-4 py-5 bg-slate-50'>
+      <main className='mx-2 md:mx-0 sm:container'>
+        <section className=' my-10 rounded-md px-3 py-5 bg-slate-50'>
           <h1 className='font-bold text-2xl text-justify uppercase'>Who are we?</h1>
           <p className='text-justify mt-2 py-3 text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
             <br /><br />

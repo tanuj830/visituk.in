@@ -6,17 +6,17 @@ export default function OffersCard({ plan }) {
     return (
         <>
             {
-                plan !== undefined ? <Link className='hover:shadow-md rounded-xl overflow-hidden' href={`/details/${encodeURIComponent(plan.id)}`}>
+                plan !== undefined ? <Link className=' hover:shadow-md rounded-xl overflow-hidden' href={`/details/${encodeURIComponent(plan.id)}`}>
                     {
                         plan.specialoffer === true ? <div className='relative '>
-                            <div className='absolute top-0 right-0 bg-[gold] px-3 py-2 duration-1000 ease-in-out'>
+                            <div className='absolute top-0 right-0 bg-[gold] px-3 py-2 duration-100 ease-in-out'>
                                 <small className='text-sm text-slate-600 font-semibold'>Special Offer</small>
                             </div>
                         </div> : null
                     }
                     <div className=' rounded-lg border bg-white'>
                         <div className='overflow-hidden'>
-                            <img className='w-fit  min-h-96 h-fit hover:scale-110 duration-1000 ease-in-out' src={plan.img} alt="" />
+                            <img className='w-full hover:scale-110 duration-1000 ease-in-out' src={plan.img} alt="" />
                         </div>
                         <div className='px-6 py-4'>
                             <div className='flex flex-row'>
@@ -33,10 +33,10 @@ export default function OffersCard({ plan }) {
                                 </div>
 
                             </div>
-                            <p>{plan.disp.slice(0, 200) + "..."}</p>
-                            <div className='w-full flex justify-center'>
-                                <button className='bg-red-600 text-white font-semibold text-xl w-full rounded-md py-3'>View Details</button>
-                            </div>
+                            <p>{plan.disp.slice(0, 100) + "..."}</p>
+                            {/* <div className='w-full flex justify-center mt-2'>
+                                <button className='bg-red-600 text-white font-semibold text-md w-full rounded-md py-1'>View Details</button>
+                            </div> */}
                         </div>
                     </div>
                 </Link> : null
