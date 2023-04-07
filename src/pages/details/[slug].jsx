@@ -42,11 +42,8 @@ export default function Slug() {
      <div className='mt-2'>
      <small className='flex items-center gap-1'><h6 className='text-xl'><BsFillPersonFill/></h6> <small className='font-semibold text-sm'>{plan.persons}  persons</small></small>
 </div>
-     <small className='flex items-center gap-1 mt-2'><h6 className='text-2xl'><BiTrip/></h6>{
-        plan.via.map(v=>(
-          <small className='font-semibold text-sm'>{" -> " + v}</small>
-        ))
-      }</small>
+     <small className='flex items-center gap-1 mt-2'><h6 className='text-2xl'><BiTrip/></h6>
+     <small className='font-semibold text-sm'>{plan.via}</small></small>
       <h6 className='flex items-center  mt-2 gap-2 text-yellow-500'><small className='text-lg'>4.5</small> <small className='flex items-center text-lg'><AiTwotoneStar/> <AiTwotoneStar/> <AiTwotoneStar/> <AiTwotoneStar/> <BsStarHalf/></small> <small className='text-sm text-violet-400'>(12,800 ratings)</small></h6>
 
       <div className='flex items-center gap-1 mt-2'>
@@ -94,6 +91,11 @@ export default function Slug() {
           <h1 className='text-2xl text-black'><MdEmojiTransportation/></h1><h1>Vechile with driver</h1>
         </div>
     </div>
+   </section>
+
+   {/* Tour Itinerary */}
+   <section className='xl:container mt-6 p-3'>
+
    </section>
  </div>:null
  }

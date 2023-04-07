@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
-import {FiExternalLink} from 'react-icons/fi'
+import {BiTrip, BiTimeFive} from 'react-icons/bi'
 
 export default function OffersCard({ plan }) {
     return (
@@ -12,18 +12,18 @@ export default function OffersCard({ plan }) {
             <div className='px-6 py-4'>
                 <div className='flex flex-row'>
                     <h1 className='text-2xl font-bold'>{plan.title}</h1>
-                    <div className=' bg-[#d00000] px-2 py-1  ml-auto rounded-md text-white text-sm'>
-                        6 days+5 nights
-                    </div>
                 </div>
+                    <div className='flex items-center gap-1 mt-1'>
+                      <h3 className='text-xl'><BiTimeFive/></h3>   <h3 className='tracking-tighter text-md'>{plan.days} days + {plan.nights} nights</h3>
+                    </div>
+                <div className='flex items-center mt-1 gap-1 '><h3 className='text-xl '><BiTrip/></h3> <h3>{plan.via.slice(0,22) + "..."}</h3></div>
                 <div className='flex'>
-                    <div className='font-semibold text-lg'>
-                        <div><strike className="text-slate-400">₹ 23,000</strike></div>
-                        <div>₹ 19,000</div>
+                    <div className=' flex items-center font-semibold text-lg gap-2'>
+                        <div><strike className="text-red-400 text-sm">₹{plan.exPrice}</strike></div>
+                        <div className='text-green-600'> ₹{plan.price}</div>
                     </div>
                     
                 </div>
-                <h2>Exit: {plan.exit}</h2>
                 <p>{plan.disp.slice(0, 50) + "..."}</p>
 
             </div>
