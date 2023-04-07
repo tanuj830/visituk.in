@@ -83,7 +83,7 @@ export default function Slug() {
                           <h6 className="text-2xl">
                             <BiTrip />
                           </h6>
-                          <small className="font-semibold text-sm">
+                          <small className="font-semibold text-sm md:w-[50%]">
                             {plan.via}
                           </small>
                         </small>
