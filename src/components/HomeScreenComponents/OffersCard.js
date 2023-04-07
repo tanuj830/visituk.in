@@ -8,7 +8,7 @@ export default function OffersCard({ plan }) {
     return (
         <>
             {
-                plan !== undefined ? <Link className='bg-slate-100 border hover:shadow-md rounded-xl overflow-hidden' href={`/details/${encodeURIComponent(plan.id)}`}>
+                plan !== undefined ? <Link className='bg-slate-100 border-2 hover:shadow-md rounded-xl overflow-hidden' href={`/details/${encodeURIComponent(plan.id)}`}>
                     {
                         plan.specialoffer === true ? <div className='relative '>
                             <div className='absolute top-0 right-0 bg-[gold] px-3 py-2 duration-100 ease-in-out'>
