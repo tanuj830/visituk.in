@@ -27,7 +27,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='w-full relative bg-black'>
-        <img className='w-full brightness-50' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
+        <img className='h-[150px] md:w-full md:h-full brightness-50' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
         <div className='absolute px-10 md:px-0 top-1 md:top-[50%] w-full'>
           <div className='flex items-center justify-center  w-full'>
             <div className=''>
