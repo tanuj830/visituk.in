@@ -28,7 +28,7 @@ export default function OffersCard({ plan }) {
                                     <div className='flex items-center mt-1 gap-1 '><h3 className='text-xl '><BiTrip/></h3> <h3>{plan.via.slice(0,25) + "..."}</h3></div>
                                     <div className='flex'>
                                         <div className=' flex items-center font-semibold text-lg gap-2'>
-                                            <div><strike className="text-red-400 text-sm">₹{plan.exPrice}</strike></div>
+                                            <div><strike className="text-red-600 text-sm">₹{plan.exPrice}</strike></div>
                                             <div className='text-green-600'> ₹{plan.price}</div>
                                         </div>
                                         
