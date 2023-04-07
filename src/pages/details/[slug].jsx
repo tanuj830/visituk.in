@@ -40,7 +40,7 @@ export default function Slug() {
      <small className='flex items-center gap-1'><h6 className='text-xl'><BiTimeFive/></h6> <small className='font-semibold text-sm'>{plan.days} days + {plan.nights} nights </small></small>
      </div>
      <div className='mt-2'>
-     <small className='flex items-center gap-1'><h6 className='text-xl'><BsFillPersonFill/></h6> <small className='font-semibold text-sm'>{plan.persons}  persons</small></small>
+     <small className='flex items-center gap-1'><h6 className='text-xl'><BsFillPersonFill/></h6> <small className='font-semibold text-sm'>Tour of {plan.persons}  people</small></small>
 </div>
      <small className='flex items-center gap-1 mt-2'><h6 className='text-2xl'><BiTrip/></h6>
      <small className='font-semibold text-sm'>{plan.via}</small></small>
@@ -71,9 +71,9 @@ export default function Slug() {
    </section>
    <section className='xl:container mt-20  w-full'>
      <div className='p-3 md:p-6'>
-      <div className='md:w-[50%] border p-5 rounded-lg'>
+      <div className='md:w-[70%] border p-5 rounded-lg'>
         <h3 className='text-2xl font-semibold  my-3'>About Tour</h3>
-      <h6>{plan.disp}</h6>
+      <h6 className='text-lg text-justify'>{plan.disp}</h6>
       </div>
      </div>
    </section>
@@ -82,13 +82,13 @@ export default function Slug() {
     <div><h2 className='text-2xl font-semibold '>This tour includes:</h2></div>
     <div className='md:w-[50%] grid grid-cols-2 text-slate-700'>
         <div className='flex items-center gap-1 py-4 '>
-          <h1 className='text-2xl text-black'><BiTrip/></h1><h1>{plan.days} days and {plan.nights} nights </h1>
+          <h1 className='text-2xl text-black'><BiTrip/></h1><h1 className='text-lg'>{plan.days} days and {plan.nights} nights </h1>
         </div>
         <div className='flex items-center gap-1 py-4 '>
-          <h1 className='text-2xl text-black'><MdLocalConvenienceStore/></h1><h1>Convenience</h1>
+          <h1 className='text-2xl text-black'><MdLocalConvenienceStore/></h1><h1 className='text-lg'>Convenience</h1>
         </div>
         <div className='flex items-center gap-1 py-4 '>
-          <h1 className='text-2xl text-black'><MdEmojiTransportation/></h1><h1>Vechile with driver</h1>
+          <h1 className='text-2xl text-black'><MdEmojiTransportation/></h1><h1  className='text-lg'>Vechile with driver</h1>
         </div>
     </div>
    </section>
