@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {BsAirplaneEngines} from 'react-icons/bs'
+import {GiMountains} from 'react-icons/gi'
 const Footer = () => {
   return (
     <>
@@ -9,8 +9,8 @@ const Footer = () => {
         {/* section1 */}
         <div className='flex items-center justify-center'>
             <div>
-            <Link className="text-3xl text-themecol flex items-center justify-center"  href="/">
-              <BsAirplaneEngines/><span className="ml-2">ARTravells</span>
+            <Link className="text-3xl text-themecol flex items-center justify-center gap-1"  href="/">
+            <GiMountains /><h6 className="tracking-tighter">visituttrakhand.in</h6>
             </Link>
             <div className='flex flex-col'>
             <small className='font-semibold text-white'>Keep travelling all year round!</small>

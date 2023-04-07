@@ -3,7 +3,7 @@ import React from "react";
 import { BsAirplaneEngines } from "react-icons/bs";
 // import SearchBar from "./SearchBar";
 import { AiOutlineContacts } from "react-icons/ai";
-import { AiOutlineVideoCameraAdd } from "react-icons/ai";
+import { GiMountains } from "react-icons/gi";
 import { BsGithub } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -27,8 +27,8 @@ const Navbar = () => {
       <div className="xl:container inline md:hidden ">
         <div className="  flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 ">
         <div className="flex items-center  py-4">
-            <Link className="text-md md:text-2xl text-themecol flex items-center justify-center" href="/home">
-              <BsAirplaneEngines /><span className="ml-2">ARTravells</span>
+            <Link className="text-lg md:text-2xl text-themecol flex items-center justify-center gap-1" href="/home">
+              <GiMountains /><h6 className="tracking-tighter">visituttrakhand.in</h6>
             </Link>
           </div>
           
@@ -80,8 +80,8 @@ const Navbar = () => {
       <div className=" bg-white  hidden md:inline tracking-widest ">
         <div className=" py-5 xl:container shadow-md container flex items-center justify-between w-100 ">
           <div className="flex items-center ">
-            <Link className="text-3xl text-themecol flex items-center justify-center" href="/">
-              <BsAirplaneEngines/><span className="ml-2">ARTravells</span>
+            <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
+            <GiMountains /><h6 className="tracking-tighter">visituttrakhand.in</h6>
             </Link>
           </div>
           <div className="flex items-center justify-center ">
