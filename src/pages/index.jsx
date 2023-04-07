@@ -69,7 +69,7 @@ export default function Home({ data }) {
         
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
-          <div className=' hidden md:grid md:grid-cols-4 gap-6'>
+          <div className=' hidden md:grid md:grid-cols-4 gap-4'>
             {data.plans.map((plan) => {
               return (plan.isgroupplan === false ? <OffersCard plan={plan} /> : null)
             })}

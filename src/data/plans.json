@@ -2,6 +2,7 @@
     "plans": [
         {
             "id":1,
+            "ratings":4.6,
             "title": "Char Dham Yatra",
             "days": 9,
             "nights": 8,
@@ -19,6 +20,7 @@
         },
         {
             "id":2,
+            "ratings":4,
             "title": "Char Dham Yatra",
             "days": 9,
             "nights": 8,
@@ -35,6 +37,7 @@
         },
         {
             "id":3,
+            "ratings":4.1,
             "title": "Char Dham Yatra",
             "days": 9,
             "nights": 4,
@@ -56,6 +59,7 @@
         },
         {
             "id":4,
+            "ratings":4.5,
             "title": "Char Dham Yatra",
             "days": 5,
             "nights": 4,
@@ -72,6 +76,7 @@
         },
         {
             "id":5,
+            "ratings":4,
             "title": "Char Dham Yatra",
             "days": 9,
             "nights": 8,
@@ -87,6 +92,7 @@
         },
         {
             "id":6,
+            "ratings":4.2,
             "title": "Char Dham Yatra",
             "days": 6,
             "nights": 5,
@@ -102,6 +108,7 @@
         },
         {
             "id":7,
+            "ratings":4.3,
             "title": "Char Dham Yatra",
             "days": 10,
             "nights": 9,
