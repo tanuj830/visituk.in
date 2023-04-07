@@ -22,21 +22,21 @@ export default function OffersCard({ plan }) {
                             <div className='flex flex-row'>
                                 <h1 className='text-2xl font-bold'>{plan.title}</h1>
                             </div>
-                            <div className='flex items-center gap-1 mt-1'>
+                            <div className='flex items-center gap-1 mt-2'>
                                 <h3 className='text-xl'><BiTimeFive /></h3>   <h3 className='tracking-tighter text-md'>{plan.days} days + {plan.nights} nights</h3>
                             </div>
-                            <div className='flex items-center mt-1 gap-1 '><h3 className='text-xl '><BiTrip /></h3> <h3>{plan.via.slice(0, 25) + "..."}</h3></div>
-                            <div className='flex'>
+                            <div className='flex items-center mt-2 gap-1 '><h3 className='text-xl '><BiTrip /></h3> <h3>{plan.via.slice(0, 25) + "..."}</h3></div>
+                            <div className='flex mt-2'>
                                 <div className=' flex items-center font-semibold text-lg gap-2'>
                                     <div><strike className="text-red-600 text-sm">₹{plan.exPrice}</strike></div>
                                     <div className='text-green-600'> ₹{plan.price}</div>
                                 </div>
 
                             </div>
-                            <p>{plan.disp.slice(0, 100) + "..."}</p>
-                            {/* <div className='w-full flex justify-center mt-2'>
-                                <button className='bg-red-600 text-white font-semibold text-md w-full rounded-md py-1'>View Details</button>
-                            </div> */}
+                            <p>{plan.disp.slice(0, 200) + "..."}</p>
+                            <div className='w-full flex justify-center'>
+                                <button className='bg-red-600 text-white font-semibold text-xl w-full rounded-md py-3'>View Details</button>
+                            </div>
                         </div>
                     </div>
                 </Link> : null

@@ -6,6 +6,8 @@ import styles from '@/styles/Home.module.css'
 import data from "../data/plans.json"
 import { useEffect } from 'react'
 import OffersCard from '@/components/HomeScreenComponents/OffersCard'
+import { Carousel } from 'react-responsive-carousel'
+import CardCrousel from '@/components/HomeScreenComponents/CardCrousel'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -52,21 +54,29 @@ export default function Home({ data }) {
         {/*  group plans */}
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mx-2 md:mx-0'>
+          <div className='hidden md:grid md:grid-cols-3 gap-6'>
             {
               data.plans.map((plan) => {
                 return (plan.isgroupplan === true ? <OffersCard plan={plan} /> : null)
               })
             }
           </div>
+          <div className='md:hidden mb-10'>
+            <CardCrousel data={data} group={true} />
+          </div>
         </div>
+
+        
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
+          <div className=' hidden md:grid md:grid-cols-4 gap-6'>
             {data.plans.map((plan) => {
               return (plan.isgroupplan === false ? <OffersCard plan={plan} /> : null)
             })}
           </div>
+          <div className='md:hidden mb-10'>
+          <CardCrousel data={data} group={false} />
+        </div>
         </div>
       </main>
     </>
