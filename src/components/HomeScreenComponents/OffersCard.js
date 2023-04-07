@@ -24,7 +24,9 @@ export default function OffersCard({ plan }) {
                             <div className='flex flex-row'>
                                 <h1 className='text-2xl font-bold'>{plan.title}</h1>
                             </div>
+                            
                             <div className='mt-2'>
+                                
                                 <h3 className='flex items-center text-yellow-500 gap-1'><small className='text-lg font-semibold'>{plan.ratings}</small><small className='flex items-center text-lg'> <AiTwotoneStar /> <AiTwotoneStar />{" "}
                             <AiTwotoneStar /> <AiTwotoneStar /> <BsStarHalf /></small></h3>
                             </div>
