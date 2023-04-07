@@ -29,8 +29,10 @@ export default function Slug() {
                 <div className="">
                   {
                     plan.specialoffer === true ? <div className=" py-1  w-full bg-green-600">
-                      <h3 className="text-md text-white text-center uppercase">Avail our Special Offer and make the best deal for you ! </h3>
-                      </div>:null
+                      <h3 className="text-sm md:text-md text-white text-center uppercase">Avail our Special Offer and make the best deal for you ! </h3>
+                      </div>:<div className=" py-1  w-full bg-slate-600">
+                      <h3 className="text-sm md:text-md text-white text-center uppercase">You can customize this tour <small className="text-slate-200 text-md">by choosing number of peoples and vechile</small> </h3>
+                      </div>
                   }
                   <section className="flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 ">
                     <div className="xl:container">
@@ -59,10 +61,22 @@ export default function Slug() {
                             <h6 className="text-xl">
                               <BsFillPersonFill />
                             </h6>{" "}
-                            <small className="font-semibold text-sm">
+                            {
+                              plan.specialoffer === true ? <small className="font-semibold text-sm">
                               Tour of {plan.persons} people
-                            </small>
-                            <small className="text-lg text-green-400">(₹{Math.round(plan.price / plan.persons)}/person)</small>
+                            </small>: <div>
+                              <small className="font-semibold text-sm">Tour of {
+                                plan.persons.map((per, index)=>(
+                                  
+                                    index == plan.persons.length-1 ? per: per + " or "
+                                  
+                                ))
+                              } people <small className="text-green-400 text-sm">(Customizable)</small></small>
+                            </div>
+                            }
+                            {
+                              plan.specialoffer === true ? <small className="text-lg text-green-400">(₹{Math.round(plan.price / plan.persons)}/person)</small>:null
+                            }
                           </small>
                         </div>
                         <small className="flex items-center gap-1 mt-2">
@@ -135,16 +149,41 @@ export default function Slug() {
                   </section>
 
                 {/* customization section */}
-                <section>
-                  {
+                <section className="xl:container md:mt-20 p-6 md:w-[60%]">
+                 <div className="border p-3">
+                 <h3 className="text-2xl font-semibold">Customize your package</h3>
+                 <div className="mt-10 ">
+                 {
                     plan.specialoffer === false ? <div>
-                      not special
+                      {/* customization main logic here */}
+                       <div>
+                       <label className="text-slate-600">Please select no of travellers</label>
+                      <select className="border w-full p-1" name="persons" id="personsid">
+                        {
+                          plan.persons.map(per=>(
+                            <option className="" value={per}>{per}</option>
+                          ))
+                        }
+                      </select>
+                       </div>
+                       {/* <div>
+                       <label className="text-slate-600">Please select vechiles</label>
+                      <select className="border w-full p-1" name="persons" id="personsid">
+                        {
+                          plan.persons.map(per=>(
+                            <option className="" value={per}>{per}</option>
+                          ))
+                        }
+                      </select>
+                       </div> */}
                     </div>:null
                   }
+                 </div>
+                 </div>
                 </section>
 
 
-                  <section className="xl:container mt-20  w-full">
+                  <section className="xl:container md:mt-20  w-full">
                     <div className="p-3 md:p-6">
                       <div className="md:w-[70%] border p-5 rounded-lg">
                         <h3 className="text-2xl font-semibold  my-3">
