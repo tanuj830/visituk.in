@@ -27,6 +27,11 @@ export default function Slug() {
             <>
               {plan.id == slug ? (
                 <div className="">
+                  {
+                    plan.specialoffer === true ? <div className=" py-1  w-full bg-green-600">
+                      <h3 className="text-md text-white text-center uppercase">Avail our Special Offer and make the best deal for you ! </h3>
+                      </div>:null
+                  }
                   <section className="flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 ">
                     <div className="xl:container">
                       <div className="px-3 md:px-0">
@@ -128,6 +133,17 @@ export default function Slug() {
                       </div>
                     </div>
                   </section>
+
+                {/* customization section */}
+                <section>
+                  {
+                    plan.specialoffer === false ? <div>
+                      not special
+                    </div>:null
+                  }
+                </section>
+
+
                   <section className="xl:container mt-20  w-full">
                     <div className="p-3 md:p-6">
                       <div className="md:w-[70%] border p-5 rounded-lg">
