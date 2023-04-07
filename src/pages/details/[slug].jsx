@@ -149,12 +149,13 @@ export default function Slug() {
                   </section>
 
                 {/* customization section */}
+                 {
+                    plan.specialoffer === false ? 
                 <section className="xl:container md:mt-20 p-6 md:w-[60%]">
                  <div className="border p-3">
                  <h3 className="text-2xl font-semibold">Customize your package</h3>
                  <div className="mt-10 ">
-                 {
-                    plan.specialoffer === false ? <div>
+                    <div>
                       {/* customization main logic here */}
                        <div>
                        <label className="text-slate-600">Please select no of travellers</label>
@@ -176,11 +177,11 @@ export default function Slug() {
                         }
                       </select>
                        </div> */}
-                    </div>:null
+                    </div>
+                 </div>
+                 </div>
+                </section>:null
                   }
-                 </div>
-                 </div>
-                </section>
 
 
                   <section className="xl:container md:mt-20  w-full">
