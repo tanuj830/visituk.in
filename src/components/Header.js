@@ -77,8 +77,8 @@ const Navbar = () => {
       </div>
 
       {/* forpc */}
-      <div className=" bg-white  hidden md:inline tracking-widest ">
-        <div className=" py-5 xl:container shadow-md container flex items-center justify-between w-100 ">
+      <div className="w-full bg-white  hidden md:inline tracking-widest ">
+        <div className=" py-5  shadow-md px-10 flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
             <GiMountains /><h6 className="tracking-tighter">visituttrakhand.in</h6>

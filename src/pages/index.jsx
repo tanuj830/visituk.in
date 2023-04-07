@@ -9,8 +9,8 @@ import OffersCard from '@/components/HomeScreenComponents/OffersCard'
 const inter = Inter({ subsets: ['latin'] })
 
 
-const onChangeCollege=(e)=>{
-console.log(e.target.value)
+const onChangeCollege = (e) => {
+  console.log(e.target.value)
 }
 export default function Home({ data }) {
   useEffect(() => {
@@ -24,49 +24,49 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <div className='w-full relative bg-black'>
-          <img className='w-full brightness-50' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
-          <div className='absolute px-10 md:px-0 top-1 md:top-[50%] w-full'>
+      <div className='w-full relative bg-black'>
+        <img className='w-full brightness-50' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
+        <div className='absolute px-10 md:px-0 top-1 md:top-[50%] w-full'>
           <div className='flex items-center justify-center  w-full'>
-         <div className=''>
-         <h2 className='text-white font-semibold tracking-wider text-lg md:text-5xl '>Uttarakhand Tourism</h2>
-<h3 className='text-white font-semibold tracking-wider text-sm md:text-lg text-justify md:w-[70%] md:mt-4'>The Himalayan Mountains, Crisp Air, Sacred Temples, and Enthralling Adventure Call You to Uttarakhand</h3>
-       
-          </div>   </div>
-          </div>
+            <div className=''>
+              <h2 className='text-white font-semibold tracking-wider text-lg md:text-5xl '>Uttarakhand Tourism</h2>
+              <h3 className='text-white font-semibold tracking-wider text-sm md:text-lg text-justify md:w-[70%] md:mt-4'>The Himalayan Mountains, Crisp Air, Sacred Temples, and Enthralling Adventure Call You to Uttarakhand</h3>
+
+            </div>   </div>
         </div>
-      <main className='xl:container'>
+      </div>
+      <main className='mx-14'>
         <section className='mx-2 md:mx-0 my-10 rounded-md px-4 py-5 bg-slate-50'>
           <h1 className='font-bold text-2xl text-justify uppercase'>Who are we?</h1>
           <p className='text-justify mt-2 py-3 text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
-<br /><br />
-At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, we understand that travel is more than just visiting new places; it's about immersing yourself in new cultures, connecting with people from around the world, and creating memories that will last a lifetime. That's why we take a personalized approach to every trip we plan, ensuring that every detail is tailored to your needs and desires.
-<br /><br />
-Our team of experienced travel consultants has a passion for exploring the world and a deep understanding of what it takes to create a truly exceptional travel experience. Whether you're looking for a romantic getaway, a family adventure, or a solo trip to explore new horizons, we've got you covered.
-<br /><br />
-We work with a wide range of trusted partners, including airlines, hotels, and local tour operators, to ensure that you receive the highest quality service and accommodations throughout your journey. We also prioritize responsible and sustainable travel practices, working to minimize our impact on the environment and support local communities.
-<br /><br />
-At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, our goal is to exceed your expectations and help you create memories that will last a lifetime. Let us take care of the details so you can focus on making the most of your travels.</p>
+            <br /><br />
+            At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, we understand that travel is more than just visiting new places; it's about immersing yourself in new cultures, connecting with people from around the world, and creating memories that will last a lifetime. That's why we take a personalized approach to every trip we plan, ensuring that every detail is tailored to your needs and desires.
+            <br /><br />
+            Our team of experienced travel consultants has a passion for exploring the world and a deep understanding of what it takes to create a truly exceptional travel experience. Whether you're looking for a romantic getaway, a family adventure, or a solo trip to explore new horizons, we've got you covered.
+            <br /><br />
+            We work with a wide range of trusted partners, including airlines, hotels, and local tour operators, to ensure that you receive the highest quality service and accommodations throughout your journey. We also prioritize responsible and sustainable travel practices, working to minimize our impact on the environment and support local communities.
+            <br /><br />
+            At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, our goal is to exceed your expectations and help you create memories that will last a lifetime. Let us take care of the details so you can focus on making the most of your travels.</p>
         </section>
 
         {/*  group plans */}
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mx-2 md:mx-0'>
-          {
-            data.plans.map((plan) => {
-              return (plan.isgroupplan ===true ?<OffersCard plan={plan}/>:null)
-            })
-          }
-        </div>
+            {
+              data.plans.map((plan) => {
+                return (plan.isgroupplan === true ? <OffersCard plan={plan} /> : null)
+              })
+            }
+          </div>
         </div>
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
           <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
-          {data.plans.map((plan) => {
-            return (plan.isgroupplan === false ? <OffersCard plan={plan}/>: null)
-          })}
-        </div>
+            {data.plans.map((plan) => {
+              return (plan.isgroupplan === false ? <OffersCard plan={plan} /> : null)
+            })}
+          </div>
         </div>
       </main>
     </>
