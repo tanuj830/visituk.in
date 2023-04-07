@@ -25,7 +25,7 @@ export default function OffersCard({ plan }) {
                                         <div className='flex items-center gap-1 mt-1'>
                                           <h3 className='text-xl'><BiTimeFive/></h3>   <h3 className='tracking-tighter text-md'>{plan.days} days + {plan.nights} nights</h3>
                                         </div>
-                                    <div className='flex items-center mt-1 gap-1 '><h3 className='text-xl '><BiTrip/></h3> <h3>{plan.via.slice(0,22) + "..."}</h3></div>
+                                    <div className='flex items-center mt-1 gap-1 '><h3 className='text-xl '><BiTrip/></h3> <h3>{plan.via.slice(0,25) + "..."}</h3></div>
                                     <div className='flex'>
                                         <div className=' flex items-center font-semibold text-lg gap-2'>
                                             <div><strike className="text-red-400 text-sm">₹{plan.exPrice}</strike></div>
