@@ -27,7 +27,7 @@ export default function Slug() {
           data.plans.map(plan=>(
             <>
  {
-   plan.slug === slug ?   <div className=''>
+   plan.id == slug ?   <div className=''>
    <section className='flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 '>
     
    <div className='xl:container'>

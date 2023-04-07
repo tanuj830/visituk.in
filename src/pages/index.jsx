@@ -49,7 +49,7 @@ We work with a wide range of trusted partners, including airlines, hotels, and l
 At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, our goal is to exceed your expectations and help you create memories that will last a lifetime. Let us take care of the details so you can focus on making the most of your travels.</p>
         </section>
 
-        {/* group plans */}
+        {/*  group plans */}
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mx-2 md:mx-0'>
@@ -61,38 +61,13 @@ At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small
         </div>
         </div>
         <div className='mt-10'>
-          <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>PLANS</h1>
+          <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {data.plans.map((plan) => {
             return (plan.isgroupplan === false ? <OffersCard plan={plan}/>: null)
           })}
         </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div className=' mt-96'>
-<select  onChange={onChangeCollege} name="p" id="p">
-  <option  onChange={onChangeCollege} value="2">2</option>
-  <option  onChange={onChangeCollege} value="4">4</option>
-  <option  onChange={onChangeCollege} value="6">6</option>
-</select>
-  <input type="submit" value="Submit"/>
-</div>
-
-
-
-
-
       </main>
     </>
   )
