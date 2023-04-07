@@ -14,7 +14,7 @@ export default function CardCrousel({ data,group }) {
         slidesToScroll: 1
     };
     return (
-        <Slider {...settings}>
+        <Slider className='' {...settings}>
             {
                 data.plans.map((plan) => {
                     return (plan.isgroupplan === group ? <OffersCard plan={plan} /> : null)
