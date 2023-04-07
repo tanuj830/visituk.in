@@ -53,12 +53,12 @@ export default function Slug() {
     </div>
    </div>
 
-      <div className='mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0'>
+      <div className='mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md hover:shadow-lg rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0'>
         <img className='overflow-hidden' src={plan.img} alt="" />
           <div className='py-2 px-3'>
           <h2 className='text-xl text-justify font-semibold text-slate-600'>Book {plan.title}</h2>
        <div className=''>
-       <small className=' text-slate-600'><strike> ₹ {plan.exPrice}</strike></small>
+       <small className=' text-slate-600'><strike className="text-[12px]"> ₹ {plan.exPrice}</strike></small>
         <small className=' text-lg font-semibold text-green-700'>  <small>now at</small> ₹{plan.price}</small><br />
         {/* <small className=' text-lg font-semibold text-green-600'>  <small>You are saving</small> ₹{(plan.exPrice) - (plan.price)}</small> */}
        </div>

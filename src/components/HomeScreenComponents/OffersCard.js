@@ -16,7 +16,7 @@ export default function OffersCard({ plan }) {
                                }
                             <div className=' rounded-lg border bg-white'>
                                 <div className='overflow-hidden'>
-                                    <img className='h-fit w-fit hover:scale-110 duration-1000 ease-in-out' src="https://assets.cntraveller.in/photos/60ba1486002baf698cc67003/16:9/pass/GettyImages-539105384.jpg" alt="" />
+                                    <img className='h-fit w-fit hover:scale-110 duration-1000 ease-in-out' src={plan.img} alt="" />
                                 </div>
                                 <div className='px-6 py-4'>
                                     <div className='flex flex-row'>
