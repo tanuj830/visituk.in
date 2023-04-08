@@ -5,21 +5,34 @@ import { FiPhoneCall } from "react-icons/fi";
 import { FcOnlineSupport } from "react-icons/fc";
 import { AiTwotoneStar } from "react-icons/ai";
 import { MdLocalConvenienceStore, MdEmojiTransportation } from "react-icons/md";
+import { HiCurrencyRupee} from 'react-icons/hi'
+
 import { BiTimeFive } from "react-icons/bi";
 import { BsFillPersonFill, BsStarHalf } from "react-icons/bs";
 import { BiTrip } from "react-icons/bi";
+import { BsFillCarFrontFill} from "react-icons/bs";
 import { MdUpdate } from "react-icons/md";
 import Link from "next/link";
 import OffersCard from "@/components/HomeScreenComponents/OffersCard";
 export default function Slug() {
   const router = useRouter();
   const slug = router.query.slug;
-  // const[data, setData] = React.useState()
+  const[persons, setPersons] = React.useState(0)
+  const[perPersonPrice, setPerPersonPrice] = React.useState(0)
+  const[price, setPrice] = React.useState(0)
 
-  // useEffect(() => {
-  //   setData(router.query.slug);
-  // }, [])
-  console.log(slug);
+  // setting up total price and persons to state 
+    const handleChange=(e, p)=>{
+      console.log(p)
+      console.log(e.target.persons)
+    }
+
+    // calculating price
+  useEffect(() => {
+    setPerPersonPrice(price/persons)
+  })
+
+
   return (
     <>
       {slug !== "undefined"
@@ -153,26 +166,41 @@ export default function Slug() {
                     plan.specialoffer === false ? 
                 <section className="xl:container md:mt-20 p-6 md:w-[60%]">
                  <div className="border p-3">
-                 <h3 className="text-2xl font-semibold">Customize your package</h3>
                  <div className="mt-10 ">
                     <div>
                       {/* customization main logic here */}
                        <div>
-                       <label className="text-slate-600">Please select no of travellers</label>
-                      <select className="border w-full p-1" name="persons" id="personsid">
+                       <h2 className=" text-xl uppercase tracking-wider font-bold">Available Vehicles</h2>
                         {
-                          plan.persons.map(per=>(
-                            <option className="" value={per}>{per}</option>
+                          data.vehicles.map(vech=>(
+                            
+                              <div className=" mt-3  rounded p-2">
+                        <hr />
+                                  <h2 className="flex items-center gap-3"><h2 className="w-14"><img src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/car_ytnkq9.gif" alt="" /></h2><h2 className="text-lg font-bold">{vech.name}</h2></h2>
+                                  <h6 className="flex items-center gap-1 mb-3"><h6 className="text-2xl"><HiCurrencyRupee/></h6>Price per day <h6 className="text-lg font-bold text-green-600">₹{vech.pricePerDay}</h6>/Person</h6>
+                                  <label className="">Select number of travellers</label>
+                                  <select className="border w-full p-1" name="persons" id="personsid">
+                                  {
+                                      vech.persons.map(per=>(
+                                            <option className="" persons={per} >{per}</option>
+                                       ))
+                                   }          
+                        </select>
+                              </div>
+                            
                           ))
+                         
                         }
-                      </select>
+                        {
+                          console.log(perPersonPrice)
+                        }
                        </div>
                        {/* <div>
                        <label className="text-slate-600">Please select vechiles</label>
                       <select className="border w-full p-1" name="persons" id="personsid">
                         {
                           plan.persons.map(per=>(
-                            <option className="" value={per}>{per}</option>
+                            <option className="" persons={per}>{per}</option>
                           ))
                         }
                       </select>
