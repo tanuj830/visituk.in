@@ -54,29 +54,33 @@ export default function Home({ data }) {
         {/*  group plans */}
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
-          <div className='hidden md:grid md:grid-cols-3 gap-6'>
+          <div className='overflow-hidden'>
+          <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
               data.plans.map((plan) => {
                 return (plan.isgroupplan === true ? <OffersCard plan={plan} /> : null)
               })
             }
           </div>
-          <div className='md:hidden mb-10'>
-            <CardCrousel data={data} group={true} />
           </div>
+          {/* <div className='md:hidden mb-10'>
+            <CardCrousel data={data} group={true} />
+          </div> */}
         </div>
 
         
         <div className='mt-10'>
           <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
-          <div className=' hidden md:grid md:grid-cols-4 gap-4'>
-            {data.plans.map((plan) => {
+          <div className='  overflow-hidden '>
+           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
+           {data.plans.map((plan) => {
               return (plan.isgroupplan === false ? <OffersCard plan={plan} /> : null)
             })}
+           </div>
           </div>
-          <div className='md:hidden mb-10'>
+          {/* <div className='md:hidden mb-10'>
           <CardCrousel data={data} group={false} />
-        </div>
+        </div> */}
         </div>
       </main>
     </>
