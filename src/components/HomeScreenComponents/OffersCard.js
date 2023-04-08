@@ -21,7 +21,7 @@ export default function OffersCard({ plan }) {
                         <div className='overflow-hidden'>
                             <img className='w-full hover:scale-110 duration-1000 ease-in-out' src={plan.img} alt="" />
                         </div>
-                        <div className='md:px-6 md:py-4 pt-4'>
+                        <div className='md:px-6 p-3 md:py-4 pt-4'>
                             <div className='flex flex-row'>
                                 <h1 className='text-2xl font-bold'>{plan.title}</h1>
                             </div>
@@ -34,8 +34,8 @@ export default function OffersCard({ plan }) {
                             <div className='flex items-center gap-1 mt-1'>
                                 <h3 className='text-xl'><BiTimeFive /></h3>   <h3 className='tracking-tighter text-md'>{plan.days} days + {plan.nights} nights</h3>
                             </div>
-                            <div className='flex items-center mt-1 gap-1 hidden md:visible'><h3 className='text-xl '><BiTrip /></h3> <h3>{plan.via.slice(0, 26) + "..."}</h3></div>
-                            <div className='flex items-center mt-1 gap-1 md:hidden visible'><h3 className='text-xl '><BiTrip /></h3> <h3>{plan.via.slice(0, 40) + "..."}</h3></div>
+                            {/* <div className=' items-center mt-1 gap-1 hidden md:visible'><h3 className='text-xl '><BiTrip /></h3> <h3>{plan.via.slice(0, 26) + "..."}</h3></div> */}
+                            <div className='flex items-center mt-1 gap-1 md:hidden visible'><h3 className='text-xl '><BiTrip /></h3> <h3>{plan.via.slice(0, 35) + "..."}</h3></div>
                             <div className='flex mt-1'>
                                 <div className=' flex items-center font-semibold text-lg gap-2'>
                                     <div><strike className="text-red-600 text-sm">₹{plan.exPrice}</strike></div>
