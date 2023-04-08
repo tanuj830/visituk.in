@@ -217,7 +217,7 @@ export default function Slug() {
 
                   <section className="xl:container mt-10  w-full">
                     <div className="px-2 md:px-0">
-                      <div className=" border p-5 rounded-lg">
+                      <div className=" border p-3 md:p-5 rounded-lg">
                         <h3 className="text-2xl font-semibold  my-3">
                           About Tour
                         </h3>
