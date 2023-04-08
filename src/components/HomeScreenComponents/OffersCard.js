@@ -41,7 +41,7 @@ export default function OffersCard({ plan }) {
                                 <div className=' flex items-center font-semibold text-lg gap-2'>
                                     <h3><HiCurrencyRupee/></h3>
                                     <div><strike className="text-red-600 text-[12px]">₹{plan.exPrice}</strike></div>
-                                    <div className='text-green-600 text-sm font-semibold'> ₹{plan.price}</div>
+                                    <div className='text-green-600 text-sm font-bold'> ₹{plan.price}</div>
                                 </div>
                             </div>
                                 {
