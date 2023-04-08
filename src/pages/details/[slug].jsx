@@ -164,8 +164,8 @@ export default function Slug() {
                 {/* customization section */}
                  {
                     plan.specialoffer === false ? 
-                <section className="xl:container md:mt-20 p-6 md:w-[60%]">
-                 <div className="border p-3">
+                <section className="xl:container md:mt-20 md:p-6 p-3  md:w-[60%]">
+                 <div className="border p-3 rounded">
                  <div className="mt-10 ">
                     <div>
                       {/* customization main logic here */}
