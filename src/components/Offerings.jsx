@@ -24,7 +24,7 @@ const Offerings = () => {
 
   return (
     <section className=' mt-20'>
-        <h2 className='text-2xl text-center font-semibold uppercase'>Our Offerings</h2>
+        <h2 className='text-2xl text-center font-bold uppercase'>Our Offerings</h2>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-6 mt-1'>
           {
             offerings.map(off=>(

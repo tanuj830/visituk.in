@@ -54,7 +54,7 @@ export default function Home({ data }) {
 
         {/*  group plans */}
         <div className='mt-10'>
-          <h1 className='text-2xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
+          <h1 className='text-2xl font-bold my-4 tracking-wide text-center'>GROUP PLANS</h1>
           <div className='overflow-hidden'>
           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
@@ -71,7 +71,7 @@ export default function Home({ data }) {
 
         
         <div className='mt-10'>
-          <h1 className='text-2xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
+          <h1 className='text-2xl font-bold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
           <div className='  overflow-hidden '>
            <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
            {data.plans.map((plan) => {
