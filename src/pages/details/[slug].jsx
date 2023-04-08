@@ -164,13 +164,14 @@ export default function Slug() {
                 {/* customization section */}
                  {
                     plan.specialoffer === false ? 
-                <section className="xl:container md:mt-20 md:p-6 p-3  md:w-[60%]">
-                 <div className="border p-3 rounded">
-                 <div className="mt-10 ">
+                <section className="xl:container md:mt-20  mt-10 md:w-[60%]">
+                 <div className="border px-6 py-6 rounded mx-2 md:mx-0">
+                 <div className=" mt-4">
                     <div>
                       {/* customization main logic here */}
                        <div>
-                       <h2 className=" text-xl uppercase tracking-wider font-bold">Available Vehicles</h2>
+                       <h2 className=" text-xl uppercase tracking-wider font-bold">Vehicles Options</h2>
+                       <small className="text-sm font-semibold text-slate-500">Depending upon number of person</small>
                         {
                           data.vehicles.map(vech=>(
                             
