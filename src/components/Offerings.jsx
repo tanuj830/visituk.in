@@ -9,7 +9,7 @@ const Offerings = () => {
                 "img":"https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/car_ytnkq9.gif"
             },
             {
-                "title":"Pre Planned Route",
+                "title":"Well Planned Route",
                 "img":"https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/way_oo6dkw.gif"
             },
             {
@@ -30,7 +30,7 @@ const Offerings = () => {
             offerings.map(off=>(
                 <div className='flex items-center flex-col p-6'>
                     <img className='w-20' src={off.img} />
-                    <h2 className='font-semibold tracking-wider'>{off.title}</h2>
+                    <h2 className='font-semibold tracking-wider uppercase'>{off.title}</h2>
                 </div>
             ))
           }
