@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import OffersCard from '@/components/HomeScreenComponents/OffersCard'
 import { Carousel } from 'react-responsive-carousel'
 import CardCrousel from '@/components/HomeScreenComponents/CardCrousel'
+import Offerings from '@/components/Offerings'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -26,7 +27,7 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='w-full relative bg-black'>
+      <div className='w-full  relative bg-black'>
         <img className='h-[150px] md:w-full md:h-full brightness-50' src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/4-dham-only.png?alt=media&token=c1f3fbe2-8195-4e81-b3f2-3ed8e9373145" alt="" />
         <div className='absolute px-10 md:px-0 top-1 md:top-[50%] w-full'>
           <div className='flex items-center justify-center  w-full'>
@@ -37,7 +38,7 @@ export default function Home({ data }) {
             </div>   </div>
         </div>
       </div>
-      <main className='mx-2 md:mx-0 sm:container'>
+      <main className='mx-2 md:mx-0 sm:container tracking-wider'>
         <section className=' my-10 rounded-md px-3 py-5 bg-slate-50'>
           <h1 className='font-bold text-2xl text-justify uppercase'>Who are we?</h1>
           <p className='text-justify mt-2 py-3 text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
@@ -53,7 +54,7 @@ export default function Home({ data }) {
 
         {/*  group plans */}
         <div className='mt-10'>
-          <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
+          <h1 className='text-2xl font-semibold my-4 tracking-wide text-center'>GROUP PLANS</h1>
           <div className='overflow-hidden'>
           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
@@ -70,7 +71,7 @@ export default function Home({ data }) {
 
         
         <div className='mt-10'>
-          <h1 className='text-3xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
+          <h1 className='text-2xl font-semibold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
           <div className='  overflow-hidden '>
            <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
            {data.plans.map((plan) => {
@@ -82,6 +83,7 @@ export default function Home({ data }) {
           <CardCrousel data={data} group={false} />
         </div> */}
         </div>
+        <Offerings/>
       </main>
     </>
   )
