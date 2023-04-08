@@ -29,9 +29,9 @@ export default function Slug() {
                 <div className="">
                   {
                     plan.specialoffer === true ? <div className=" py-1  w-full bg-green-600">
-                      <h3 className="text-sm md:text-md text-white text-center uppercase">Avail our Special Offer and make the best deal for you ! </h3>
+                      <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">Avail our Special Offer and make the best deal for you ! </h3>
                       </div>:<div className=" py-1  w-full bg-slate-600">
-                      <h3 className="text-sm md:text-md text-white text-center uppercase">You can customize this tour <small className="text-slate-200 text-md">by choosing number of peoples and vechile</small> </h3>
+                      <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">You can customize this tour <small className="text-slate-200 text-md">by choosing number of peoples and vechile</small> </h3>
                       </div>
                   }
                   <section className="flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 ">
@@ -184,24 +184,14 @@ export default function Slug() {
                   }
 
 
-                  <section className="xl:container md:mt-20  w-full">
-                    <div className="p-3 md:p-6">
-                      <div className="md:w-[70%] border p-5 rounded-lg">
-                        <h3 className="text-2xl font-semibold  my-3">
-                          About Tour
-                        </h3>
-                        <h6 className="text-lg text-justify text-slate-600">{plan.disp}</h6>
-                      </div>
-                    </div>
-                  </section>
 
-                  <section className="mt-4 px-3  xl:container">
+                  <section className="mt-20 px-3  xl:container">
                     <div>
                       <h2 className="text-2xl font-semibold ">
                         This tour includes:
                       </h2>
                     </div>
-                    <div className="md:w-[50%] grid grid-cols-2 text-slate-700">
+                    <div className="md:w-[50%] grid-cols-2 grid md:grid-cols-3 text-slate-700">
                       <div className="flex items-center gap-1 py-4 ">
                         <h1 className="text-2xl text-black">
                           <BiTrip />
@@ -225,6 +215,16 @@ export default function Slug() {
                     </div>
                   </section>
 
+                  <section className="xl:container mt-10  w-full">
+                    <div className="px-2 md:px-0">
+                      <div className=" border p-5 rounded-lg">
+                        <h3 className="text-2xl font-semibold  my-3">
+                          About Tour
+                        </h3>
+                        <div dangerouslySetInnerHTML={{__html:plan.disp}} className="text-lg text-justify text-slate-600"></div>
+                      </div>
+                    </div>
+                  </section>
                   {/* Tour Itinerary */}
                   <section className="xl:container mt-6 p-3"></section>
                 </div>
