@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { BsAirplaneEngines, BsFillCarFrontFill } from "react-icons/bs";
 // import SearchBar from "./SearchBar";
-import { AiOutlineContacts } from "react-icons/ai";
+import { AiOutlineContacts, AiOutlineHome } from "react-icons/ai";
 import { GiMountains } from "react-icons/gi";
 import { BsGithub } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
@@ -18,7 +18,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = React.useState(false);
-  const [showNumber,setShowNumber]=React.useState(false);
+  const [showNumber, setShowNumber] = React.useState(false);
   const handleClick = () => {
     setShowMenu(!showMenu);
   };
@@ -58,9 +58,9 @@ const Navbar = () => {
           {showMenu == true ? (
             <div className="relative w-full tracking-wider  py-1">
               <div className="sticky bg-white w-full">
-              <Link className="flex items-center gap-2 mt-2 hover:text-red-600" href='#about-us'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-red-600" href='#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-red-600" href='#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
+                <Link className="flex items-center gap-2 mt-2 hover:text-red-600" href='#about-us'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
+                <Link className="flex items-center gap-2 mt-2 hover:text-red-600" href='#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
+                <Link className="flex items-center gap-2 mt-2 hover:text-red-600" href='#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
               </div>
             </div>
           ) : null}
@@ -76,7 +76,8 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex items-center justify-center ">
-            <Link className="flex items-center gap-1 hover:text-red-600" href='#about-us'> <h3 className="ml-8 text-xl"><AiOutlineContacts /></h3><h3>About Us</h3></Link>
+            <Link className="flex items-center gap-1 hover:text-red-600" href='/'> <h3 className="ml-8 text-xl"><AiOutlineHome /></h3><h3>Home</h3></Link>
+            <Link className="flex items-center gap-1 hover:text-red-600" href='/about'> <h3 className="ml-8 text-xl"><AiOutlineContacts /></h3><h3>About Us</h3></Link>
             <Link className="flex items-center gap-1 hover:text-red-600" href='#services'> <h3 className="ml-8 text-xl"><BsFillCarFrontFill /></h3><h3>Services</h3></Link>
             <Link className="flex items-center gap-1 hover:text-red-600" href='#plans'> <h3 className="ml-8 text-xl"><MdModeOfTravel /></h3><h3>Plans</h3></Link>
             <hr />
@@ -84,8 +85,8 @@ const Navbar = () => {
         </div>
         <div className="fixed top-64 right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100">
           <ul className="p-1 font-bold text-lg">
-            <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
-            <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
+            <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></a>
+            <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></li>
           </ul>
         </div>
       </div>
