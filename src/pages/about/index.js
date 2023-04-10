@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from "../../components/Header"
+import Header2 from "../../components/Header2"
 const index = () => {
   return (
     <div>
-        <Header/>
+        <Header2/>
            <section className=' my-10 rounded-lg drop-shadow-lg shadow-gray-600 px-5 py-5 ' id='about-us'>
           <h1 className='font-bold text-2xl  uppercase ' >Who are we?</h1>
           <p className='text-justify mt-2 py-3  text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.

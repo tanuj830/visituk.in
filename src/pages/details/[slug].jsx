@@ -6,7 +6,7 @@ import { FcOnlineSupport } from "react-icons/fc";
 import { AiTwotoneStar } from "react-icons/ai";
 import { MdLocalConvenienceStore, MdEmojiTransportation } from "react-icons/md";
 import { HiCurrencyRupee} from 'react-icons/hi'
-
+import Header2 from "../../components/Header2"
 import { BiTimeFive } from "react-icons/bi";
 import { BsFillPersonFill, BsStarHalf } from "react-icons/bs";
 import { BiTrip } from "react-icons/bi";
@@ -35,6 +35,7 @@ export default function Slug() {
 
   return (
     <>
+    <Header2/>
       {slug !== "undefined"
         ? data.plans.map((plan) => (
             <>
