@@ -38,7 +38,7 @@ export default function Home({ data }) {
       </Head>
 <main>
   {/* for pc */}
-<div className=" hidden md:inline ">
+<div className=" hidden md:inline brightness-200">
           <div className='fixed  bottom-72  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100'>
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
@@ -150,7 +150,7 @@ export default function Home({ data }) {
 
 
         {/* for mobile */}
-        <div className="inline md:hidden  ">
+        <div className="inline md:hidden  brightness-200">
         <div className="fixed bottom-0  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100">
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
