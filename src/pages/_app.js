@@ -15,8 +15,7 @@ export default function App({ Component, pageProps }) {
       <link rel="icon" href="/favicon.ico" />
       <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script> {/*cdn link for accordin*/}
     </Head>
-    <Header />
-    <Component {...pageProps} />
+    <Component   {...pageProps} />
     <Footer />
   </>
 }
