@@ -3,11 +3,11 @@ import React from 'react'
 
 const Hero1 = () => {
   return (
-    <div className='xl:container mt-32 px-[1rem] md:px-[7rem] '>
+    <div className='xl:container mt-10 md:mt-32 px-[1rem] md:px-[7rem] '>
     <div className='flex flex-col md:flex-row   items-center justify-between gap-6'>
         <div className=''>
-            <h4 className='text-3xl font-semibold'>Find The Perfect Package</h4>
-            <div className=' mt-1 w-24 border-b-4 border-green-600'><hr /></div>
+            <h4 className='text-3xl font-semibold  tracking-wider '>Find The Perfect Package</h4>
+            <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
         <Link className='uppercase  duration-300 ease-in-out rounded-full text-sm text-green-500 hover:text-green-700' href="/">Explore All packages</Link>
         </div>
             <div className=' hidden md:inline-block '>
@@ -17,7 +17,7 @@ const Hero1 = () => {
             </div>
        <div className=''>
         {/* for mobile */}
-       <div className='inline md:hidden'>
+       <div className='inline md:hidden '>
        <div className=' flex flex-row flex-nowrap overflow-scroll gap-6'>
             <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150 ease-in-out' src="https://images.pexels.com/photos/15017640/pexels-photo-15017640.jpeg" alt="" />
             <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/11305767/pexels-photo-11305767.jpeg" alt="" />
