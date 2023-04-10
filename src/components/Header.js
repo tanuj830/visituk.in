@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <>
       {/* for mobile */}
-      <div className="xl:container inline md:hidden brightness-200 text-white">
+      <div className="xl:container inline md:hidden  text-white">
         <div className="  flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
             <Link className="text-2xl text-themecol flex items-center justify-center gap-1" href="/">

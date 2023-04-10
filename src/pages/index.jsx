@@ -155,7 +155,7 @@ export default function Home({ data }) {
 
 
         {/* for mobile */}
-        <div className="inline md:hidden  brightness-200">
+        <div className="inline md:hidden">
         <div className="fixed bottom-0  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100">
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
@@ -202,15 +202,19 @@ export default function Home({ data }) {
             <div className='text-5xl '><MdOutlineEmojiTransportation/></div>
             <div>
               {/* <div><h6 className=' uppercase brightness-200 text-sm'></h6></div> */}
-              <div><h6 className=' uppercase brightness-200 text-sm'>Transportation</h6></div>
+              <div><h6 className=' uppercase  text-sm'>Transportation</h6></div>
             </div>
           </div>
         </div>
             </div>
 
+
+          <Hero1/>
+
+
             {/* hero section */}
         <section className=' my-10 rounded-lg drop-shadow-lg shadow-gray-600 px-5 py-5 ' id='about-us'>
-          <h1 className='font-bold text-2xl  uppercase brightness-200' >Who are we?</h1>
+          <h1 className='font-bold text-2xl  uppercase ' >Who are we?</h1>
           <p className='text-justify mt-2 py-3  text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
             <br /><br />
             At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, we understand that travel is more than just visiting new places; it's about immersing yourself in new cultures, connecting with people from around the world, and creating memories that will last a lifetime. That's why we take a personalized approach to every trip we plan, ensuring that every detail is tailored to your needs and desires.
