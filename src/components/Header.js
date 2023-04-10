@@ -52,11 +52,11 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        <div className="mb-2 md:container flex items-center justify-between">
+        <div className="mb-2 md:container flex  items-center justify-between">
 
           {/* <div> */}
           {showMenu == true ? (
-            <div className="relative w-full tracking-wider  py-1">
+            <div className="relative w-full tracking-wider text-white py-1">
               <div className=" w-full">
               <Link className="flex items-center gap-2 mt-2 hover:text-green-600 brightness-200" href='#about-us'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
             <Link className="flex items-center gap-2 mt-2 hover:text-green-600 brightness-200" href='#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
@@ -68,11 +68,11 @@ const Navbar = () => {
       </div>
 
       {/* forpc */}
-      <div className="w-full bg-white  hidden md:inline tracking-widest ">
+      <div className="w-full text-white tracking-wider hidden md:inline tracking-widest ">
         <div className=" py-5  shadow-md px-10 flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
-              <GiMountains /><h6 className="tracking-tighter">visituttrakhand.in</h6>
+              <GiMountains /><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
           <div className="flex items-center justify-center ">
