@@ -15,6 +15,7 @@ import Offerings from '@/components/Offerings'
 const inter = Inter({ subsets: ['latin'] })
 import Header from '../components/Header'
 import {MdOutlineTour, MdSecurity, MdOutlineCleanHands, MdOutlineEmojiTransportation} from 'react-icons/md'
+import Hero1 from '@/components/herosection/Hero1';
 
 
 const onChangeCollege = (e) => {
@@ -38,20 +39,20 @@ export default function Home({ data }) {
       </Head>
 <main>
   {/* for pc */}
-<div className=" hidden md:inline brightness-200">
+<div className=" hidden md:inline ">
           <div className='fixed  bottom-72  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100'>
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
             <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
           </ul>
         </div>
-      <div className='mx-2 md:mx-0 sm:container tracking-wider  bg-[rgba(0,0,0,0.2)] bg-no-repeat h-[100vh]'  style={{backgroundImage:"url(https://ui-assets-gc.thrillophilia.com/assets/homepage/homepage-banner-2696fc25d8bb0f563e9ff7ae22882ee67cea624e244dfb0bc74316db0ffdcfba.jpg)", backgroundBlendMode:"overlay"}}>
+      <div className='mx-2 md:mx-0 sm:container tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat h-[100vh]'  style={{backgroundImage:"url(https://ui-assets-gc.thrillophilia.com/assets/homepage/homepage-banner-2696fc25d8bb0f563e9ff7ae22882ee67cea624e244dfb0bc74316db0ffdcfba.jpg)", backgroundBlendMode:"overlay"}}>
         <Header/>
         <div className=' flex items-center  justify-center mt-36 w-full'>
           <div className='flex items-center justify-center  w-full'>
             <div className=''>
-              <h2 className='text-white font-semibold tracking-wider  text-lg md:text-5xl '>Uttarakhand Tourism</h2>
-              <h3 className='text-white font-semibold tracking-wider text-sm md:text-lg text-justify md:w-[70%] md:mt-4'>The Himalayan Mountains, Crisp Air, Sacred Temples, and Enthralling Adventure Call You to Uttarakhand</h3>
+              <h2 className='text-white font-semibold tracking-wider  text-lg md:text-5xl brightness-200'>Uttarakhand Tourism</h2>
+              <h3 className='text-white font-semibold tracking-wider text-sm md:text-lg text-justify md:w-[70%] md:mt-4 brightness-200'>The Himalayan Mountains, Crisp Air, Sacred Temples, and Enthralling Adventure Call You to Uttarakhand</h3>
 
             </div>   </div>
       
@@ -61,37 +62,41 @@ export default function Home({ data }) {
           <div className='flex  items-center  gap-2'>
             <div className='text-5xl '><MdOutlineTour/></div>
             <div>
-              <div><h6 className='font-semibold uppercase z-50  text-sm'>2000+</h6></div>
-              <div><h6 className='font-semibold uppercase text-sm'>Successful Tour</h6></div>
+              <div><h6 className=' uppercase brightness-200 z-50  text-sm'>2000+</h6></div>
+              <div><h6 className=' uppercase brightness-200 text-sm'>Successful Tour</h6></div>
             </div>
           </div>
           <div className='flex  items-center  gap-2'>
             <div className='text-5xl '><MdOutlineCleanHands/></div>
             <div>
-              <div><h6 className='font-semibold uppercase text-sm'>5 Star</h6></div>
-              <div><h6 className='font-semibold uppercase text-sm'>Cleanliness</h6></div>
+              <div><h6 className=' uppercase brightness-200 text-sm'>5 Star</h6></div>
+              <div><h6 className=' uppercase brightness-200 text-sm'>Cleanliness</h6></div>
             </div>
           </div>
           <div className='flex  items-center  gap-2'>
             <div className='text-5xl '><MdSecurity/></div>
             <div>
-              {/* <div><h6 className='font-semibold uppercase text-sm'></h6></div> */}
-              <div><h6 className='font-semibold uppercase text-sm'>Security</h6></div>
+              {/* <div><h6 className=' uppercase brightness-200 text-sm'></h6></div> */}
+              <div><h6 className=' uppercase brightness-200 text-sm'>Security</h6></div>
             </div>
           </div>
           <div className='flex  items-center  gap-2'>
             <div className='text-5xl '><MdOutlineEmojiTransportation/></div>
             <div>
-              {/* <div><h6 className='font-semibold uppercase text-sm'></h6></div> */}
-              <div><h6 className='font-semibold uppercase text-sm'>Transportation</h6></div>
+              {/* <div><h6 className=' uppercase brightness-200 text-sm'></h6></div> */}
+              <div><h6 className=' uppercase brightness-200 text-sm'>Transportation</h6></div>
             </div>
           </div>
         </div>
             </div>
 
+
+          <Hero1 />
+
+
             {/* hero section */}
         <section className=' my-10 rounded-lg drop-shadow-lg shadow-gray-600 px-5 py-5 ' id='about-us'>
-          <h1 className='font-bold text-2xl text-justify uppercase' >Who are we?</h1>
+          <h1 className='font-bold text-2xl  uppercase brightness-200' >Who are we?</h1>
           <p className='text-justify mt-2 py-3  text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
             <br /><br />
             At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, we understand that travel is more than just visiting new places; it's about immersing yourself in new cultures, connecting with people from around the world, and creating memories that will last a lifetime. That's why we take a personalized approach to every trip we plan, ensuring that every detail is tailored to your needs and desires.
@@ -175,29 +180,29 @@ export default function Home({ data }) {
           <div className='flex  items-center  '>
             <div className='text-5xl '><MdOutlineTour/></div>
             <div>
-              <div><h6 className='font-semibold uppercase z-50  text-sm'>2000+</h6></div>
-              <div><h6 className='font-semibold uppercase text-sm'>Successful Tour</h6></div>
+              <div><h6 className=' uppercase brightness-200 z-50  text-sm'>2000+</h6></div>
+              <div><h6 className=' uppercase brightness-200 text-sm'>Successful Tour</h6></div>
             </div>
           </div>
           <div className='flex  items-center'>
             <div className='text-5xl '><MdOutlineCleanHands/></div>
             <div>
-              <div><h6 className='font-semibold uppercase text-sm'>5 Star</h6></div>
-              <div><h6 className='font-semibold uppercase text-sm'>Cleanliness</h6></div>
+              <div><h6 className=' uppercase brightness-200 text-sm'>5 Star</h6></div>
+              <div><h6 className=' uppercase brightness-200 text-sm'>Cleanliness</h6></div>
             </div>
           </div>
           <div className='flex  items-center'>
             <div className='text-5xl '><MdSecurity/></div>
             <div>
-              {/* <div><h6 className='font-semibold uppercase text-sm'></h6></div> */}
-              <div><h6 className='font-semibold uppercase text-sm'>Security</h6></div>
+              {/* <div><h6 className=' uppercase brightness-200 text-sm'></h6></div> */}
+              <div><h6 className=' uppercase brightness-200 text-sm'>Security</h6></div>
             </div>
           </div>
           <div className='flex  items-center'>
             <div className='text-5xl '><MdOutlineEmojiTransportation/></div>
             <div>
-              {/* <div><h6 className='font-semibold uppercase text-sm'></h6></div> */}
-              <div><h6 className='font-semibold uppercase text-sm'>Transportation</h6></div>
+              {/* <div><h6 className=' uppercase brightness-200 text-sm'></h6></div> */}
+              <div><h6 className=' uppercase brightness-200 text-sm'>Transportation</h6></div>
             </div>
           </div>
         </div>
@@ -205,7 +210,7 @@ export default function Home({ data }) {
 
             {/* hero section */}
         <section className=' my-10 rounded-lg drop-shadow-lg shadow-gray-600 px-5 py-5 ' id='about-us'>
-          <h1 className='font-bold text-2xl text-justify uppercase' >Who are we?</h1>
+          <h1 className='font-bold text-2xl  uppercase brightness-200' >Who are we?</h1>
           <p className='text-justify mt-2 py-3  text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
             <br /><br />
             At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, we understand that travel is more than just visiting new places; it's about immersing yourself in new cultures, connecting with people from around the world, and creating memories that will last a lifetime. That's why we take a personalized approach to every trip we plan, ensuring that every detail is tailored to your needs and desires.

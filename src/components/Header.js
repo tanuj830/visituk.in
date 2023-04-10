@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="  flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
             <Link className="text-2xl text-themecol flex items-center justify-center gap-1" href="/">
-              <GiMountains /><h6 className="tracking-wide">visituttrakhand.in</h6>
+              <GiMountains /><h6 className="tracking-wide brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
 
@@ -56,9 +56,9 @@ const Navbar = () => {
           {showMenu == true ? (
             <div className="relative w-full tracking-wider  py-1">
               <div className=" w-full">
-              <Link className="flex items-center gap-2 mt-2 hover:text-green-600" href='#about-us'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-green-600" href='#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-green-600" href='#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
+              <Link className="flex items-center gap-2 mt-2 hover:text-green-600 brightness-200" href='#about-us'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
+            <Link className="flex items-center gap-2 mt-2 hover:text-green-600 brightness-200" href='#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
+            <Link className="flex items-center gap-2 mt-2 hover:text-green-600 brightness-200" href='#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
               </div>
             </div>
           ) : null}
@@ -70,13 +70,13 @@ const Navbar = () => {
         <div className=" xl:container py-5  text-white px-10 flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
-              <GiMountains /><h6 className="tracking-tight text-2xl font-semibold">visituttrakhand.in</h6>
+              <GiMountains /><h6 className="tracking-tight text-2xl font-semibold brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
           <div className="flex items-center justify-center ">
-            <Link className="flex items-center gap-1 hover:text-green-600" href='#about-us'> <h3 className="ml-8 text-xl"><AiOutlineContacts /></h3><h3>About Us</h3></Link>
-            <Link className="flex items-center gap-1 hover:text-green-600" href='#services'> <h3 className="ml-8 text-xl"><BsFillCarFrontFill /></h3><h3>Services</h3></Link>
-            <Link className="flex items-center gap-1 hover:text-green-600" href='#plans'> <h3 className="ml-8 text-xl"><MdModeOfTravel /></h3><h3>Plans</h3></Link>
+            <Link className="flex items-center gap-1 hover:text-green-600 brightness-200" href='#about-us'> <h3 className="ml-8 text-xl"><AiOutlineContacts /></h3><h3>About Us</h3></Link>
+            <Link className="flex items-center gap-1 hover:text-green-600 brightness-200" href='#services'> <h3 className="ml-8 text-xl"><BsFillCarFrontFill /></h3><h3>Services</h3></Link>
+            <Link className="flex items-center gap-1 hover:text-green-600 brightness-200" href='#plans'> <h3 className="ml-8 text-xl"><MdModeOfTravel /></h3><h3>Plans</h3></Link>
             <hr />
           </div>
         </div>
