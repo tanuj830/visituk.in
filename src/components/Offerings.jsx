@@ -25,6 +25,9 @@ const Offerings = () => {
   return (
     <section className='xl:container mt-24' >
         <h2 className='text-3xl text-center font-bold  text-slate-600 tracking-wider'>Our Offerings</h2>
+        <div className='flex items-center justify-center mt-2'>
+            <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
+            </div>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-6 mt-1'>
           {
             offerings.map(off=>(
