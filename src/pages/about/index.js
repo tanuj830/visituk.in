@@ -1,9 +1,11 @@
 import React from 'react'
 import Header2 from "../../components/Header2"
+import Offerings from '@/components/Offerings'
 const index = () => {
   return (
-    <div>
+    <>
         <Header2/>
+    <div className='xl:container'>
            <section className=' my-10 rounded-lg drop-shadow-lg shadow-gray-600 px-5 py-5 ' id='about-us'>
           <h1 className='font-bold text-2xl  uppercase ' >Who are we?</h1>
           <p className='text-justify mt-2 py-3  text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
@@ -17,6 +19,8 @@ const index = () => {
             At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, our goal is to exceed your expectations and help you create memories that will last a lifetime. Let us take care of the details so you can focus on making the most of your travels.</p>
         </section>
     </div>
+    <Offerings/>
+    </>
   )
 }
 

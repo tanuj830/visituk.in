@@ -3,9 +3,9 @@ import Link from 'next/link'
 import {GiMountains} from 'react-icons/gi'
 const Footer = () => {
   return (
-    <>
+    <div className=''>
     <div className=' bg-slate-800 p-6 text-slate-300 mt-10'>
-      <div className=' flex md:flex-row flex-col items-center justify-between gap-6 md:gap-32'>
+      <div className='xl:container flex md:flex-row flex-col items-center justify-between gap-6 md:gap-32'>
         {/* section1 */}
         <div className='flex items-center justify-center'>
             <div>
@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
         </div>
         {/* section2 */}
-        <div className='flex items-center justify-center mb-2 md:mb-10'>
+        <div className='xl:container flex items-center justify-center mb-2 md:mb-10'>
           <div className='flex  items-center justify-center gap-7 md:gap-32'>
               <div className=''>
                 <div ><h3 className='text-md md:text-lg text-white'>Discover us</h3></div>
@@ -46,8 +46,7 @@ const Footer = () => {
 
       </div>
         {/* section3 */}
-        <div className='text-justify w-full my-2 mt-8 md:mt-0'>
-      <hr />
+        <div className='xl:container text-justify w-full my-2 mt-8 md:mt-0'>
         <div className='mt-2'>
         <p className='font-semibold text-[13px] md:w-[60%] mt-2'>*Caution: Beware of Fake Promotions or Offers</p>
           <p className='text-[13px] md:w-[60%] mt-2'>*Please do not believe or engage with any promotional emails, SMS or Web-link which ask you to click on a link and fill . All ARTravellers authorized email communications are delivered from domain @artravellers.co.in.</p>
@@ -55,7 +54,7 @@ const Footer = () => {
         </div>
         </div>
         {/* section4 */}
-        <div className=' py-3'>
+        <div className='xl:container py-3'>
           <hr />
           <div className='my-2'>
               <h3 className='text-center text-[11px]'>© 2022-23 ARTravelles Pvt Ltd. All Rights Reserved.</h3>
@@ -63,7 +62,7 @@ const Footer = () => {
         </div>
         
     </div>
-    </>
+    </div>
   )
 }
 
