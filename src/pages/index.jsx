@@ -157,7 +157,7 @@ export default function Home({ data }) {
             <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
           </ul>
         </div>
-      <div className='   tracking-wider w-screen h-screen z-0   bg-[rgba(0,0,0,0.3)]'  style={{backgroundImage:"url(https://ui-assets-gc.thrillophilia.com/assets/homepage/homepage-banner-mobile-70b4c0f0dc4b38ca1a4870d7e5c756b4629568b74d8c052207fb8479738e0029.jpg)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
+      <div className='   tracking-wider w-screen h-screen z-0   bg-[rgba(0,0,0,0.2)]'  style={{backgroundImage:"url(https://ui-assets-gc.thrillophilia.com/assets/homepage/homepage-banner-mobile-70b4c0f0dc4b38ca1a4870d7e5c756b4629568b74d8c052207fb8479738e0029.jpg)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
         <Header/>
        <div className='relative '>
        <div className='absolute z-10 px-[2rem] flex items-center  justify-center mt-24 w-full'>
