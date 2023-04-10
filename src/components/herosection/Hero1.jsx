@@ -6,7 +6,7 @@ const Hero1 = () => {
     <div className='xl:container mt-10 md:mt-32 px-[1rem] md:px-[7rem] '>
     <div className='flex flex-col md:flex-row   items-center justify-between gap-6'>
         <div className=''>
-            <h4 className='text-3xl font-semibold  tracking-wider '>Find The Perfect Package</h4>
+            <h4 className='text-3xl font-semibold  tracking-wider text-slate-600'>Find The Perfect Package</h4>
             <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
         <Link className='uppercase  duration-300 ease-in-out rounded-full text-sm text-green-500 hover:text-green-700' href="/">Explore All packages</Link>
         </div>
@@ -38,8 +38,6 @@ const Hero1 = () => {
         </div>
        </div>
         </div>
-        <div className='flex items-center justify-center pb-10 border-b-2 border-slate-300'>
-        </div> 
     </div>
   )
 }

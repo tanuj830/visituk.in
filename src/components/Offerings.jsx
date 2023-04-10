@@ -23,8 +23,8 @@ const Offerings = () => {
         ]
 
   return (
-    <section className=' mt-20' >
-        <h2 className='text-2xl text-center font-bold uppercase'>Our Offerings</h2>
+    <section className='xl:container mt-24' >
+        <h2 className='text-3xl text-center font-bold  text-slate-600 tracking-wider'>Our Offerings</h2>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-6 mt-1'>
           {
             offerings.map(off=>(

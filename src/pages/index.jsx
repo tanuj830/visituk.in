@@ -16,6 +16,7 @@ const inter = Inter({ subsets: ['latin'] })
 import Header from '../components/Header'
 import {MdOutlineTour, MdSecurity, MdOutlineCleanHands, MdOutlineEmojiTransportation} from 'react-icons/md'
 import Hero1 from '@/components/herosection/Hero1';
+import Hero2 from '@/components/herosection/Hero2';
 
 
 const onChangeCollege = (e) => {
@@ -92,27 +93,14 @@ export default function Home({ data }) {
 
 
           <Hero1 />
+          <Hero2 />
 
-
-            {/* hero section */}
-        <section className=' my-10 rounded-lg drop-shadow-lg shadow-gray-600 px-5 py-5 ' id='about-us'>
-          <h1 className='font-bold text-2xl  uppercase ' >Who are we?</h1>
-          <p className='text-justify mt-2 py-3  text-lg'>Welcome to <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, a leading travel company dedicated to creating unforgettable experiences for our clients. We specialize in designing personalized itineraries that cater to your unique travel interests and preferences.
-            <br /><br />
-            At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, we understand that travel is more than just visiting new places; it's about immersing yourself in new cultures, connecting with people from around the world, and creating memories that will last a lifetime. That's why we take a personalized approach to every trip we plan, ensuring that every detail is tailored to your needs and desires.
-            <br /><br />
-            Our team of experienced travel consultants has a passion for exploring the world and a deep understanding of what it takes to create a truly exceptional travel experience. Whether you're looking for a romantic getaway, a family adventure, or a solo trip to explore new horizons, we've got you covered.
-            <br /><br />
-            {/* We work with a wide range of trusted partners, including airlines, hotels, and local tour operators, to ensure that you receive the highest quality service and accommodations throughout your journey. We also prioritize responsible and sustainable travel practices, working to minimize our impact on the environment and support local communities.
-            <br /><br /> */}
-            At <small className='text-xl font-semibold text-black'>visituttrakhand.in</small>, our goal is to exceed your expectations and help you create memories that will last a lifetime. Let us take care of the details so you can focus on making the most of your travels.</p>
-        </section>
 
         {/*  group plans */}
-        <div className='mt-10' id='plans'>
-          <h1 className='text-2xl font-bold my-4 tracking-wide text-center'>GROUP PLANS</h1>
+        <div className='xl:container mt-24' id='plans'>
+          <h1 className='text-3xl font-bold my-4 tracking-wider text-slate-600 text-center'>Group Plans</h1>
           <div className='overflow-hidden'>
-          <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
+          <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-3 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
               data.plans.map((plan) => {
                 return (plan.isgroupplan === true ? <OffersCard plan={plan} /> : null)
@@ -126,8 +114,8 @@ export default function Home({ data }) {
         </div>
 
         
-        <div className='mt-10'>
-          <h1 className='text-2xl font-bold my-4 tracking-wide text-center'> GENERAL PLANS</h1>
+        <div className='xl:container mt-24'>
+          <h1 className='text-3xl font-bold my-4 tracking-wider text-slate-600 text-center'> General Plans</h1>
           <div className='  overflow-hidden '>
            <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
            {data.plans.map((plan) => {
@@ -210,6 +198,7 @@ export default function Home({ data }) {
 
 
           <Hero1/>
+          <Hero2/>
 
 
             {/* hero section */}
@@ -264,6 +253,8 @@ export default function Home({ data }) {
           {/* do not delete this */}
         </div>
         </div>
+
+        <Offerings/>
  
 </main>
    </>
