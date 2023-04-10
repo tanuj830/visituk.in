@@ -41,12 +41,12 @@ export default function Home({ data }) {
 <main>
   {/* for pc */}
 <div className=" hidden md:inline ">
-          <div className='fixed  bottom-72  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100'>
+          {/* <div className='fixed  bottom-72  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100'>
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
             <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
           </ul>
-        </div>
+        </div> */}
       <div className='mx-2 md:mx-0 sm:container tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat h-[100vh]'  style={{backgroundImage:"url(https://ui-assets-gc.thrillophilia.com/assets/homepage/homepage-banner-2696fc25d8bb0f563e9ff7ae22882ee67cea624e244dfb0bc74316db0ffdcfba.jpg)", backgroundBlendMode:"overlay"}}>
         <Header/>
         <div className=' flex items-center  justify-center mt-36 w-full'>
@@ -144,12 +144,12 @@ export default function Home({ data }) {
 
         {/* for mobile */}
         <div className="inline md:hidden">
-        <div className="fixed bottom-0  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100">
+        {/* <div className="fixed bottom-0  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100">
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
             <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
           </ul>
-        </div>
+        </div> */}
       <div className='   tracking-wider w-screen h-screen z-0   bg-[rgba(0,0,0,0.2)]'  style={{backgroundImage:"url(https://ui-assets-gc.thrillophilia.com/assets/homepage/homepage-banner-mobile-70b4c0f0dc4b38ca1a4870d7e5c756b4629568b74d8c052207fb8479738e0029.jpg)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
         <Header/>
        <div className='relative '>

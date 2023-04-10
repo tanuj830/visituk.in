@@ -26,25 +26,25 @@ const Navbar = () => {
   return (
     <>
       {/* for mobile */}
-      <div className="xl:container inline md:hidden ">
+      <div className="xl:container text-white inline md:hidden ">
         <div className="  flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
             <Link className="text-xl md:text-2xl text-themecol flex items-center justify-center gap-1" href="/home">
-              <GiMountains /><h6 className="tracking-wider">visituttrakhand.in</h6>
+              <GiMountains /><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
 
           <div className="ml-2">
             {!showMenu ? (
               <button
-                className="text-2xl mr-3 "
+                className="text-2xl mr-3 brightness-200"
                 onClick={handleClick}
               >
                 <RxHamburgerMenu />
               </button>
             ) : (
               <button
-                className="text-2xl mr-3 "
+                className="text-2xl mr-3 brightness-200"
                 onClick={handleClick}
               >
                 <RxCross1 />
@@ -68,7 +68,7 @@ const Navbar = () => {
       </div>
 
       {/* forpc */}
-      <div className="w-full text-white tracking-wider hidden md:inline tracking-widest ">
+      <div className="w-full text-white tracking-wider hidden md:inline ">
         <div className=" py-5  shadow-md px-10 flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
