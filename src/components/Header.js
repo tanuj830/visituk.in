@@ -82,10 +82,11 @@ const Navbar = () => {
             <hr />
           </div>
         </div>
-        <div className="fixed top-64 right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100">
+        <div className="fixed top-64 right-0  z-10 rounded-l-md bg-[rgba(0,0,0,0.3)] drop-shadow-md border">
           <ul className="p-1 font-bold text-lg">
-            <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></a>
-            <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></li>
+            <a href="https:wa.link/prs44x" target="_blank" className="flex m-2 text-green-600 items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></a>
+            <hr/>
+            <Link href="tel:818181326" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></Link>
           </ul>
         </div>
       </div>
