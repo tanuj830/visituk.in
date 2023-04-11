@@ -17,7 +17,7 @@ const Footer = () => {
             <div className='flex flex-col'>
             <small className='font-semibold text-white'>Keep travelling all year round!</small>
              </div>
-             <div className='mt-4 flex text-white brightness-200 items-center  gap-2 text-2xl'>
+             <div className='mt-4 flex text-white brightness-200 items-center  gap-3 md:gap-2 text-2xl'>
               <small className='text-md brightness-50'>Contact us via: </small>
               <Link className="hover:scale-110" href="https://www.instagram.com/visituttrakhand.in/" ><BsInstagram/></Link>
               <Link className="hover:scale-110" href="tel:8181813626" ><FiPhoneCall/></Link>
