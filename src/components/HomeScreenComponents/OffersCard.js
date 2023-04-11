@@ -5,12 +5,12 @@ import { BsStarHalf} from 'react-icons/bs'
 import { AiTwotoneStar} from 'react-icons/ai'
 import { RiVipCrown2Fill} from 'react-icons/ri'
 import { HiCurrencyRupee} from 'react-icons/hi'
-
+import data from '../../data/plans.json'
 export default function OffersCard({ plan }) {
     return (
         <>
             {
-                plan !== undefined ? <Link className='bg-slate-100 border-2   transition-transform duration-150 ease-in-out hover:shadow-lg   rounded-xl ' href={`/details/${encodeURIComponent(plan.id)}`}>
+                plan !== undefined ? <div className='border rounded-lg border-slate-300'>
                     {
                         plan.specialoffer === true ? <div className='relative '>
                             <div className='absolute top-0 right-0  px-3 py-2 duration-100 ease-in-out '>
@@ -41,23 +41,33 @@ export default function OffersCard({ plan }) {
                                 <div className=' flex items-center font-semibold text-lg gap-2'>
                                     <h3><HiCurrencyRupee/></h3>
                                     <div><strike className="text-red-600 text-[12px]">₹{plan.exPrice}</strike></div>
-                                    <div className='text-green-600 text-sm font-bold'> ₹{plan.price}</div>
+                                    <div className='text-green-600 text-lg font-bold'> ₹{plan.price}</div>
+                                    <div className='text-slate-700 text-sm italic'>(Saving {Math.round(((plan.exPrice - plan.price)/plan.exPrice)*100)}%)</div>
                                 </div>
                             </div>
-                                {
-                                    plan.specialoffer === true ? <div>
-                                    <small>Now you can enjoy this tour only at <small className='text-green-600 text-lg font-bold'>₹{Math.round(plan.price / plan.persons   )}</small>/person</small>
-                                </div>:null
-                                }
-                            {
-                                plan.specialoffer !== true ? <p className='md:flex hidden'>{plan.disp.slice(0, 100) + "..."}</p>:null
-                            }
-                            {/* <div className='w-full flex justify-center'>
-                                <button className='bg-red-600 text-white font-semibold text-xl w-full rounded-md py-3'>View Details</button>
-                            </div> */}
+                              
+                           {
+                            plan.specialoffer === true ? <div className='flex items-center justify-between mt-4'>
+                                <select className='border-2 px-2 py-1 border-slate-200'>
+                                    <option>Vechile Options</option>
+                                    {
+                                        data.vehicles.map(vech=>(
+                                            <>
+                                            <option>{vech.name} (For {vech.persons} persons)</option>
+                                            </>
+                                        ))
+                                    }
+                                </select>
+                                 <Link className=' ' href={`/details/${encodeURIComponent(plan.id)}`}>
+                                <button className='bg-red-600 text-white font-semibold text-sm w-full rounded-md py-2 px-3'>View Details</button>
+                            </Link>
+                            </div>: <Link className=' ' href={`/details/${encodeURIComponent(plan.id)}`}>
+                                <button className='bg-red-600 text-white font-semibold text-sm w-full rounded-md py-2'>View Details</button>
+                            </Link>
+                           }
                         </div>
                     </div>
-                </Link> : null
+                </div> : null
             }
         </>
     )

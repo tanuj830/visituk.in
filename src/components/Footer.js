@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import {GiMountains} from 'react-icons/gi'
+import {BsInstagram, BsWhatsapp} from 'react-icons/bs'
+import {FiPhoneCall} from 'react-icons/fi'
 const Footer = () => {
   return (
     <div className=''>
@@ -14,6 +16,11 @@ const Footer = () => {
             </Link>
             <div className='flex flex-col'>
             <small className='font-semibold text-white'>Keep travelling all year round!</small>
+             </div>
+             <div className='mt-4 flex text-white brightness-200 items-center gap-4 text-2xl'>
+              <Link className="hover:scale-110" href="https://www.instagram.com/visituttrakhand.in/" ><BsInstagram/></Link>
+              <Link className="hover:scale-110" href="tel:8181813626" ><FiPhoneCall/></Link>
+              <Link className="hover:scale-110" href="http://localhost:3000/https:wa.link/prs44x" ><BsWhatsapp/></Link>
              </div>
             </div>
         </div>
