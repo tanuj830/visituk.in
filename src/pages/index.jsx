@@ -251,7 +251,7 @@ export default function Home({ data }) {
         </div>
         </div>
 
-        <Offerings/>
+        {/* <Offerings/> */}
  
 </main>
    </>
