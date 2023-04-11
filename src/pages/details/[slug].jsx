@@ -162,57 +162,6 @@ export default function Slug() {
                     </div>
                   </section>
 
-                {/* customization section */}
-                 {
-                    plan.specialoffer === false ? 
-                <section className="xl:container md:mt-20  mt-10 md:w-[60%]">
-                 <div className="border px-6 py-6 rounded mx-2 md:mx-0">
-                 <div className=" mt-4">
-                    <div>
-                      {/* customization main logic here */}
-                       <div>
-                       <h2 className=" text-xl uppercase tracking-wider font-bold">Vehicles Options</h2>
-                       <small className="text-sm font-semibold text-slate-500">Depending upon number of person</small>
-                        {
-                          data.vehicles.map(vech=>(
-                            
-                              <div className=" mt-3  rounded p-2">
-                        <hr />
-                                  <h2 className="flex items-center gap-3"><h2 className="w-14"><img src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/car_ytnkq9.gif" alt="" /></h2><h2 className="text-lg font-bold">{vech.name}</h2></h2>
-                                  <h6 className="flex items-center gap-1 mb-3"><h6 className="text-2xl"><HiCurrencyRupee/></h6>Price per day <h6 className="text-lg font-bold text-green-600">₹{vech.pricePerDay}</h6>/Person</h6>
-                                  <label className="">Select number of travellers</label>
-                                  <select className="border w-full p-1" name="persons" id="personsid">
-                                  {
-                                      vech.persons.map(per=>(
-                                            <option className="" persons={per} >{per}</option>
-                                       ))
-                                   }          
-                        </select>
-                              </div>
-                            
-                          ))
-                         
-                        }
-                        {
-                          console.log(perPersonPrice)
-                        }
-                       </div>
-                       {/* <div>
-                       <label className="text-slate-600">Please select vechiles</label>
-                      <select className="border w-full p-1" name="persons" id="personsid">
-                        {
-                          plan.persons.map(per=>(
-                            <option className="" persons={per}>{per}</option>
-                          ))
-                        }
-                      </select>
-                       </div> */}
-                    </div>
-                 </div>
-                 </div>
-                </section>:null
-                  }
-
 
 
                   <section className="mt-20 px-3  xl:container">
@@ -305,3 +254,7 @@ export default function Slug() {
     </>
   );
 }
+
+
+
+
