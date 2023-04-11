@@ -23,7 +23,7 @@ const Hero2 = () => {
 
   return (
     <div className='mt-24 xl:container'>
-        <div className=''>
+        <div className='px-4 md:px-0'>
             <h1 className='text-3xl font-semibold tracking-wider text-slate-600 text-center'>Best of Uttrakhand</h1>
             <div className='flex items-center justify-center mt-2'>
             <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>

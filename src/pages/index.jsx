@@ -207,7 +207,7 @@ export default function Home({ data }) {
           <Hero2/>
 
         {/*  group plans */}
-        <div className='mt-10' id='plans'>
+        <div className='mt-10 px-4 md:px-0' id='plans'>
           <h1 className='text-3xl text-slate-600 font-bold my-4 tracking-wider text-center'>Group Plans</h1>
           <div className='flex items-center justify-center '>
             <div className=' w-24 border-b-4 border-green-600 '><hr /></div>
@@ -227,7 +227,7 @@ export default function Home({ data }) {
         </div>
 
         
-        <div className='mt-10'>
+        <div className='mt-10 px-4 md:px-0'>
           <h1 className='text-3xl font-bold my-4 tracking-wider text-slate-600 text-center'> General Plans</h1>
           <div className='flex items-center justify-center mt-1'>
             <div className='  w-24 border-b-4 border-green-600 '><hr /></div>
