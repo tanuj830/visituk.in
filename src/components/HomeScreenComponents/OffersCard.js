@@ -48,7 +48,7 @@ export default function OffersCard({ plan }) {
                               
                            {
                             plan.specialoffer === true ? <div className='flex items-center justify-between mt-4'>
-                                <select className='border-2 px-2 py-1 border-slate-200'>
+                                <select className='border-2 w-40 md:w-full md:px-2  py-1 border-slate-200'>
                                     <option>Vechile Options</option>
                                     {
                                         data.vehicles.map(vech=>(
