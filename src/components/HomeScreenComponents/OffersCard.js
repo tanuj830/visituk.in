@@ -19,7 +19,7 @@ export default function OffersCard({ plan }) {
                         </div> : null
                     }
                     <div className=' rounded-lg overflow-hidden w-[300px] md:w-full '>
-                        <div className='overflow-hidden'>
+                        <div className='overflow-hidden h-56 '>
                             <img className='w-full hover:scale-110  duration-1000 ease-in-out' src={plan.img} alt="" />
                         </div>
                         <div className='md:px-6 p-2 md:py-4 pt-2'>
