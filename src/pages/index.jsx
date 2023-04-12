@@ -106,7 +106,7 @@ export default function Home({ data }) {
           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-3 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
               data.plans.map((plan) => {
-                return (plan.isgroupplan === true ? <OffersCard plan={plan} id={plan.id}/> : null)
+                return (plan.isgroupplan === true ? <OffersCard plan={plan} key={plan.id}/> : null)
               })
             }
           </div>
@@ -126,7 +126,7 @@ export default function Home({ data }) {
            <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
            {data.plans.map((plan) => {
               return (plan.isgroupplan === false ?
-                 <OffersCard id={plan.id} plan={plan} />
+                 <OffersCard key={plan.id} plan={plan} />
                  
                  : null)
             })}
@@ -216,7 +216,7 @@ export default function Home({ data }) {
           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
               data.plans.map((plan) => {
-                return (plan.isgroupplan === true ? <OffersCard id={plan.id} plan={plan} /> : null)
+                return (plan.isgroupplan === true ? <OffersCard key={plan.id} plan={plan} /> : null)
               })
             }
           </div>
@@ -236,7 +236,7 @@ export default function Home({ data }) {
            <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
            {data.plans.map((plan) => {
               return (plan.isgroupplan === false ?
-                 <OffersCard id={plan.id} plan={plan} />
+                 <OffersCard key={plan.id} plan={plan} />
                  
                  : null)
             })}

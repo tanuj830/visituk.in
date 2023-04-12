@@ -46,7 +46,7 @@ const Hero2 = () => {
               className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide flex'
             >
               {bestofuk.map((item) => (
-                <img
+                <img key={item.name}
                   className='w-80 h-full mx-2 rounded-2xl hover:brightness-75 duration-300 ease-in-out'
                   src={item.img}
                   alt='/'
