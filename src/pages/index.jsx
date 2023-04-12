@@ -47,8 +47,10 @@ export default function Home({ data }) {
             <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
           </ul>
         </div> */}
+        {/* change this  */}
       <div className='mx-2 md:mx-0 sm:container tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat h-[100vh]'  style={{backgroundImage:"url(https://ui-assets-gc.thrillophilia.com/assets/homepage/homepage-banner-2696fc25d8bb0f563e9ff7ae22882ee67cea624e244dfb0bc74316db0ffdcfba.jpg)", backgroundBlendMode:"overlay"}}>
         <Header/>
+
         <div className=' flex items-center  justify-center mt-36 w-full'>
           <div className='flex items-center justify-center  w-full'>
             <div className=''>
