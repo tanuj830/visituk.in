@@ -162,7 +162,7 @@ export default function Home({ data }) {
        <div className='absolute z-10 px-[2rem] flex items-center  justify-center mt-24 w-full'>
           <div className='flex items-center justify-center  w-full'>
             <div className=''>
-              <h2 className='text-white font-semibold tracking-wider  text-4xl '>Uttarakhand Tourism</h2>
+              <h2 className='text-white font-semibold tracking-wider  text-4xl uppercase '>Uttarakhand Tourism</h2>
               <h3 className='text-white  tracking-wider  text-lg text-justify md:w-[70%] md:mt-4'>The Himalayan Mountains, Crisp Air, Sacred Temples, and Enthralling Adventure Call You to Uttarakhand</h3>
 
             </div>   </div>
