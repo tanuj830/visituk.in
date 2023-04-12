@@ -31,7 +31,7 @@ const Footer = () => {
               <div className=''>
                 <div ><h3 className='text-md md:text-lg text-white'>Discover us</h3></div>
                 <div className='flex  justify-center flex-col mt-2 '>
-                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/about">About Us</Link>
+                  <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/about">Abot Us</Link>
                   <Link className='hover:scale-110 hover:text-white text-sm md:text-md' href="/about">Our Team</Link>
                 </div>
               </div>
