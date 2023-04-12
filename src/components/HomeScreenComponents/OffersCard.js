@@ -12,7 +12,7 @@ export default function OffersCard({ plan }) {
     const [planPrice,setPlanPrice]=useState(plan?.price)
     useEffect(()=>{
         const carData=data.vehicles.filter(v=> v.persons===selectedCar);
-        console.log(carData[0],carData[0].pricePerDay*plan.days,"the selected car");
+        // console.log(carData[0],carData[0].pricePerDay*plan.days,"the selected car");
         setPlanPrice(carData[0].pricePerDay*plan.days)
     },[selectedCar])
     return (
@@ -61,7 +61,7 @@ export default function OffersCard({ plan }) {
                                     {
                                         data.vehicles.map(vech=>(
                                             <>
-                                            <option value={vech.persons}>{vech.name} (For {vech.persons} people)</option>
+                                            <option id='vech.name' value={vech.persons}>{vech.name} (For {vech.persons} people)</option>
                                             </>
                                         ))
                                     }
