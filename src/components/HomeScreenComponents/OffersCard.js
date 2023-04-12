@@ -1,12 +1,20 @@
 import Link from 'next/link';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiTrip, BiTimeFive } from 'react-icons/bi'
 import { BsStarHalf} from 'react-icons/bs'
 import { AiTwotoneStar} from 'react-icons/ai'
 import { RiVipCrown2Fill} from 'react-icons/ri'
 import { HiCurrencyRupee} from 'react-icons/hi'
 import data from '../../data/plans.json'
+import numberToINR from '@/utils/numberToINR';
 export default function OffersCard({ plan }) {
+    const [selectedCar,setSelectedCar]=useState("2");
+    const [planPrice,setPlanPrice]=useState(plan?.price)
+    useEffect(()=>{
+        const carData=data.vehicles.filter(v=> v.persons===selectedCar);
+        console.log(carData[0],carData[0].pricePerDay*plan.days,"the selected car");
+        setPlanPrice(carData[0].pricePerDay*plan.days)
+    },[selectedCar])
     return (
         <>
             {
@@ -40,20 +48,20 @@ export default function OffersCard({ plan }) {
                             <div className='flex md:mt-1'>
                                 <div className=' flex items-center font-semibold text-lg gap-2'>
                                     <h3><HiCurrencyRupee/></h3>
-                                    <div><strike className="text-red-600 text-[12px]">₹{plan.exPrice}</strike></div>
-                                    <div className='text-green-600 text-lg font-bold'> ₹{plan.price}</div>
-                                    <div className='text-slate-700 text-sm italic'>(Saving {Math.round(((plan.exPrice - plan.price)/plan.exPrice)*100)}%)</div>
+                                    <div><strike className="text-red-600 text-[12px]">₹{numberToINR(plan.exPrice)}</strike></div>
+                                    <div className='text-green-600 text-lg font-bold'> ₹{numberToINR(planPrice)}</div>
+                                    <div className='text-slate-700 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice)/plan.exPrice)*100)}%)</div>
                                 </div>
                             </div>
                               
                            {
                             plan.specialoffer === true ? <div className='flex items-center justify-between mt-4'>
-                                <select className='border-2 w-40 md:w-full md:px-2  py-1 border-slate-200'>
-                                    <option>Vechile Options</option>
+                                <select onChange={e=>setSelectedCar(e.target.value)} className='border-2 w-40 md:w-full md:px-2  py-1 border-slate-200'>
+                                    <option value={"2"}>Vehicle Options</option>
                                     {
                                         data.vehicles.map(vech=>(
                                             <>
-                                            <option>{vech.name} (For {vech.persons} persons)</option>
+                                            <option value={vech.persons}>{vech.name} (For {vech.persons} people)</option>
                                             </>
                                         ))
                                     }

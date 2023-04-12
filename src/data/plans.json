@@ -127,7 +127,7 @@
         {
             "name":"Dezire",
             "pricePerDay":4000,
-            "persons":"2, 4"
+            "persons":"2"
         },
         {
             "name":"Triber",
@@ -141,7 +141,7 @@
         },
         {
             "name":"Bolero Max",
-            "pricePerDay":6000,
+            "pricePerDay":6500,
             "persons":"8"
         },
         {
