@@ -27,9 +27,9 @@ export default function Home({ data }) {
   const [showNumber,setShowNumber]=React.useState(false);
 
 
-  useEffect(() => {
-    console.log(data);
-  }, [])
+  // useEffect(() => {
+  //   console.log(data);
+  // }, [])
   return (
     <>
       <Head>
