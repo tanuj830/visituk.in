@@ -48,7 +48,7 @@ export default function Home({ data }) {
           </ul>
         </div> */}
         {/* change this  */}
-      <div className=' tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?b=1&s=612x612&w=0&k=20&c=ijMJJGOuJzNM1G86P_70jPNCtr4uaYrfLdoTol8_rZU=)", backgroundBlendMode:"overlay", backgroundSize:"100% 100%"}}>
+      <div className=' tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.pexels.com/photos/3151191/pexels-photo-3151191.jpeg?auto=compress&cs=tinysrgb&w=600)", backgroundBlendMode:"overlay", backgroundSize:"100% 100%"}}>
         <Header/>
 
         <div className=' flex items-center  justify-center mt-36 w-full'>

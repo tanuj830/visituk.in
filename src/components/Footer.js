@@ -32,23 +32,18 @@ const Footer = () => {
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/aboutus">Blog</Link>
          </div>
        </div>
-       <div className='grid grid-cols-3 gap-2'>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-          <div><img className='w-20' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
-       </div>
+       <div className='grid grid-cols-2 gap-2'>
+          <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
+          <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://images.pexels.com/photos/11305767/pexels-photo-11305767.jpeg?auto=compress&cs=tinysrgb&w=600"/></div>
+          <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://media.istockphoto.com/id/825268350/photo/hardiwar.jpg?b=1&s=612x612&w=0&k=20&c=s-sNfgZEZQCOChl9k-cPHPERCXES4SotumIK0kv9Avk="/></div>
+          <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://images.pexels.com/photos/15017640/pexels-photo-15017640.jpeg?auto=compress&cs=tinysrgb&w=600"/></div>
+        </div>
    </div>
         </div>
       </div>
   </div>
   <div className=' md:p-10'>
-            <div className='flex justify-center items-center py-3 mt-4'>
+            <div className='flex justify-center items-center py-3'>
                 <h3 className='text-white'> ___________ </h3>
                 <h3 className='text-white text-xl'> visituttrakhand.in </h3>
                 <h3 className='text-white'> ___________ </h3>
