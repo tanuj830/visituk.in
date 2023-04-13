@@ -27,7 +27,7 @@ const DarkNavbar = () => {
     <>
       {/* for mobile */}
       <div className="xl:container text-black inline md:hidden ">
-        <div className="  flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 px-3 md:px-1 ">
+        <div className="  flex justify-between items-center gap-4 md:gap-44  py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
             <Link className="text-xl md:text-2xl text-themecol flex items-center justify-center gap-1" href="/home">
               <GiMountains /><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>

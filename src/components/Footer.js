@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <div className=''>
     <div className=' bg-slate-800   text-slate-300 flex flex-col mt-10'>
-  <div className='px-[300px] '>
+  <div className='md:px-[300px] px-10 '>
         <div className=' bg-white shadow-2xl shadow-slate-700 py-20 px-6 rounded-b-2xl text-slate-600'>
         <div className=' flex justify-center mb-2 md:mb-10'>
-   <div className='flex   justify-center gap-7 md:gap-20'>
+   <div className='flex  flex-col md:flex-row justify-center gap-7 md:gap-20'>
        <div className=''>
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Discover us</h3></div>
          <div className='flex  justify-center flex-col mt-2 '>
@@ -18,14 +18,14 @@ const Footer = () => {
           <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/about">Our Team</Link>
          </div>
       </div>
-       <div className='border-l-2 border-slate-300 px-2'>
+       <div className='md:border-l-2 border-slate-300 md:px-2'>
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Support</h3></div>
          <div className='flex   flex-col mt-2 '>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/contact">Contact Us</Link>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/aboutus">How To Book</Link>
         </div>
        </div>
-       <div className='border-l-2 border-slate-300 px-2'>
+       <div className='md:border-l-2 border-slate-300 md:px-2'>
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Resources</h3></div>
          <div className='flex   flex-col mt-2 '>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/aboutus">Guest Reviews</Link>
@@ -56,6 +56,14 @@ const Footer = () => {
             <div className='flex justify-center gap-6'>
             <Link className="hover:scale-110 text-2xl" href="https://www.instagram.com/visituttrakhand.in/" ><BsInstagram/></Link>
       <Link className="hover:scale-110 text-2xl" href="http://localhost:3000/https:wa.link/prs44x" ><BsWhatsapp/></Link>
+            </div>
+            <div className='text-center mt-10'>
+            <small className='text-md font-bold'>© 2023 visituttrakhand.in All rights reserved.</small>
+            <div className='mt-2'>
+ <p className='font-semibold text-[13px]  mt-2'>*Caution: Beware of Fake Promotions or Offers</p>
+   <p className='text-[13px] '>*Please do not believe or engage with any promotional emails, SMS or Web-link which ask you to click on a link and fill . All ARTravellers authorized email communications are delivered from domain @artravellers.co.in.</p>
+   <p className='text-[13px] '>*ARTravells bears no liability or responsibility whatsoever for any communication which is fraudulent or misleading in nature and not received from registered domain</p>
+ </div>
             </div>
         </div>
     </div>
