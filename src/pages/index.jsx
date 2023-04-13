@@ -40,7 +40,7 @@ export default function Home({ data }) {
       </Head>
 <main className=''>
   {/* for pc */}
-<div className="hidden md:inline-block">
+<div className="hidden md:inline">
           {/* <div className='fixed  bottom-72  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100'>
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
@@ -48,7 +48,7 @@ export default function Home({ data }) {
           </ul>
         </div> */}
         {/* change this  */}
-      <div className=' tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?b=1&s=612x612&w=0&k=20&c=ijMJJGOuJzNM1G86P_70jPNCtr4uaYrfLdoTol8_rZU=)", backgroundBlendMode:"overlay", backgroundSize:""}}>
+      <div className=' tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?b=1&s=612x612&w=0&k=20&c=ijMJJGOuJzNM1G86P_70jPNCtr4uaYrfLdoTol8_rZU=)", backgroundBlendMode:"overlay", backgroundSize:"100% 100%"}}>
         <Header/>
 
         <div className=' flex items-center  justify-center mt-36 w-full'>
