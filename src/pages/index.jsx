@@ -40,7 +40,7 @@ export default function Home({ data }) {
       </Head>
 <main className=''>
   {/* for pc */}
-<div className="hidden md:inline ">
+<div className="hidden md:inline">
           {/* <div className='fixed  bottom-72  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100'>
           <ul className="p-1 font-bold text-lg">
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
@@ -48,7 +48,7 @@ export default function Home({ data }) {
           </ul>
         </div> */}
         {/* change this  */}
-      <div className='mx-2 md:mx-0   tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat  h-[100vh]'  style={{backgroundImage:"url(https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?b=1&s=612x612&w=0&k=20&c=ijMJJGOuJzNM1G86P_70jPNCtr4uaYrfLdoTol8_rZU=)", backgroundBlendMode:"overlay", backgroundSize:"cover"}}>
+      <div className=' tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?b=1&s=612x612&w=0&k=20&c=ijMJJGOuJzNM1G86P_70jPNCtr4uaYrfLdoTol8_rZU=)", backgroundBlendMode:"overlay", backgroundSize:"100% 100%"}}>
         <Header/>
 
         <div className=' flex items-center  justify-center mt-36 w-full'>
@@ -158,7 +158,7 @@ export default function Home({ data }) {
             <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
           </ul>
         </div> */}
-      <div className='   tracking-wider  z-0   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-screen h-[100vh]'  style={{backgroundImage:"url(https://images.unsplash.com/photo-1626621331169-5f34be280ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
+      <div className='   tracking-wider  z-0   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.unsplash.com/photo-1626621331169-5f34be280ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
         <Header/>
        <div className='relative '>
        <div className='absolute z-10 px-[2rem] flex items-center  justify-center mt-24 w-full'>
