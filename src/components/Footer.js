@@ -7,37 +7,39 @@ const Footer = () => {
   return (
     <div className='w-full shadow-2xl'>
          <div className=' bg-slate-800   text-slate-300 flex flex-col mt-10'>
-  <div className='md:px-[300px] px-2 '>
-        <div className=' bg-white shadow-2xl shadow-slate-700 md:py-20 py-7 md:px-6 rounded-b-2xl text-slate-600'>
+  <div className='mx-10'>
+        <div className=' bg-white shadow-2xl shadow-slate-700 md:py-20 py-7 px-4 w-full rounded-b-3xl text-slate-600'>
         <div className=' flex justify-center mb-2 md:mb-10'>
-   <div className='flex  flex-col md:flex-row justify-center gap-5 md:gap-20'>
+   <div className='flex  flex-col md:flex-row justify-center gap-5 md:gap-10'>
        <div className=''>
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Discover us</h3></div>
-         <div className='flex  justify-center flex-col mt-2 '>
+         <div className='flex  justify-center flex-col mt-4 '>
           <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px]' href="/about">About Us</Link>
           <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/about">Our Team</Link>
          </div>
       </div>
        <div className='md:border-l-2 border-slate-300 md:px-2'>
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Support</h3></div>
-         <div className='flex   flex-col mt-2 '>
+         <div className='flex   flex-col mt-4 '>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/contact">Contact Us</Link>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/aboutus">How To Book</Link>
         </div>
        </div>
        <div className='md:border-l-2 border-slate-300 md:px-2'>
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Resources</h3></div>
-         <div className='flex   flex-col mt-2 '>
+         <div className='flex   flex-col mt-4 '>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/aboutus">Guest Reviews</Link>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/aboutus">Blog</Link>
          </div>
        </div>
-       <div className='grid grid-cols-2 gap-2'>
+       <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
           <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/></div>
           <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://images.pexels.com/photos/11305767/pexels-photo-11305767.jpeg?auto=compress&cs=tinysrgb&w=600"/></div>
           <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://media.istockphoto.com/id/825268350/photo/hardiwar.jpg?b=1&s=612x612&w=0&k=20&c=s-sNfgZEZQCOChl9k-cPHPERCXES4SotumIK0kv9Avk="/></div>
           <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://images.pexels.com/photos/15017640/pexels-photo-15017640.jpeg?auto=compress&cs=tinysrgb&w=600"/></div>
-        </div>
+          <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://images.pexels.com/photos/11305767/pexels-photo-11305767.jpeg?auto=compress&cs=tinysrgb&w=600"/></div>
+          <div className='w-28 rounded-lg  overflow-hidden'><img className='w-full h-full hover:scale-110' src="https://media.istockphoto.com/id/825268350/photo/hardiwar.jpg?b=1&s=612x612&w=0&k=20&c=s-sNfgZEZQCOChl9k-cPHPERCXES4SotumIK0kv9Avk="/></div>
+          </div>
    </div>
         </div>
       </div>
