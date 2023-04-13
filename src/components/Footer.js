@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className='w-full shadow-2xl'>
          <div className=' bg-slate-800   text-slate-300 flex flex-col mt-10'>
-  <div className='mx-10'>
-        <div className=' bg-white shadow-2xl shadow-slate-700 md:py-20 py-7 px-4 w-full rounded-b-3xl text-slate-600'>
+  <div className='mx-3 md:mx-10'>
+        <div className=' bg-white shadow-2xl shadow-slate-700 md:py-20 py-7 md:px-4 w-full rounded-b-3xl text-slate-600'>
         <div className=' flex justify-center mb-2 md:mb-10'>
    <div className='flex  flex-col md:flex-row justify-center gap-5 md:gap-10'>
        <div className=''>
