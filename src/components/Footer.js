@@ -6,7 +6,7 @@ import {FiPhoneCall} from 'react-icons/fi'
 const Footer = () => {
   return (
     <div className='w-full shadow-2xl'>
-    <div className=' bg-slate-800   text-slate-300 flex flex-col mt-10'>
+         <div className=' bg-slate-800   text-slate-300 flex flex-col mt-10'>
   <div className='md:px-[300px] px-2 '>
         <div className=' bg-white shadow-2xl shadow-slate-700 md:py-20 py-7 md:px-6 rounded-b-2xl text-slate-600'>
         <div className=' flex justify-center mb-2 md:mb-10'>
@@ -47,11 +47,11 @@ const Footer = () => {
         </div>
       </div>
   </div>
-        <div className=' p-10'>
+  <div className=' md:p-10'>
             <div className='flex justify-center items-center py-3 mt-4'>
-                <h3 className='text-white'> __________________________________________________ </h3>
+                <h3 className='text-white'> ___________ </h3>
                 <h3 className='text-white text-xl'> visituttrakhand.in </h3>
-                <h3 className='text-white'> __________________________________________________ </h3>
+                <h3 className='text-white'> ___________ </h3>
             </div>
             <div className='flex justify-center gap-6'>
             <Link className="hover:scale-110 text-2xl" href="https://www.instagram.com/visituttrakhand.in/" ><BsInstagram/></Link>
