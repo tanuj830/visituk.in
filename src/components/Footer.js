@@ -5,12 +5,12 @@ import {BsInstagram, BsWhatsapp} from 'react-icons/bs'
 import {FiPhoneCall} from 'react-icons/fi'
 const Footer = () => {
   return (
-    <div className=''>
+    <div className='w-full shadow-2xl'>
     <div className=' bg-slate-800   text-slate-300 flex flex-col mt-10'>
-  <div className='md:px-[300px] px-10 '>
-        <div className=' bg-white shadow-2xl shadow-slate-700 py-20 px-6 rounded-b-2xl text-slate-600'>
+  <div className='md:px-[300px] px-2 '>
+        <div className=' bg-white shadow-2xl shadow-slate-700 md:py-20 py-7 md:px-6 rounded-b-2xl text-slate-600'>
         <div className=' flex justify-center mb-2 md:mb-10'>
-   <div className='flex  flex-col md:flex-row justify-center gap-7 md:gap-20'>
+   <div className='flex  flex-col md:flex-row justify-center gap-5 md:gap-20'>
        <div className=''>
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Discover us</h3></div>
          <div className='flex  justify-center flex-col mt-2 '>

@@ -31,7 +31,7 @@ const Hero2 = () => {
   };
   return (
 
-    <div className='mx-100 mt-10'>
+    <div className=' mt-10'>
       <div className='px-4 md:px-0'>
         <h1 className='text-3xl font-semibold tracking-wider text-slate-600 text-center'>Best of Uttrakhand</h1>
         <div className='flex items-center justify-center mt-2'>
