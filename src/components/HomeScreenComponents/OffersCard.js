@@ -50,13 +50,13 @@ export default function OffersCard({ plan }) {
                                     <h3><HiCurrencyRupee /></h3>
                                     <div><strike className="text-red-600 text-[12px]">₹{numberToINR(plan.exPrice)}</strike></div>
                                     <div className='text-green-600 text-lg font-bold'> ₹{numberToINR(planPrice)}</div>
-                                    <div className='text-slate-700 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
+                                    <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
                                 </div>
                             </div>
 
                             {
                                 plan.specialoffer === true ? <div className='flex items-center justify-between mt-4'>
-                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 w-40 md:w-full md:px-2  py-1 border-slate-200'>
+                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 w-40  md:px-2  py-1 border-slate-200'>
                                         <option value={"2"}>Vehicle Options</option>
                                         {
                                             data.vehicles.map(vech => (

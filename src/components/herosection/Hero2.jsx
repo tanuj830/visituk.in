@@ -39,7 +39,7 @@ const Hero2 = () => {
         </div>
         <div className='mt-6'>
           <div className='relative flex items-center'>
-            <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
+            <MdChevronLeft className='border-2 border-green-600 rounded-full py-2 px-2 opacity-50 cursor-pointer hover:opacity-100 hover:shadow-xl' onClick={slideLeft} size={40} />
             {/* npm i tailwind-scrollbar-hide and in tailwind config.js add require('tailwind-scrollbar-hide') inside plugins */}
             <div
               id='slider'
@@ -53,7 +53,7 @@ const Hero2 = () => {
                 />
               ))}
             </div>
-            <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideRight} size={40} />
+            <MdChevronRight className='border-2 border-green-600 rounded-full py-2 px-2 opacity-50 cursor-pointer hover:opacity-100 hover:shadow-xl' onClick={slideRight} size={40} />
           </div>
         </div>
       </div>
