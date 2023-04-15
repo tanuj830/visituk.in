@@ -54,7 +54,10 @@ const Footer = () => {
             <Link className="hover:scale-110 text-2xl" href="https://www.instagram.com/visituttrakhand.in/" ><BsInstagram/></Link>
       <Link className="hover:scale-110 text-2xl" href="http://localhost:3000/https:wa.link/prs44x" ><BsWhatsapp/></Link>
             </div>
-            <div className='text-center mt-10'>
+            <div className='mt-3 flex justify-center items-center'>
+              <Link className='flex items-center gap-2 text-blue-500' href="tel:8181813626"><FiPhoneCall/>8181813626</Link>
+            </div>
+            <div className='text-center mt-7'>
             <small className='text-md font-bold'>© 2023 visituttrakhand.in All rights reserved.</small>
             <div className='mt-2'>
  <p className='font-semibold text-[13px]  mt-2'>*Caution: Beware of Fake Promotions or Offers</p>

@@ -19,6 +19,16 @@ const Hero2 = () => {
       "img": "https://images.pexels.com/photos/12583557/pexels-photo-12583557.jpeg?auto=compress&cs=tinysrgb&w=600",
       "name": "Gangotri"
     }
+    ,
+    {
+      "img": "https://images.pexels.com/photos/12495840/pexels-photo-12495840.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Gangotri"
+    }
+    ,
+    {
+      "img": "https://images.pexels.com/photos/15593778/pexels-photo-15593778.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Gangotri"
+    }
   ]
   const slideLeft = () => {
     var slider = document.getElementById('slider');
@@ -51,6 +61,7 @@ const Hero2 = () => {
                   src={item.img}
                   alt='/'
                 />
+                
               ))}
             </div>
             <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideRight} size={40} />

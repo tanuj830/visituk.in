@@ -23,7 +23,7 @@ const Hero1 = () => {
             <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/11305767/pexels-photo-11305767.jpeg" alt="" />
             {/* <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/13022659/pexels-photo-13022659.jpeg" alt="" /> */}
             <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/12584382/pexels-photo-12584382.jpeg" alt="" />
-            <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/12584382/pexels-photo-12584382.jpeg" alt="" />
+            <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/12495840/pexels-photo-12495840.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
         </div>
         </div>
         {/* for pc */}
@@ -33,7 +33,7 @@ const Hero1 = () => {
             <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/11305767/pexels-photo-11305767.jpeg" alt="" />
             {/* <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/13022659/pexels-photo-13022659.jpeg" alt="" /> */}
             <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/12584382/pexels-photo-12584382.jpeg" alt="" />
-            <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/12584382/pexels-photo-12584382.jpeg" alt="" />
+            <img className='w-72 rounded-2xl hover:shadow-xl hover:scale-110 duration-150' src="https://images.pexels.com/photos/12495840/pexels-photo-12495840.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
         </div>
         </div>
        </div>
