@@ -59,7 +59,7 @@ export default function OffersCard({ plan }) {
                                 <div className='text-green-600 text-lg font-bold'> ₹{numberToINR(planPrice)}</div>
                                 <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
                             </div>
-                        </div>: <h3 className=' mt-6 text-md font-semibold tracking-wider '>Customize your package & get final calculation</h3>
+                        </div>: <h3 className=' mt-6 text-sm font-semibold tracking-wider '>Customize your package & get final calculation</h3>
                            }
                             <div className='w-full mt-2 '>
                                     <select onChange={e => setSelectedCar(e.target.value)} className='border-2   md:px-2  py-1 border-slate-200'>
