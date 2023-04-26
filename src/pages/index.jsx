@@ -100,7 +100,7 @@ export default function Home({ data }) {
 
         {/*  group plans */}
         <div className='xl:container mt-24' id='plans'>
-          <h1 className='text-3xl font-bold my-4 tracking-wider text-slate-600 text-center'>Group Plans</h1>
+          <h1 className='text-3xl font-bold my-4 tracking-widest text-slate-800 text-center '>Tours & Packages</h1>
           <div className='flex items-center justify-center mt-2'>
             <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
             </div>
@@ -119,13 +119,12 @@ export default function Home({ data }) {
         </div>
 
         
-        <div className='xl:container mt-24'>
-          <h1 className='text-3xl font-bold my-4 tracking-wider text-slate-600 text-center'> General Plans</h1>
+        <div className='xl:container '>
           <div className='flex items-center justify-center mt-2'>
             <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
             </div>
           <div className='  overflow-hidden '>
-           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
+           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-3 md:overflow-hidden w-full gap-3  overflow-scroll'>
            {data.plans.map((plan) => {
               return (plan.isgroupplan === false ?
                  <OffersCard key={plan.id} plan={plan} />

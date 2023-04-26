@@ -59,8 +59,8 @@ const DarkNavbar = () => {
             <div className="relative w-full tracking-wider  py-1">
               <div className=" w-full">
               <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/about'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
+            <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
+            <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
               </div>
             </div>
           ) : null}
@@ -77,8 +77,8 @@ const DarkNavbar = () => {
           </div>
           <div className="flex items-center justify-center ">
             <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='/about'> <h3 className="ml-8 text-xl"><AiOutlineContacts /></h3><h3>About Us</h3></Link>
-            <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='#services'> <h3 className="ml-8 text-xl"><BsFillCarFrontFill /></h3><h3>Services</h3></Link>
-            <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='#plans'> <h3 className="ml-8 text-xl"><MdModeOfTravel /></h3><h3>Plans</h3></Link>
+            <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='/#services'> <h3 className="ml-8 text-xl"><BsFillCarFrontFill /></h3><h3>Services</h3></Link>
+            <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='/#plans'> <h3 className="ml-8 text-xl"><MdModeOfTravel /></h3><h3>Plans</h3></Link>
             <hr />
           </div>
         </div>

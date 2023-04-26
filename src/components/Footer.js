@@ -22,7 +22,7 @@ const Footer = () => {
          <div ><h3 className='text-sm text-black font-bold uppercase tracking-wider'>Support</h3></div>
          <div className='flex   flex-col mt-4 '>
            <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/contact">Contact Us</Link>
-           <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/aboutus">How To Book</Link>
+           <Link className='hover:scale-110 hover:text-black  uppercase tracking-wider  text-[12px] ' href="/how-to-book">How To Book</Link>
         </div>
        </div>
        <div className='md:border-l-2 border-slate-300 md:px-2'>

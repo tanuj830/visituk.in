@@ -3,9 +3,9 @@
         {
             "id":1,
             "ratings":4.6,
-            "title": "Char Dham Yatra-1",
-            "days": 9,
-            "nights": 8,
+            "title": "Char Dham Yatra + Tungnath",
+            "days": 10,
+            "nights": 9,
             "persons": 13,
             "isgroupplan":true,
             "specialoffer":true,
@@ -21,7 +21,7 @@
         {
             "id":2,
             "ratings":4,
-            "title": "Char Dham Yatra-2",
+            "title": "Char Dham Yatra",
             "days": 9,
             "nights": 8,
             "isgroupplan":true,
@@ -38,9 +38,9 @@
         {
             "id":3,
             "ratings":4.1,
-            "title": "Char Dham Yatra-3",
-            "days": 9,
-            "nights": 4,
+            "title": "Char Dham Yatra + Tungnath + Rishikesh + Haridwar",
+            "days": 11,
+            "nights": 10,
             "persons": 8,
             "isgroupplan":true,
             "specialoffer":true,
@@ -60,9 +60,9 @@
         {
             "id":4,
             "ratings":4.5,
-            "title": "Do Dham Yatra-1",
-            "days": 5,
-            "nights": 4,
+            "title": "Do Dham Yatra",
+            "days": 9,
+            "nights": 8,
             "persons": [2,4,6,13],
             "isgroupplan":false,
             "specialoffer":false,
@@ -77,9 +77,9 @@
         {
             "id":5,
             "ratings":4,
-            "title": "Char Dham Yatra-1",
-            "days": 9,
-            "nights": 8,
+            "title": "Do Dham Yatra + Tungnath",
+            "days": 10,
+            "nights": 9,
             "persons": [2,4,6,13], 
             "isgroupplan":false,
             "specialoffer":false,
@@ -93,9 +93,9 @@
         {
             "id":6,
             "ratings":4.2,
-            "title": "Do Dham Yatra-2",
-            "days": 6,
-            "nights": 5,
+            "title": "Do Dham Yatra + Tungnath + Rishikesh + Haridwar",
+            "days": 11,
+            "nights": 10,
             "persons": [2,4,6,13],
             "isgroupplan":false,
             "specialoffer":false,
@@ -105,39 +105,28 @@
             "tourIncludes": "security, vechile with driver",
             "exPrice": 120000,
             "price": 99000
-        },
-        {
-            "id":7,
-            "ratings":4.3,
-            "title": "Char Dham Yatra-2",
-            "days": 10,
-            "persons": [2,4,6,13],
-            "nights": 9,
-            "isgroupplan":false,
-            "specialoffer":false,
-            "via":"Haridwar-> Gangotri-> Yamunotri-> Badrinath-> Dhari Devi Mandir-> Koteshwar Mahadev Mandir-> Chopta Tungnath-> Kedarnath",
-            "img":"https://res.cloudinary.com/dqfbod03i/image/upload/v1681323103/general_plan-2_hgwdep.png",
-            "disp":"Char Dham Yatra is a popular pilgrimage circuit in India, which includes four holy Hindu temples located in the state of Uttarakhand. The temples are Yamunotri, Gangotri, Kedarnath, and Badrinath. The yatra usually takes around 10 to 12 days to complete, but there are also shorter versions of the yatra that cover the two temples (badrinath and kedarnath) in a shorter duration.\n For your group of thirteen people, you have opted for a 10-day and 9-night Char Dham Yatra plan, which is a condensed version of the full yatra. This plan is designed to cover all four temples in a shorter duration, without compromising on the spiritual significance and beauty of the locations.\nThe plan includes only transport by a private vehicle from Jolly Grant Airport Dehradun or Dehradun railway station  to Haridwar, which is the starting point of the yatra. From there, you will travel to the four temples, staying overnight at different locations along the way. (in this plan include only transport charges)\nThe total cost for this plan is ------ rupees , includes all transport, However, this cost does not include any personal expenses such as shopping or extra activities.\nOverall, this plan offers a convenient and affordable way to experience the spiritual and natural beauty of the Char Dham Yatra. It is a great option for those who have limited time but still want to experience the holy temples and the stunning Himalayan scenery",
-            "tourIncludes": "security, vechile with driver",
-            "exPrice": 120000,
-            "price": 99000
         }
     ],
     "vehicles":[
         {
             "name":"Dezire",
             "pricePerDay":4000,
-            "persons":"2"
+            "persons":"4"
         },
         {
-            "name":"Triber",
+            "name":"Xylo",
             "pricePerDay":4500,
             "persons":"4"
         },
         {
+            "name":"Triber",
+            "pricePerDay":4500,
+            "persons":"6"
+        },
+        {
             "name":"Innova",
             "pricePerDay":6000,
-            "persons":"6"
+            "persons":"8"
         },
         {
             "name":"Bolero Max",
