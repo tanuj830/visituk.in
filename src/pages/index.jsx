@@ -151,12 +151,6 @@ export default function Home({ data }) {
 
         {/* for mobile */}
         <div className="inline md:hidden">
-        {/* <div className="fixed bottom-0  right-0  z-10 rounded-l-md drop-shadow-md bg-gray-100">
-          <ul className="p-1 font-bold text-lg">
-            <a href="https:wa.link/prs44x" target="_blank" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></a>
-            <li className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={()=>setShowNumber(true)} onMouseLeave={()=>setShowNumber(false)} size={30} /></li>
-          </ul>
-        </div> */}
       <div >
         <div className='tracking-wider  z-0   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.unsplash.com/photo-1626621331169-5f34be280ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
         <Header/>
