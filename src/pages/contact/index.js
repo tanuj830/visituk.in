@@ -1,11 +1,11 @@
 import React from 'react'
 import axios from 'axios'
-import Navbar from '@/components/Header/Navbar'
+import Navbar from '@/components/Header'
 import Link from 'next/link'
 
 import { AiOutlineMail} from 'react-icons/ai'
 import { FiPhoneCall} from 'react-icons/fi'
-import Footer from '@/components/Footer/Footer'
+import Footer from '@/components/Footer'
 const Contact = () => {
   
   const [data, setData] = React.useState({})
@@ -65,6 +65,7 @@ const Contact = () => {
                     </form>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }
