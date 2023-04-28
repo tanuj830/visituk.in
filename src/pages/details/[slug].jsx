@@ -205,7 +205,10 @@ export default function Slug() {
                     </div>
                   </section>
                   {/* Tour Itinerary */}
-                  <section className="xl:container mt-6 p-3"></section>
+                  <section className="xl:container mt-6 p-3">
+                    <h2 className="text-2xl font-bold my-4">Tour Itinerary</h2>
+                        <div dangerouslySetInnerHTML={{__html:plan.itenary}} className="text-lg text-justify text-slate-700"></div>
+                  </section>
                 </div>
               ) : null}
             </>
