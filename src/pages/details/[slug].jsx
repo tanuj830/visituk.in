@@ -164,10 +164,11 @@ export default function Slug() {
 
 
 
-                  <section className="mt-20 px-3   xl:container">
-                    <div>
-                      <h2 className="text-2xl font-semibold ">
-                        This tour includes:
+                  <section className="   xl:container">
+                   <div className="mt-20 bg-white border px-5 rounded-xl shadow tracking-widest md:px-20 md:py-10">
+                    <div className="">
+                      <h2 className="text-xl  uppercase font-semibold border-l-8 border-green-500 px-3  my-3">
+                        This tour includes
                       </h2>
                     </div>
                     <div className="md:w-[50%] grid-cols-2 grid md:grid-cols-3 text-slate-700">
@@ -192,12 +193,13 @@ export default function Slug() {
                         <h1 className="text-lg">Vechile with driver</h1>
                       </div>
                     </div>
+                   </div>
                   </section>
 
                   <section className="xl:container mt-10  w-full">
                     <div className="px-2 md:px-0">
-                      <div className=" bg-white border px-5 rounded-xl shadow tracking-wider md:px-20 md:py-10">
-                        <h3 className="text-2xl font-semibold border-l-8 border-green-500 px-3  my-3">
+                      <div className=" bg-white border px-5 rounded-xl shadow tracking-widest md:px-20 md:py-10">
+                        <h3 className="text-xl  uppercase font-semibold border-l-8 border-green-500 px-3  my-3">
                           About Tour
                         </h3>
                         <div dangerouslySetInnerHTML={{__html:plan.disp}} className="text-lg text-justify text-slate-600"></div>
@@ -205,12 +207,14 @@ export default function Slug() {
                     </div>
                   </section>
                   {/* Tour Itinerary */}
-                  <section className="xl:container mt-6 p-3">
-                    <div className="bg-white border px-5 rounded-xl shadow tracking-wider md:px-20 md:py-10">
-                    <h2 className="text-2xl font-bold my-4 border-l-8 border-green-500 px-3">Tour Itinerary</h2>
+                  {
+                    plan.itenary ? <section className="xl:container mt-6 p-3">
+                    <div className="bg-white border px-5 rounded-xl shadow tracking-widest md:px-20 md:py-10">
+                    <h2 className="text-xl  uppercase font-bold my-4 border-l-8 border-green-500 px-3">Tour Itinerary</h2>
                         <div dangerouslySetInnerHTML={{__html:plan.itenary}} className="text-lg  text-justify text-slate-700"></div>
                     </div>
-                  </section>
+                  </section>:null
+                  }
                 </div>
               ) : null}
             </>
