@@ -41,9 +41,9 @@ const Hero2 = () => {
   };
   return (
 
-    <div className='mt-24 xl:container'>
+    <div data-aos="flip-up"  className='mt-24 '>
       <div className='px-4 md:px-0'>
-        <h1 className='text-3xl font-semibold tracking-wider text-slate-600 text-center'>Best of Uttrakhand</h1>
+        <h1  className='text-3xl font-semibold tracking-wider text-slate-600 text-center'>Best of Uttrakhand</h1>
         <div className='flex items-center justify-center mt-2'>
           <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
         </div>
@@ -56,7 +56,7 @@ const Hero2 = () => {
               className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide flex'
             >
               {bestofuk.map((item) => (
-                <img key={item.name}
+                <img data-aos="fade-left" key={item.name}
                   className='w-80 h-full mx-2 rounded-2xl hover:brightness-75 duration-300 ease-in-out'
                   src={item.img}
                   alt='/'

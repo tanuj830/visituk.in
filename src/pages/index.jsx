@@ -48,7 +48,7 @@ export default function Home({ data }) {
           </ul>
         </div> */}
         {/* change this  */}
-      <div className=' tracking-wider   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.pexels.com/photos/3151191/pexels-photo-3151191.jpeg?auto=compress&cs=tinysrgb&w=600)", backgroundBlendMode:"overlay", backgroundSize:"100% 100%"}}>
+      <div className=' tracking-wider   bg-[rgba(0,0,0,0.1)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.pexels.com/photos/14769110/pexels-photo-14769110.jpeg?auto=compress&cs=tinysrgb&w=600)", backgroundBlendMode:"overlay", backgroundSize:"100% 100%"}}>
         <Header/>
 
         <div className=' flex items-center  justify-center mt-36 w-full'>
@@ -99,7 +99,7 @@ export default function Home({ data }) {
 
 
         {/*  group plans */}
-        <div className='xl:container mt-24' id='plans'>
+        <div className='mx-[10%] mt-24' id='plans'>
           <h1 className='text-3xl font-bold my-4 tracking-widest text-slate-800 text-center '>Tours & Packages</h1>
           <div className='flex items-center justify-center mt-2'>
             <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
@@ -108,7 +108,7 @@ export default function Home({ data }) {
           <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-3 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
               data.plans.map((plan) => {
-                return (plan.isgroupplan === true ? <OffersCard plan={plan} key={plan.id}/> : null)
+                return (plan.isgroupplan === true ? <OffersCard data-aos="fade-up" plan={plan} key={plan.id}/> : null)
               })
             }
           </div>
@@ -119,7 +119,7 @@ export default function Home({ data }) {
         </div>
 
         
-        <div className='xl:container '>
+        <div className='mx-[10%] '>
           <div className='flex items-center justify-center mt-2'>
             <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
             </div>
@@ -211,16 +211,16 @@ export default function Home({ data }) {
           <Hero2/>
 
         {/*  group plans */}
-        <div className='mt-10 px-4 md:px-0' id='plans'>
+        <div  className='mt-10 px-4 md:px-0' id='plans'>
           <h1 className='text-3xl text-slate-600 font-bold my-4 tracking-wider text-center'>Group Plans</h1>
           <div className='flex items-center justify-center '>
             <div className=' w-24 border-b-4 border-green-600 '><hr /></div>
             </div>
-          <div className='overflow-hidden mt-4'>
-          <div className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
+          <div  className='overflow-hidden mt-4'>
+          <div  className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
             {
               data.plans.map((plan) => {
-                return (plan.isgroupplan === true ? <OffersCard key={plan.id} plan={plan} /> : null)
+                return (plan.isgroupplan === true ? <OffersCard  key={plan.id} plan={plan} /> : null)
               })
             }
           </div>

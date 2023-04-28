@@ -4,9 +4,18 @@ import Header from '@/components/Header'
 import '@/styles/globals.css'
 import Head from 'next/head'
 import Script from 'next/script'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 export default function App({ Component, pageProps }) {
-  return <>
+ 
+  useEffect(() => {
+    AOS.init({
+      duration:1000,
+    });
+  },)
+ return <>
     <Head>
       <title>visituttrakhand.in</title>
       <Script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="2bxx79xx-0dxb-4xx4-ac71-x4a42xxxxxxx"/>

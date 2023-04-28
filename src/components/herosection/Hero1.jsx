@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero1 = () => {
   return (
-    <div className='xl:container mt-10 md:mt-32 px-[1rem] md:px-[7rem] '>
+    <div data-aos="flip-up" className='xl:container mt-10 md:mt-32 px-[1rem] md:px-[7rem] '>
     <div className='flex flex-col md:flex-row   items-center justify-between gap-6'>
         <div className=''>
             <h4 className='text-3xl font-semibold  tracking-wider text-slate-600'>Find The Perfect Package</h4>

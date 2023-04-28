@@ -24,7 +24,7 @@ export default function OffersCard({ plan }) {
     return (
         <>
             {
-                plan !== undefined ? <div className=' border rounded-lg border-slate-300'>
+                plan !== undefined ? <div data-aos="fade-up" className=' border rounded-lg border-slate-300'>
                     {
                         plan.specialoffer === true ? <div className='relative '>
                             <div className='absolute top-0 right-0  px-3 py-2 duration-100 ease-in-out '>
@@ -32,7 +32,7 @@ export default function OffersCard({ plan }) {
                             </div>
                         </div> : null
                     }
-                    <div className=' rounded-lg overflow-hidden w-[300px] md:w-full '>
+                    <div  className=' rounded-lg overflow-hidden w-[300px] md:w-full '>
                         <div className='overflow-hidden h-56 '>
                             <img className='w-full hover:scale-110 h-[100%]  duration-1000 ease-in-out' src={plan.img} alt="" />
                         </div>
@@ -62,27 +62,19 @@ export default function OffersCard({ plan }) {
                         </div>: <h3 className=' mt-6 text-sm font-semibold tracking-wider '>Customize your package & get final calculation</h3>
                            }
                             <div className='w-full mt-2 '>
-                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2   md:px-2  py-1 border-slate-200'>
+                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer hover:bg-slate-100 border-slate-200'>
                                         <option value={"2"}>Select number of peoples</option>
-                                        <option value={"4"}>2 - 4</option>
-                                        <option value={"6"}>5 - 6</option>
-                                        <option value={"8"}>7 - 8</option>
-                                        <option value={"13"}>9 - 13</option>
+                                        <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
+                                        <option value={"6"}>5 - 6 (Triber)</option>
+                                        <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>
+                                        <option value={"13"}>9 - 13 (Traveller)</option>
                                     </select>
                                 </div> 
-                            <div className='flex items-center justify-between mt-2'>
-                                    <select className='border-2 md:w-56  md:px-2  py-1 border-slate-200'>
-                                        <option value={"2"}>Vehicle Options</option>
-                                        {
-                                            data.vehicles.map(vech => (
-                                                <option key={vech.name} value={vech.persons}>{vech.name} </option>
-                                            ))
-                                        }
-                                    </select>
-                                    <Link className=' ' href={`/details/${encodeURIComponent(plan.id)}`}>
+                                   <div className='mt-3'>
+                                   <Link className=' ' href={`/details/${encodeURIComponent(plan.id)}`}>
                                         <button className='bg-red-600 text-white font-semibold text-sm w-full rounded-md py-2 px-3'>View Details</button>
                                     </Link>
-                                </div> 
+                                   </div>
                         </div>
                     </div>
                 </div> : null
