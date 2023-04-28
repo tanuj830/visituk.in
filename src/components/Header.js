@@ -4,7 +4,7 @@ import { BsAirplaneEngines, BsFillCarFrontFill } from "react-icons/bs";
 // import SearchBar from "./SearchBar";
 import { AiOutlineContacts, AiOutlineHome } from "react-icons/ai";
 import { GiMountains } from "react-icons/gi";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsTelegram } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrChannel } from "react-icons/gr";
@@ -87,6 +87,8 @@ const Navbar = () => {
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2 text-green-600 items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></a>
             <hr/>
             <Link href="tel:818181326" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></Link>
+            <hr/>
+            <Link href="tel:818181326" className="flex m-2 text-[#0088cc] items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<BsTelegram onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></Link>
           </ul>
         </div>
       </div>
