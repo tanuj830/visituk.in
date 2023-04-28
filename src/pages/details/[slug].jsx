@@ -40,7 +40,7 @@ export default function Slug() {
         ? data.plans.map((plan) => (
             <>
               {plan.id == slug ? (
-                <div className="">
+                <div className="bg-slate-100">
                   {
                     plan.specialoffer === true ? <div className=" py-1  w-full bg-green-600">
                       <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">Avail our Special Offer and make the best deal for you ! </h3>
@@ -164,7 +164,7 @@ export default function Slug() {
 
 
 
-                  <section className="mt-20 px-3  xl:container">
+                  <section className="mt-20 px-3   xl:container">
                     <div>
                       <h2 className="text-2xl font-semibold ">
                         This tour includes:
@@ -196,8 +196,8 @@ export default function Slug() {
 
                   <section className="xl:container mt-10  w-full">
                     <div className="px-2 md:px-0">
-                      <div className=" border p-3 md:p-5 rounded-lg">
-                        <h3 className="text-2xl font-semibold  my-3">
+                      <div className=" bg-white border px-5 rounded-xl shadow tracking-wider md:px-20 md:py-10">
+                        <h3 className="text-2xl font-semibold border-l-8 border-green-500 px-3  my-3">
                           About Tour
                         </h3>
                         <div dangerouslySetInnerHTML={{__html:plan.disp}} className="text-lg text-justify text-slate-600"></div>
@@ -206,8 +206,10 @@ export default function Slug() {
                   </section>
                   {/* Tour Itinerary */}
                   <section className="xl:container mt-6 p-3">
-                    <h2 className="text-2xl font-bold my-4">Tour Itinerary</h2>
-                        <div dangerouslySetInnerHTML={{__html:plan.itenary}} className="text-lg text-justify text-slate-700"></div>
+                    <div className="bg-white border px-5 rounded-xl shadow tracking-wider md:px-20 md:py-10">
+                    <h2 className="text-2xl font-bold my-4 border-l-8 border-green-500 px-3">Tour Itinerary</h2>
+                        <div dangerouslySetInnerHTML={{__html:plan.itenary}} className="text-lg  text-justify text-slate-700"></div>
+                    </div>
                   </section>
                 </div>
               ) : null}
