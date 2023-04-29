@@ -41,7 +41,7 @@ const Hero2 = () => {
   };
   return (
 
-    <div data-aos="flip-up"  className='mt-24 '>
+    <div data-aos="fade-up"  className='mt-24 '>
       <div className='px-4 md:px-0'>
         <h1  className='text-3xl font-semibold tracking-wider text-slate-600 text-center'>Best of Uttrakhand</h1>
         <div className='flex items-center justify-center mt-2'>
@@ -51,12 +51,13 @@ const Hero2 = () => {
           <div className='relative flex items-center'>
             <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
             {/* npm i tailwind-scrollbar-hide and in tailwind config.js add require('tailwind-scrollbar-hide') inside plugins */}
-            <div
+            <div 
+            
               id='slider'
               className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide flex'
             >
               {bestofuk.map((item) => (
-                <img data-aos="fade-left" key={item.name}
+                <img key={item.name}
                   className='w-80 h-full mx-2 rounded-2xl hover:brightness-75 duration-300 ease-in-out'
                   src={item.img}
                   alt='/'
