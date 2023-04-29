@@ -39,7 +39,7 @@ const Hero3 = () => {
         </div>
     </div>
         <div className='inline md:hidden'>
-        <div className='flex items-center justify-center bg-contain bg-no-repeat py-10 ' style={{background:"url(https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg?auto=compress&cs=tinysrgb&w=600)", backgroundSize:"100%, 100%", backgroundRepeat:"no-repeat"}}>
+        <div className='flex items-center justify-center bg-contain bg-no-repeat py-2 ' style={{background:"url(https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg?auto=compress&cs=tinysrgb&w=600)", backgroundSize:"100%, 100%", backgroundRepeat:"no-repeat"}}>
     
     <div className='mx-[1rem] md:mx-[4rem]'>
     <div className='grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-10 '>
