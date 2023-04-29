@@ -17,6 +17,7 @@ import Header from '../components/Header'
 import {MdOutlineTour, MdSecurity, MdOutlineCleanHands, MdOutlineEmojiTransportation} from 'react-icons/md'
 import Hero1 from '@/components/herosection/Hero1';
 import Hero2 from '@/components/herosection/Hero2';
+import Hero3 from '@/components/herosection/Hero3';
 
 
 const onChangeCollege = (e) => {
@@ -250,6 +251,7 @@ export default function Home({ data }) {
         </div>
 
         {/* <Offerings/> */}
+        <Hero3/>
  
 </main>
    </>
