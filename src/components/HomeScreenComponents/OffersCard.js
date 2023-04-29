@@ -24,7 +24,7 @@ export default function OffersCard({ plan }) {
     return (
         <>
             {
-                plan !== undefined ? <div  className='bg-slate-50 border rounded-lg border-slate-300 hover:drop-shadow-xl my-3 duration-500'>
+                plan !== undefined ? <div  className='  rounded-lg border-slate-300 hover:drop-shadow-xl my-3 duration-500'>
                     {
                         plan.specialoffer === true ? <div className='relative '>
                             <div className='absolute top-0 right-0  px-3 py-2 duration-100 ease-in-out '>
@@ -33,10 +33,10 @@ export default function OffersCard({ plan }) {
                         </div> : null
                     }
                     <div  className=' rounded-lg overflow-hidden w-[300px] md:w-full '>
-                        <div className='overflow-hidden h-56 '>
+                        <div className='overflow-hidden md:h-52 h-32 '>
                             <img className='w-full hover:scale-110 h-[100%]  duration-1000 ease-in-out' src={plan.img} alt="" />
                         </div>
-                        <div className='md:px-6 p-2 md:py-4 pt-2'>
+                        <div className=' md:py-4'>
                             <div className='flex flex-row'>
                                 <h1 className='text-xl font-bold'>{plan.title}</h1>
                             </div>

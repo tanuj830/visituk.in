@@ -213,7 +213,7 @@ export default function Home({ data }) {
             <div className=' w-24 border-b-4 border-green-600 '><hr /></div>
             </div>
           <div  className='overflow-hidden mt-4'>
-          <div  className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3  overflow-scroll'>
+          <div  className='flex flex-nowrap md:py-3 md:grid md:grid-cols-4 md:overflow-hidden w-full gap-3 overflow-scroll'>
             {
               data.plans.map((plan) => {
                 return (plan.isgroupplan === true ? <OffersCard  key={plan.id} plan={plan} /> : null)

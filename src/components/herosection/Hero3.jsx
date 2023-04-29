@@ -22,10 +22,10 @@ const Hero3 = () => {
   return (
     <>
         <div className='hidden lg:inline'>
-        <div className='flex items-center justify-center py-10 bg-no-repeat ' style={{background:"url(https://images.pexels.com/photos/235778/pexels-photo-235778.jpeg?auto=compress&cs=tinysrgb&w=2840)", backgroundSize:"100%, 100%", backgroundRepeat:"no-repeat"}}>
+        <div className='flex items-center justify-center py-10 bg-cover bg-no-repeat ' style={{background:"url(https://images.pexels.com/photos/235778/pexels-photo-235778.jpeg?auto=compress&cs=tinysrgb&w=2840)", backgroundRepeat:"no-repeat"}}>
     
     <div className='mx-[1rem] lg:mx-[4rem]'>
-    <div className='grid grid-cols-1 lg:grid-cols-4 gap-3 lg:gap-x-10 '>
+    <div className='grid grid-cols-1 lg:grid-cols-4 gap-3 lg:gap-x-8 '>
      {
        data.map(d=>(
            <div className="tracking-widest shadow-lg backdrop-blur-lg  bg-slate-100 bg-opacity-10 lg:p-10 p-4 rounded-lg lg:rounded-2xl">

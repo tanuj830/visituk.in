@@ -3,7 +3,7 @@
         {
             "id":1,
             "ratings":4.6,
-            "title": "Char Dham Yatra + Tungnath",
+            "title": "Char Dham Yatra + Tungnath Package (From Dehradun)",
             "days": 10,
             "nights": 9,
             "persons": 13,
@@ -24,7 +24,7 @@
         {
             "id":2,
             "ratings":4,
-            "title": "Char Dham Yatra",
+            "title": "Char Dham Yatra Package (From Dehradun)",
             "days": 9,
             "nights": 8,
             "isgroupplan":true,
@@ -63,7 +63,7 @@
         {
             "id":4,
             "ratings":4.5,
-            "title": "Do Dham Yatra",
+            "title": " Do Dham Yatra Package (Only Do Dham no extra places) ",
             "days": 9,
             "nights": 8,
             "persons": [2,4,6,13],
@@ -80,7 +80,7 @@
         {
             "id":5,
             "ratings":4,
-            "title": "Do Dham Yatra + Tungnath",
+            "title": "Do Dham Yatra + Tungnath Package (From Dehradun)",
             "days": 10,
             "nights": 9,
             "persons": [2,4,6,13], 
