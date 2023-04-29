@@ -24,7 +24,7 @@ export default function OffersCard({ plan }) {
     return (
         <>
             {
-                plan !== undefined ? <div data-aos="fade-up" className=' border rounded-lg border-slate-300'>
+                plan !== undefined ? <div  className='bg-slate-50 border rounded-lg border-slate-300 hover:drop-shadow-xl my-3 duration-500'>
                     {
                         plan.specialoffer === true ? <div className='relative '>
                             <div className='absolute top-0 right-0  px-3 py-2 duration-100 ease-in-out '>
