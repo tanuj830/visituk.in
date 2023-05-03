@@ -38,7 +38,7 @@ export default function OffersCard({ plan }) {
                         </div>
                         <div className='  px-2'>
                             <div className='flex flex-row'>
-                                <h1 className='text-md font-bold'>{plan.title}</h1>
+                                <h1 className='text-md font-bold leading-6'>{plan.title}</h1>
                             </div>
 
                             <div className=' '>
