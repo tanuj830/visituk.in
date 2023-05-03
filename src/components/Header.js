@@ -4,7 +4,7 @@ import { BsAirplaneEngines, BsFillCarFrontFill } from "react-icons/bs";
 // import SearchBar from "./SearchBar";
 import { AiOutlineContacts, AiOutlineHome } from "react-icons/ai";
 import { GiMountains } from "react-icons/gi";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsTelegram } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrChannel } from "react-icons/gr";
@@ -27,10 +27,10 @@ const Navbar = () => {
     <>
       {/* for mobile */}
       <div className="xl:container text-white inline md:hidden ">
-        <div className="  flex justify-between items-center gap-4 md:gap-44 shadow-sm py-1 px-3 md:px-1 ">
+        <div className="  flex justify-between items-center gap-4 md:gap-44  py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
             <Link className="text-xl md:text-2xl text-themecol flex items-center justify-center gap-1" href="/home">
-              <GiMountains /><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
+              <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif"/><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
 
@@ -69,10 +69,10 @@ const Navbar = () => {
 
       {/* forpc */}
       <div className="w-full text-white tracking-wider hidden md:inline ">
-        <div className=" py-5  shadow-md px-10 flex items-center justify-between w-100 ">
+        <div className=" py-5  px-10 flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
-              <GiMountains /><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
+            <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif"/><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
           <div className="flex items-center justify-center ">
@@ -87,6 +87,8 @@ const Navbar = () => {
             <a href="https:wa.link/prs44x" target="_blank" className="flex m-2 text-green-600 items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></a>
             <hr/>
             <Link href="tel:818181326" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></Link>
+            <hr/>
+            <Link href="tel:818181326" className="flex m-2 text-[#0088cc] items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<BsTelegram onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></Link>
           </ul>
         </div>
       </div>

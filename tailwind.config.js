@@ -12,15 +12,15 @@ module.exports = {
     extend: {
       container:{
         padding:{
-          sm:'2rem',
-          md:'4rem',
-          lg:'6rem',
-          xl:'8rem',
+          sm:'2vw',
+          md:'4vw',
+          lg:'6vw',
+          xl:'8vw',
         }
       }
     },
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    // require('tailwind-scrollbar-hide')
   ],
 }
