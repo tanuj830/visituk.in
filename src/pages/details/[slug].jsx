@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import data from "../../data/plans.json";
 import { FiPhoneCall } from "react-icons/fi";
 import { FcOnlineSupport } from "react-icons/fc";
@@ -13,6 +13,8 @@ import { BiTrip } from "react-icons/bi";
 import { BsFillCarFrontFill} from "react-icons/bs";
 import { MdUpdate } from "react-icons/md";
 import Link from "next/link";
+import numberToINR from '@/utils/numberToINR';
+
 import OffersCard from "@/components/HomeScreenComponents/OffersCard";
 export default function Slug() {
   const router = useRouter();
@@ -22,10 +24,10 @@ export default function Slug() {
   const[price, setPrice] = React.useState(0)
 
   // setting up total price and persons to state 
-    const handleChange=(e, p)=>{
-      console.log(p)
-      console.log(e.target.persons)
-    }
+    // const handleChange=(e, p)=>{
+    //   console.log(p)
+    //   console.log(e.target.persons)
+    // }
 
     // calculating price
   useEffect(() => {
@@ -33,13 +35,40 @@ export default function Slug() {
   })
 
 
+  const [selectedCar, setSelectedCar] = useState("2");
+  const [showPrice, setShowPrice] = useState(false);
+  const [plan, setPlan] = useState({});
+  
+  const [planPrice, setPlanPrice] = useState(plan?.price)
+
+useEffect(() => {
+  
+  data.plans.map((plan) => (
+    plan.id == slug ? setPlan(plan) : null))
+}, [slug])
+
+
+  useEffect(() => {
+    
+
+
+      const carData = data.vehicles.filter(v => v.persons === selectedCar);
+      console.log(carData)
+      // console.log(carData[0],carData[0].pricePerDay*plan.days,"the selected car");
+      if(carData.length > 0)
+      {
+          setPlanPrice(carData[0].pricePerDay * plan.days)
+          setShowPrice(true)
+      }
+  }, [selectedCar])
+
+
   return (
     <>
     <Header2/>
-      {slug !== "undefined"
-        ? data.plans.map((plan) => (
+      {plan !== "undefined"
+        ? 
             <>
-              {plan.id == slug ? (
                 <div className="bg-slate-100">
                   {
                     plan.specialoffer === true ? <div className=" py-1  w-full bg-green-600">
@@ -52,11 +81,13 @@ export default function Slug() {
                     <div className="xl:container">
                       <div className="px-3 md:px-0">
                         <h1 className="text-3xl font-semibold">{plan.title}</h1>
-                        <small className="text-lg mt-1 text-justify">
-                          Embark on a divine adventure with {plan.title}, the
-                          journey of a lifetime <br /> that will lift your
+                        <div className="w-[50%] leading-5">
+                        <small className="text-[14px]  text-justify">
+                          Embark on a divine adventure with <b>{plan.title}</b>, the
+                          journey of a lifetime  that will lift your
                           spirit and lift your heart!
                         </small>
+                        </div>
                         <div className="w-[50%] mt-1">
                           <hr />
                         </div>
@@ -80,11 +111,11 @@ export default function Slug() {
                               Tour of {plan.persons} people
                             </small>: <div>
                               <small className="font-semibold text-sm">Tour of {
-                                plan.persons.map((per, index)=>(
+                                plan.persons > 0 ? plan.persons.map((per, index)=>(
                                   
-                                    index == plan.persons.length-1 ? per: per + " or "
-                                  
-                                ))
+                                  index == plan.persons.length-1 ? per: per + " or "
+                                
+                              )):null
                               } people <small className="text-green-400 text-sm">(Customizable)</small></small>
                             </div>
                             }
@@ -108,7 +139,7 @@ export default function Slug() {
                             <AiTwotoneStar /> <AiTwotoneStar /> <BsStarHalf />
                           </small>{" "}
                           <small className="text-sm text-violet-400">
-                            (12,800 ratings)
+                            ({plan.ratingsCount} ratings)
                           </small>
                         </h6>
 
@@ -126,26 +157,30 @@ export default function Slug() {
                     </div>
 
                     <div className="mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md hover:shadow-lg rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0">
-                      <img className="overflow-hidden" src={plan.img} alt="" />
+                      <img className="overflow-hidden h-44 w-full object-cover" src={plan.img} alt="" />
                       <div className="py-2 px-3">
-                        <h2 className="text-xl text-justify font-semibold text-slate-600">
+                        <h2 className="text-lg font-semibold ">
                           Book {plan.title}
                         </h2>
-                        <div className="">
-                          <small className=" text-red-600">
-                            <strike className="text-[12px]">
-                              {" "}
-                              ₹ {plan.exPrice}
-                            </strike>
-                          </small>
-                          <small className=" text-lg font-semibold text-green-700">
-                            {" "}
-                            <small>now at</small> ₹{plan.price}
-                          </small><br />
-                          <small className="text-md ">Now you can enjoy this tour only at ₹{Math.round(plan.price / plan.persons)}/person</small>
-                          <br />
-                          {/* <small className=' text-lg font-semibold text-green-600'>  <small>You are saving</small> ₹{(plan.exPrice) - (plan.price)}</small> */}
-                        </div>
+                        {
+                            showPrice === true ?  <div className='flex flex-col md:my-1'>
+                            <div className=' flex items-center h-10 font-semibold text-lg gap-1'>
+                                <h3><HiCurrencyRupee /></h3>
+                                <div><strike className="text-red-600 text-[12px]">₹{numberToINR(plan.exPrice)}</strike></div>
+                                <div className='text-green-600 text-lg font-bold'> ₹{numberToINR(planPrice)}</div>
+                                <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
+                            </div>
+                        </div>: <h3 className=' text-sm font-semibold tracking-wider h-10 leading-8'>Customize your package & get final calculation</h3>
+                           }
+                        <div className='w-full mt-2 '>
+                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
+                                        <option value={"2"}>Select number of peoples</option>
+                                        <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
+                                        <option value={"6"}>5 - 6 (Triber)</option>
+                                        <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>
+                                        <option value={"13"}>9 - 13 (Traveller)</option>
+                                    </select>
+                                </div> 
                         <div className="flex flex-col justify-between mt-4 mb-4">
                           <Link
                             href="tel:7668088539"
@@ -171,26 +206,32 @@ export default function Slug() {
                         This tour includes
                       </h2>
                     </div>
-                    <div className="md:w-[50%] grid-cols-2 grid md:grid-cols-3 text-slate-700">
+                    <div className=" flex items-center justify-around text-slate-700">
                       <div className="flex items-center gap-1 py-4 ">
                         <h1 className="text-2xl text-black">
-                          <BiTrip />
+                          <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/way_oo6dkw.gif" alt="" />
                         </h1>
-                        <h1 className="text-lg">
+                        <h1 className="text-sm">
                           {plan.days} days and {plan.nights} nights{" "}
                         </h1>
                       </div>
                       <div className="flex items-center gap-1 py-4 ">
                         <h1 className="text-2xl text-black">
-                          <MdLocalConvenienceStore />
+                            <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683133634/ezgif-5-3d935309ed_exoaa8.gif" alt="" />
                         </h1>
-                        <h1 className="text-lg">Convenience</h1>
+                        <h1 className="text-sm">Stay on Demand</h1>
                       </div>
                       <div className="flex items-center gap-1 py-4 ">
                         <h1 className="text-2xl text-black">
-                          <MdEmojiTransportation />
+                          <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/car_ytnkq9.gif" alt="" />
                         </h1>
-                        <h1 className="text-lg">Vechile with driver</h1>
+                        <h1 className="text-sm">Experienced Driver</h1>
+                      </div>
+                      <div className="flex items-center gap-1 py-4 ">
+                        <h1 className="text-2xl text-black">
+                        <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946773/spray_ay4hv3.gif" alt="" />
+                        </h1>
+                        <h1 className="text-sm">Clean & Sanitized Vechile</h1>
                       </div>
                     </div>
                    </div>
@@ -216,11 +257,10 @@ export default function Slug() {
                   </section>:null
                   }
                 </div>
-              ) : null}
-            </>
-          ))
-        : null}
+            
+            </>:null
 
+                }
       {/* other plans */}
       <section className="xl:container px-3 mt-6">
         <h1 className="text-xl text-center uppercase font-bold my-3">Popular packages</h1>

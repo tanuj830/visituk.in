@@ -3,6 +3,7 @@
         {
             "id":2,
             "ratings":4,
+            "ratingsCount":"11,200" ,
             "title": "Char Dham Yatra Package (ex Haridwar)",
             "days": 9,
             "nights": 8,
@@ -20,6 +21,7 @@
         {
             "id":1,
             "ratings":4.6,
+            "ratingsCount":"10,121",
             "title": "Char Dham Yatra + Tungnath Package ",
             "days": 10,
             "nights": 9,
@@ -41,6 +43,7 @@
         {
             "id":3,
             "ratings":4.1,
+            "ratingsCount":"12,800",
             "title": "Char Dham Yatra + Tungnath + Rishikesh ",
             "days": 11,
             "nights": 10,
@@ -63,6 +66,7 @@
         {
             "id":4,
             "ratings":4.1,
+            "ratingsCount":"5800",
             "title": "Char Dham Yatra + Dhari Devi + Sangam at Devprayag + Rishikesh",
             "days": 13,
             "nights": 12,
@@ -83,8 +87,9 @@
             }
         },
         {
-            "id":4,
+            "id":5,
             "ratings":4.5,
+            "ratingsCount":"7890",
             "title": " Do Dham Yatra Package ( ex Haridwar) ",
             "days": 5,
             "nights": 4,
@@ -100,8 +105,9 @@
             "price": 99000 
         },
         {
-            "id":5,
+            "id":6,
             "ratings":4,
+            "ratingsCount":"7000" ,
             "title": "Do Dham Yatra + Tungnath Package (ex Haridwar)",
             "days": 6,
             "nights": 5,
@@ -116,8 +122,9 @@
             "price": 99000
         },
         {
-            "id":6,
+            "id":7,
             "ratings":4.2,
+            "ratingsCount":"12,000",
             "title": "Do Dham Yatra + Tungnath + Rishikesh + Haridwar",
             "days": 7,
             "nights": 6,
@@ -133,8 +140,9 @@
         }
         ,
         {
-            "id":7,
+            "id":8,
             "ratings":4.2,
+            "ratingsCount":"16,800",
             "title": "Do Dham Yatra + GuptKashi + Sonprayag + Haridwar",
             "days": 7,
             "nights": 6,
