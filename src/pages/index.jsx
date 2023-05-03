@@ -49,13 +49,13 @@ export default function Home({ data }) {
           </ul>
         </div> */}
         {/* change this  */}
-      <div className=' tracking-wider bg-cover  bg-[rgba(0,0,0,0.1)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.pexels.com/photos/1526718/pexels-photo-1526718.jpeg?auto=compress&cs=tinysrgb&w=2410)", backgroundBlendMode:"overlay", backgroundSize:""}}>
+      <div className=' tracking-wider   bg-[rgba(0,0,0,0.1)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.pexels.com/photos/1526718/pexels-photo-1526718.jpeg?auto=compress&cs=tinysrgb&w=2410)", backgroundBlendMode:"overlay", backgroundSize:"100% 100%"}}>
         <Header/>
 
         <div className=' flex items-center  justify-center mt-36 w-full'>
           <div className='flex items-center justify-center  w-full'>
             <div className=''>
-              <h2 className='text-white font-semibold tracking-wider  text-lg md:text-5xl brightness-200'>Visit Uttarakhand</h2>
+              <h2 className='text-white font-semibold tracking-wider  text-lg md:text-5xl brightness-200'>Uttarakhand Tourism</h2>
               <h3 className='text-white font-semibold tracking-wider text-sm md:text-lg text-justify md:w-[70%] md:mt-4 brightness-200'>The Himalayan Mountains, Crisp Air, Sacred Temples, and Enthralling Adventure Call You to Uttarakhand</h3>
 
             </div>   </div>
@@ -153,7 +153,7 @@ export default function Home({ data }) {
         {/* for mobile */}
         <div className="inline md:hidden">
       <div >
-        <div className='tracking-wider  z-0   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://cdn.pixabay.com/photo/2017/07/24/12/43/schrecksee-2534484__340.jpg)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
+        <div className='tracking-wider  z-0   bg-[rgba(0,0,0,0.2)] bg-no-repeat w-full h-[100vh]'  style={{backgroundImage:"url(https://images.unsplash.com/photo-1626621331169-5f34be280ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80)",backgroundSize:"cover" , backgroundBlendMode:"overlay"}}>
         <Header/>
        <div className='relative '>
        <div className='absolute z-10 px-[2rem] flex items-center  justify-center mt-24 w-full'>
