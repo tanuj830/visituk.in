@@ -53,13 +53,13 @@ export default function OffersCard({ plan }) {
                             <div className='flex items-center mt-1 gap-1 md:hidden visible'><h3 className='text-lg '><BiTrip /></h3> <h3 className='text-sm'>{plan.via.slice(0, 35) + "..."}</h3></div>
                            {
                             showPrice === true ?  <div className='flex flex-col md:my-1'>
-                            <div className=' flex items-center font-semibold text-lg gap-1'>
+                            <div className=' flex items-center leading-3 font-semibold text-lg gap-1'>
                                 <h3><HiCurrencyRupee /></h3>
                                 <div><strike className="text-red-600 text-[12px]">₹{numberToINR(plan.exPrice)}</strike></div>
                                 <div className='text-green-600 text-lg font-bold'> ₹{numberToINR(planPrice)}</div>
                                 <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
                             </div>
-                        </div>: <h3 className='mt-2 text-sm font-semibold tracking-wider '>Customize your package & get final calculation</h3>
+                        </div>: <h3 className='mt-2 text-sm font-semibold tracking-wider leading-6'>Customize your package & get final calculation</h3>
                            }
                             <div className='w-full mt-2 '>
                                     <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
