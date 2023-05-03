@@ -30,7 +30,7 @@ const DarkNavbar = () => {
         <div className="  flex justify-between items-center gap-4 md:gap-44  py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
             <Link className="text-xl md:text-2xl text-themecol flex items-center justify-center gap-1" href="/home">
-              <GiMountains /><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
+            <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif"/><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
 
@@ -69,10 +69,10 @@ const DarkNavbar = () => {
 
       {/* forpc */}
       <div className="w-full text-black tracking-wider hidden md:inline ">
-        <div className=" py-5  shadow-md px-10 flex items-center justify-between w-100 ">
+        <div className=" py-5   px-10 flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
-              <GiMountains /><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
+            <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif"/><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
           <div className="flex items-center justify-center ">

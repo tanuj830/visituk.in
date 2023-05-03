@@ -24,7 +24,7 @@ export default function OffersCard({ plan }) {
     return (
         <>
             {
-                plan !== undefined ? <div  className='  rounded-lg border-slate-300 hover:drop-shadow-xl my-3 duration-500'>
+                plan !== undefined ? <div  className='  rounded-lg border-slate-300 my-3 md:mx-3  duration-500'>
                     {
                         plan.specialoffer === true ? <div className='relative '>
                             <div className='absolute top-0 right-0  px-3 py-2 duration-100 ease-in-out '>
@@ -33,10 +33,10 @@ export default function OffersCard({ plan }) {
                         </div> : null
                     }
                     <div  className=' rounded-lg overflow-hidden w-[300px] md:w-full '>
-                        <div className='overflow-hidden md:h-52 h-32 '>
-                            <img className='w-full hover:scale-110 h-[100%]  duration-1000 ease-in-out' src={plan.img} alt="" />
+                        <div className='overflow-hidden md:h-52 h-32 rounded-3xl mb-1'>
+                            <img className='w-full h-[100%] object-cover hover:scale-[1.1]  duration-1000 ease-in-out' src={plan.img} alt="" />
                         </div>
-                        <div className=' md:py-4'>
+                        <div className=' md:py-4 px-2'>
                             <div className='flex flex-row'>
                                 <h1 className='text-xl font-bold'>{plan.title}</h1>
                             </div>
@@ -59,10 +59,10 @@ export default function OffersCard({ plan }) {
                                 <div className='text-green-600 text-lg font-bold'> ₹{numberToINR(planPrice)}</div>
                                 <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
                             </div>
-                        </div>: <h3 className=' mt-6 text-sm font-semibold tracking-wider '>Customize your package & get final calculation</h3>
+                        </div>: <h3 className='mt-2 text-sm font-semibold tracking-wider '>Customize your package & get final calculation</h3>
                            }
                             <div className='w-full mt-2 '>
-                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer hover:bg-slate-100 border-slate-200'>
+                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
                                         <option value={"2"}>Select number of peoples</option>
                                         <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
                                         <option value={"6"}>5 - 6 (Triber)</option>
