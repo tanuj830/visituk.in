@@ -53,8 +53,8 @@ export default function Slug() {
                     <div className="px-3 md:px-0">
                       <h1 className="text-3xl font-semibold">{plan.title}</h1>
                       <small className="text-lg mt-1 text-justify">
-                        Embark on a divine adventure with {plan.title}, the
-                        journey of a lifetime <br /> that will lift your
+                        Embark on a divine adventure with {plan.title},<br />  the
+                        journey of a lifetime that will lift your
                         spirit and lift your heart!
                       </small>
                       <div className="w-[50%] mt-1">
