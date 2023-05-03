@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { BsAirplaneEngines, BsFillCarFrontFill } from "react-icons/bs";
+import { BsAirplaneEngines, BsFillCarFrontFill, BsTelegram } from "react-icons/bs";
 // import SearchBar from "./SearchBar";
 import { AiOutlineContacts, AiOutlineHome } from "react-icons/ai";
 import { GiMountains } from "react-icons/gi";
@@ -30,7 +30,7 @@ const DarkNavbar = () => {
         <div className="  flex justify-between items-center gap-4 md:gap-44  py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
             <Link className="text-xl md:text-2xl text-themecol flex items-center justify-center gap-1" href="/home">
-            <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif"/><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
+              <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif" /><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
 
@@ -58,9 +58,9 @@ const DarkNavbar = () => {
           {showMenu == true ? (
             <div className="relative w-full tracking-wider  py-1">
               <div className=" w-full">
-              <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/about'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
-            <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
+                <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/about'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
+                <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
+                <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
               </div>
             </div>
           ) : null}
@@ -72,7 +72,7 @@ const DarkNavbar = () => {
         <div className=" py-5   px-10 flex items-center justify-between w-100 ">
           <div className="flex items-center ">
             <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
-            <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif"/><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
+              <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif" /><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
             </Link>
           </div>
           <div className="flex items-center justify-center ">
@@ -84,9 +84,11 @@ const DarkNavbar = () => {
         </div>
         <div className="fixed top-64 right-0  z-10 rounded-l-md bg-[rgba(0,0,0,0.3)] drop-shadow-md border">
           <ul className="p-1 font-bold text-lg">
-            <a href="https:wa.link/prs44x" target="_blank" className="flex m-2 text-green-800 items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></a>
-            <hr/>
+            <a href="https:wa.link/prs44x" target="_blank" className="flex m-2 text-green-600 items-center">{showNumber && <span className="mr-2">818-181-3626</span>} <RiWhatsappFill onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></a>
+            <hr />
             <Link href="tel:818181326" className="flex m-2  items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<MdCall onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></Link>
+            <hr />
+            <Link href="tel:818181326" className="flex m-2 text-[#0088cc] items-center">{showNumber && <span className="mr-2">818-181-3626</span>}<BsTelegram onMouseEnter={() => setShowNumber(true)} onMouseLeave={() => setShowNumber(false)} size={30} /></Link>
           </ul>
         </div>
       </div>
