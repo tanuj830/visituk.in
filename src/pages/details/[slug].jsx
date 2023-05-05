@@ -74,7 +74,7 @@ useEffect(() => {
                  <div className=" py-1  w-full bg-green-600">
                       <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">Avail our Special Offer and make the best deal for you ! </h3>
                       </div>
-                  <section className="flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 ">
+                  <section className="flex flex-col md:relative  text-white  bg-slate-800 md:px-6 md:py-10 py-3 ">
                     <div className="xl:container">
                       <div className="px-3 md:px-0">
                         <h1 className="text-3xl font-semibold">{plan.title}</h1>
@@ -143,7 +143,7 @@ useEffect(() => {
                       </div>
                     </div>
 
-                    <div className="mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md hover:shadow-lg rounded-lg md:top-10 md:w-[25%] md:right-56  top-0 right-0 bg-white mt-6 md:mt-0">
+                    <div className="mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md hover:shadow-lg rounded-lg md:top-20 md:w-[30%] md:right-24  top-0 right-0 bg-white mt-6 md:mt-0">
                       <img className="overflow-hidden h-44 w-full object-cover" src={plan.img} alt="" />
                       <div className="py-2 px-3">
                         <h2 className="text-lg font-semibold ">
