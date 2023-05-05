@@ -52,17 +52,17 @@ export default function OffersCard({ plan }) {
                             {/* <div className=' items-center mt-1 gap-1 hidden md:visible'><h3 className='text-xl '><BiTrip /></h3> <h3>{plan.via.slice(0, 26) + "..."}</h3></div> */}
                             <div className='flex items-center  gap-1 md:hidden visible'><h3 className='text-md '><BiTrip /></h3> <h3 className='text-sm'>{plan.via.slice(0, 35) + "..."}</h3></div>
                            {
-                            showPrice === true ?  <div className='flex flex-col'>
+                            showPrice === true ?  <div className='flex flex-col md:my-1'>
                             <div className=' flex items-center h-9 font-semibold text-lg gap-1'>
                                 <h3><HiCurrencyRupee /></h3>
                                 <div><strike className="text-red-600 text-[12px]">₹{numberToINR(plan.exPrice)}</strike></div>
                                 <div className='text-green-600 text-sm font-bol'> ₹{numberToINR(planPrice)}</div>
                                 <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
                             </div>
-                        </div>: <h3 className=' text-xs  font-semibold tracking-wider h-10'>Customize your package & get final calculation</h3>
+                        </div>: <h3 className=' text-xs  font-semibold tracking-wider h-10 pt-2'>Customize your package & get final calculation</h3>
                            }
                             <div className='w-full mt-2 '>
-                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-3 py-2 cursor-pointer '>
+                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
                                         <option value={"2"}>Select number of peoples</option>
                                         <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
                                         <option value={"6"}>5 - 6 (Triber)</option>

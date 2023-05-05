@@ -203,15 +203,16 @@ useEffect(() => {
 
                 
 
-                <section className="px-3">
-                  <div className="mt-20 bg-white border px-5 rounded-xl shadow tracking-widest md:px-20 md:py-10">
+                <section className="md:container">
+                  <div className="px-3 mt-6 md:pb-10 md:w-[70%]">
+                  <div className="mt-6 md:mt-20 bg-white border px-5 rounded-xl shadow tracking-widest md:px-10 py-6 md:py-10">
                     <div className="">
                       <h2 className="text-xl  uppercase font-semibold border-l-8 border-green-500 px-3  my-3">
                         This tour includes
                       </h2>
                     </div>
-                    <div className=" flex items-center justify-around text-slate-700">
-                      <div className="flex items-center gap-1 py-4 ">
+                    <div className=" flex items-center gap-x-10 flex-wrap text-slate-700">
+                      <div className="flex items-center gap-1 py-1 md:py-4 ">
                         <h1 className="text-2xl text-black">
                           <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/way_oo6dkw.gif" alt="" />
                         </h1>
@@ -219,19 +220,19 @@ useEffect(() => {
                           {plan.days} days and {plan.nights} nights{" "}
                         </h1>
                       </div>
-                      <div className="flex items-center gap-1 py-4 ">
+                      <div className="flex items-center gap-1 py-1 md:py-4 ">
                         <h1 className="text-2xl text-black">
                             <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683133634/ezgif-5-3d935309ed_exoaa8.gif" alt="" />
                         </h1>
                         <h1 className="text-sm">Stay on Demand</h1>
                       </div>
-                      <div className="flex items-center gap-1 py-4 ">
+                      <div className="flex items-center gap-1 py-1 md:py-4 ">
                         <h1 className="text-2xl text-black">
                           <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946772/car_ytnkq9.gif" alt="" />
                         </h1>
                         <h1 className="text-sm">Experienced Driver</h1>
                       </div>
-                      <div className="flex items-center gap-1 py-4 ">
+                      <div className="flex items-center gap-1 py-1 md:py-4 ">
                         <h1 className="text-2xl text-black">
                         <img className="w-10" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1680946773/spray_ay4hv3.gif" alt="" />
                         </h1>
@@ -239,11 +240,14 @@ useEffect(() => {
                       </div>
                     </div>
                   </div>
+                  </div>
                 </section>
 
-                <section className="px-3 mt-10 pb-10 w-full">
+                {/* grid of itenary and  */}
+                <div className="flex flex-col md:flex-row md:container">
+                <section className="px-3 mt-6 md:pb-10 md:w-[70%]">
                   <div className="">
-                    <div className=" bg-white border p-5 rounded-xl shadow md:tracking-widest md:px-20 md:py-10">
+                    <div className=" bg-white border p-5 rounded-xl shadow md:tracking-widest md:px-14 md:py-10">
                       <div className="flex gap-x-1">
                         <button className={`text-xs border rounded-full  transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
                           About Tour
@@ -254,15 +258,22 @@ useEffect(() => {
                         }
                       </div>
                       {
-                        subSection === "about" && <div dangerouslySetInnerHTML={{ __html: plan.disp }} className="text-sm text-justify text-slate-600"></div>
+                        subSection === "about" && <div dangerouslySetInnerHTML={{ __html: plan.disp }} className="text-[13px] text-justify text-slate-600"></div>
                       }
                       {
-                        (plan.itenary && subSection === "itinerary") && <div dangerouslySetInnerHTML={{ __html: plan.itenary }} className="text-sm  text-justify text-slate-700"></div>
+                        (plan.itenary && subSection === "itinerary") && <div dangerouslySetInnerHTML={{ __html: plan.itenary }} className="text-[13px]  text-justify text-slate-700"></div>
                       }
 
                     </div>
                   </div>
                 </section >
+                <section className=" mt-6 pb-10 md:w-[30%]">
+                  <div className="bg-white border p-5 rounded-xl shadow md:tracking-widest md:px-6 md:py-10">
+                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Terms and conditions</h2>
+                    <div dangerouslySetInnerHTML={{ __html: plan.tandc }} className="text-[13px]  text-justify text-slate-700"></div>
+                  </div>
+                </section >
+                </div>
                 </div>
               
             </>: null}
