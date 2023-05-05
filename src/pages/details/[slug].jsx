@@ -70,7 +70,7 @@ useEffect(() => {
       {plan !== "undefined"
         ? 
             <>
-                <div className="md:pb-10 bg-slate-100">
+                <div className="md:pb-10 bg-gradient-to-br from-neutral-100 to-white-100">
                  <div className=" py-1  w-full bg-green-600">
                       <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">Avail our Special Offer and make the best deal for you ! </h3>
                       </div>
