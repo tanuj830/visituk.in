@@ -70,7 +70,7 @@ useEffect(() => {
       {plan !== "undefined"
         ? 
             <>
-                <div className="pb-10 bg-slate-100">
+                <div className="md:pb-10 bg-slate-100">
                  <div className=" py-1  w-full bg-green-600">
                       <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">Avail our Special Offer and make the best deal for you ! </h3>
                       </div>
@@ -158,7 +158,7 @@ useEffect(() => {
                                 <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
                             </div>
                             <div></div>
-                        </div>: <h3 className=' text-sm font-semibold tracking-wider h-10 lead'>Customize your package & get final calculation</h3>
+                        </div>: <h3 className=' text-sm text-gray-600 mt-4 tracking-wider'>Customize your package & get final calculation</h3>
                            }
                         <div className='w-full mt-2 '>
                                     <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
@@ -235,42 +235,42 @@ useEffect(() => {
                   <div className="">
                     <div className=" bg-white border p-5 rounded-lg shadow md:tracking-widest md:px-14 md:py-10">
                       <div className="flex gap-x-2">
-                        <button className={`text-xs border rounded-full  transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
+                        <button className={`text-sm border rounded-full  transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
                           About Tour
                         </button>
                         {
                           plan.itenary &&
-                          <button className={`text-xs  border rounded-full transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "itinerary" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("itinerary")}>Tour Itineary</button>
+                          <button className={`text-sm  border rounded-full transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "itinerary" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("itinerary")}>Tour Itineary</button>
                         }
                       </div>
                       {
-                        subSection === "about" && <div dangerouslySetInnerHTML={{ __html: plan.disp }} className="text-[13px] text-justify text-slate-600"></div>
+                        subSection === "about" && <div dangerouslySetInnerHTML={{ __html: plan.disp }} className="text-sm text-justify text-slate-600"></div>
                       }
                       {
-                        (plan.itenary && subSection === "itinerary") && <div dangerouslySetInnerHTML={{ __html: plan.itenary }} className="text-[13px]  text-justify text-slate-700"></div>
+                        (plan.itenary && subSection === "itinerary") && <div dangerouslySetInnerHTML={{ __html: plan.itenary }} className="text-sm  text-justify text-slate-700"></div>
                       }
                     </div>
 
                     <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
                     <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Payment policy</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.paymentPolicy }} className="text-[13px]  text-justify text-slate-700"></div>
+                    <div dangerouslySetInnerHTML={{ __html: plan.paymentPolicy }} className="text-sm  text-justify text-slate-700"></div>
                   </div>
                     <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
                     <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Cancelletion policy</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.cancelPolicy }} className="text-[13px]  text-justify text-slate-700"></div>
+                    <div dangerouslySetInnerHTML={{ __html: plan.cancelPolicy }} className="text-sm  text-justify text-slate-700"></div>
                   </div>
                     <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
                     <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">inclusions and exclusions</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.incAndExe }} className="text-[13px]  text-justify text-slate-700"></div>
+                    <div dangerouslySetInnerHTML={{ __html: plan.incAndExe }} className="text-sm  text-justify text-slate-700"></div>
                   </div>
 
                   </div>
                 </section >
 
-                <section className=" mt-3 pb-10 md:w-[30%]">
+                <section className=" mt-3 pb-6 md:pb-10 px-3 md:px-0 md:w-[30%]">
                   <div className="bg-white border p-5 rounded-lg shadow md:tracking-widest md:px-6 md:py-10">
                     <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Terms and conditions</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.tandc }} className="text-[13px]  text-justify text-slate-700"></div>
+                    <div dangerouslySetInnerHTML={{ __html: plan.tandc }} className="text-sm  text-justify text-slate-700"></div>
                   </div>
                 </section >
                 </div>
