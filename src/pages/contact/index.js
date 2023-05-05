@@ -9,6 +9,8 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FiPhoneCall } from 'react-icons/fi'
 import Footer from '@/components/Footer'
 import { sendEmail } from '@/utils/sendMail'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
 
   const [data, setData] = React.useState({})
@@ -16,14 +18,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(data);
-    if(!data.name || !data.email || !data.message){
+    if (!data.name || !data.email || !data.message) {
       console.log("Enter complete data");
+    toast.error("Enter all details");
     }
-    else{
-    sendEmail("VisitUttrakhand", "visituttrakhand3@gmail.com", "VisitUttrakhand", "visituttrakhand3@gmail.com", `Hi Ashish, there is a new query`, `<div>Name :${data.name} Email: ${data.email} message:${data.message}</div>`)
-    setData({})
+    else {
+      sendEmail("VisitUttrakhand", "visituttrakhand3@gmail.com", "VisitUttrakhand", "visituttrakhand3@gmail.com", `Hi Ashish, there is a new query`, `<div>Name :${data.name} Email: ${data.email} message:${data.message}</div>`)
+      // setData({})
+      toast.success("Message Sent");
     }
-    
+
   }
 
   const handleChange = (e) => {
@@ -73,6 +77,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <ToastContainer />
     </>
   )
 }
