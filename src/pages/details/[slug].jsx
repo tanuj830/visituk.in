@@ -82,9 +82,9 @@ useEffect(() => {
                     <div className="xl:container">
                       <div className="px-3 md:px-0">
                         <h1 className="text-3xl font-semibold">{plan.title}</h1>
-                        <div className="w-[50%] leading-5">
+                        <div className="md:w-[50%] leading-5">
                         <small className="text-[14px]  text-justify">
-                          Embark on a divine adventure with <b>{plan.title}</b>, the
+                          Embark on a divine adventure with <b className="text-lg">{plan.title}</b>, the
                           journey of a lifetime  that will lift your
                           spirit and lift your heart!
                         </small>
@@ -109,7 +109,7 @@ useEffect(() => {
                             </h6>{" "}
                             {
                               plan.specialoffer === true ? <small className="font-semibold text-sm">
-                              Tour of {plan.persons} people
+                              Choose number of people to know actual price 
                             </small>: <div>
                               <small className="font-semibold text-sm">Tour of {
                                 plan.persons > 0 ? plan.persons.map((per, index)=>(
@@ -120,9 +120,9 @@ useEffect(() => {
                               } people <small className="text-green-400 text-sm">(Customizable)</small></small>
                             </div>
                             }
-                            {
+                            {/* {
                               plan.specialoffer === true ? <small className="text-lg text-green-400">(₹{Math.round(plan.price / plan.persons)}/person)</small>:null
-                            }
+                            } */}
                           </small>
                         </div>
                         <small className="flex items-center gap-1 mt-2">
@@ -171,6 +171,7 @@ useEffect(() => {
                                 <div className='text-green-600 text-lg font-bold'> ₹{numberToINR(planPrice)}</div>
                                 <div className='text-red-600 text-sm italic'>(Saving {Math.round(((plan.exPrice - planPrice) / plan.exPrice) * 100)}%)</div>
                             </div>
+                            <div></div>
                         </div>: <h3 className=' text-sm font-semibold tracking-wider h-10 lead'>Customize your package & get final calculation</h3>
                            }
                         <div className='w-full mt-2 '>
@@ -202,7 +203,7 @@ useEffect(() => {
 
                 
 
-                <section className="   xl:container">
+                <section className="px-3">
                   <div className="mt-20 bg-white border px-5 rounded-xl shadow tracking-widest md:px-20 md:py-10">
                     <div className="">
                       <h2 className="text-xl  uppercase font-semibold border-l-8 border-green-500 px-3  my-3">
@@ -240,16 +241,16 @@ useEffect(() => {
                   </div>
                 </section>
 
-                <section className="xl:container mt-10 pb-10 w-full">
-                  <div className="px-2 md:px-0">
-                    <div className=" bg-white border px-5 rounded-xl shadow tracking-widest md:px-20 md:py-10">
+                <section className="px-3 mt-10 pb-10 w-full">
+                  <div className="">
+                    <div className=" bg-white border p-5 rounded-xl shadow md:tracking-widest md:px-20 md:py-10">
                       <div className="flex gap-x-1">
-                        <button className={`text-sm border rounded-full  transition-all duration-500 border-neutral-300 px-4 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
+                        <button className={`text-xs border rounded-full  transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
                           About Tour
                         </button>
                         {
                           plan.itenary &&
-                          <button className={`text-sm border rounded-full transition-all duration-500 border-neutral-300 px-4 py-2 ${subSection === "itinerary" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("itinerary")}>Tour Itineary</button>
+                          <button className={`text-xs  border rounded-full transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "itinerary" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("itinerary")}>Tour Itineary</button>
                         }
                       </div>
                       {
@@ -262,14 +263,6 @@ useEffect(() => {
                     </div>
                   </div>
                 </section >
-                {/* Tour Itinerary */}
-                {/* {
-                  plan.itenary ? <section className="xl:container mt-6 p-3">
-                    <div className="bg-white border px-5 rounded-xl shadow tracking-widest md:px-20 md:py-10">
-                      <h2 className="text-xl  uppercase font-bold my-4 border-l-8 border-green-500 px-3">Tour Itinerary</h2>
-                    </div>
-                  </section>:null
-                  } */}
                 </div>
               
             </>: null}
