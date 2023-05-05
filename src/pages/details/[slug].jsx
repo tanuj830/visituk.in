@@ -175,7 +175,7 @@ useEffect(() => {
                         </div>: <h3 className=' text-sm font-semibold tracking-wider h-10 lead'>Customize your package & get final calculation</h3>
                            }
                         <div className='w-full mt-2 '>
-                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
+                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-f-lg w-full px-5 py-2 cursor-pointer '>
                                         <option value={"2"}>Select number of peoples</option>
                                         <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
                                         <option value={"6"}>5 - 6 (Triber)</option>
@@ -186,14 +186,14 @@ useEffect(() => {
                         <div className="flex flex-col justify-between mt-4 mb-4">
                           <Link
                             href="tel:7668088539"
-                            className="bg-[#d00000] px-3 py-3 mt-2 border rounded-md hover:bg-[#ea0000] text-white flex items-center justify-center gap-2"
+                            className="bg-[#d00000] px-3 py-3 mt-2 border rounded-lg hover:bg-[#ea0000] text-white flex items-center justify-center gap-2"
                           >
                             <h2 className="text-xl">
                               <FiPhoneCall />
                             </h2>
                             <h2 className="">Book on call</h2>
                           </Link>
-                          {/* <button  className='bg-slate-200 px-3 py-2 mt-2 border rounded-md hover:bg-slate-300 flex items-center justify-center gap-2'><h2 className='text-xl'><FcOnlineSupport/></h2><h2>Book Online</h2></button> */}
+                          {/* <button  className='bg-slate-200 px-3 py-2 mt-2 border rounded-lg hover:bg-slate-300 flex items-center justify-center gap-2'><h2 className='text-xl'><FcOnlineSupport/></h2><h2>Book Online</h2></button> */}
                         </div>
                       </div>
                     </div>
@@ -204,8 +204,8 @@ useEffect(() => {
                 
 
                 <section className="md:container">
-                  <div className="px-3 mt-6 md:pb-10 md:w-[70%]">
-                  <div className="mt-6 md:mt-20 bg-white border px-5 rounded-xl shadow tracking-widest md:px-10 py-6 md:py-10">
+                  <div className="px-3 py-3 md:w-[70%]">
+                  <div className="mt-6 md:mt-20 bg-white border px-5 rounded-lg shadow tracking-widest md:px-10 py-6 md:py-10">
                     <div className="">
                       <h2 className="text-xl  uppercase font-semibold border-l-8 border-green-500 px-3  my-3">
                         This tour includes
@@ -245,10 +245,10 @@ useEffect(() => {
 
                 {/* grid of itenary and  */}
                 <div className="flex flex-col md:flex-row md:container">
-                <section className="px-3 mt-6 md:pb-10 md:w-[70%]">
+                <section className="px-3 py-3 md:w-[70%]">
                   <div className="">
-                    <div className=" bg-white border p-5 rounded-xl shadow md:tracking-widest md:px-14 md:py-10">
-                      <div className="flex gap-x-1">
+                    <div className=" bg-white border p-5 rounded-lg shadow md:tracking-widest md:px-14 md:py-10">
+                      <div className="flex gap-x-2">
                         <button className={`text-xs border rounded-full  transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
                           About Tour
                         </button>
@@ -263,12 +263,26 @@ useEffect(() => {
                       {
                         (plan.itenary && subSection === "itinerary") && <div dangerouslySetInnerHTML={{ __html: plan.itenary }} className="text-[13px]  text-justify text-slate-700"></div>
                       }
-
                     </div>
+
+                    <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
+                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Payment policy</h2>
+                    <div dangerouslySetInnerHTML={{ __html: plan.paymentPolicy }} className="text-[13px]  text-justify text-slate-700"></div>
+                  </div>
+                    <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
+                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Cancelletion policy</h2>
+                    <div dangerouslySetInnerHTML={{ __html: plan.cancelPolicy }} className="text-[13px]  text-justify text-slate-700"></div>
+                  </div>
+                    <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
+                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">inclusions and exclusions</h2>
+                    <div dangerouslySetInnerHTML={{ __html: plan.incAndExe }} className="text-[13px]  text-justify text-slate-700"></div>
+                  </div>
+
                   </div>
                 </section >
+
                 <section className=" mt-6 pb-10 md:w-[30%]">
-                  <div className="bg-white border p-5 rounded-xl shadow md:tracking-widest md:px-6 md:py-10">
+                  <div className="bg-white border p-5 rounded-lg shadow md:tracking-widest md:px-6 md:py-10">
                     <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Terms and conditions</h2>
                     <div dangerouslySetInnerHTML={{ __html: plan.tandc }} className="text-[13px]  text-justify text-slate-700"></div>
                   </div>
