@@ -70,20 +70,16 @@ useEffect(() => {
       {plan !== "undefined"
         ? 
             <>
-                <div className="bg-slate-100">
-                  {
-                    plan.specialoffer === true ? <div className=" py-1  w-full bg-green-600">
+                <div className="pb-10 bg-slate-100">
+                 <div className=" py-1  w-full bg-green-600">
                       <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">Avail our Special Offer and make the best deal for you ! </h3>
-                      </div>:<div className=" py-1  w-full bg-slate-600">
-                      <h3 className="text-sm md:text-md text-white text-center uppercase px-2 md:p-2">You can customize this tour <small className="text-slate-200 text-md">by choosing number of peoples and vechile</small> </h3>
                       </div>
-                  }
                   <section className="flex flex-col md:relative  text-white  bg-slate-800 md:py-10 py-3 ">
                     <div className="xl:container">
                       <div className="px-3 md:px-0">
                         <h1 className="text-3xl font-semibold">{plan.title}</h1>
                         <div className="md:w-[50%] leading-5">
-                        <small className="text-[14px]  text-justify">
+                        <small className="text-[14px]  text-justify leading-7">
                           Embark on a divine adventure with <b className="text-lg">{plan.title}</b>, the
                           journey of a lifetime  that will lift your
                           spirit and lift your heart!
@@ -107,19 +103,9 @@ useEffect(() => {
                             <h6 className="text-xl">
                               <BsFillPersonFill />
                             </h6>{" "}
-                            {
-                              plan.specialoffer === true ? <small className="font-semibold text-sm">
+                            <small className="font-semibold text-sm">
                               Choose number of people to know actual price 
-                            </small>: <div>
-                              <small className="font-semibold text-sm">Tour of {
-                                plan.persons > 0 ? plan.persons.map((per, index)=>(
-                                  
-                                  index == plan.persons.length-1 ? per: per + " or "
-                                
-                              )):null
-                              } people <small className="text-green-400 text-sm">(Customizable)</small></small>
-                            </div>
-                            }
+                            </small>
                             {/* {
                               plan.specialoffer === true ? <small className="text-lg text-green-400">(₹{Math.round(plan.price / plan.persons)}/person)</small>:null
                             } */}
@@ -175,7 +161,7 @@ useEffect(() => {
                         </div>: <h3 className=' text-sm font-semibold tracking-wider h-10 lead'>Customize your package & get final calculation</h3>
                            }
                         <div className='w-full mt-2 '>
-                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-f-lg w-full px-5 py-2 cursor-pointer '>
+                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
                                         <option value={"2"}>Select number of peoples</option>
                                         <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
                                         <option value={"6"}>5 - 6 (Triber)</option>
@@ -281,7 +267,7 @@ useEffect(() => {
                   </div>
                 </section >
 
-                <section className=" mt-6 pb-10 md:w-[30%]">
+                <section className=" mt-3 pb-10 md:w-[30%]">
                   <div className="bg-white border p-5 rounded-lg shadow md:tracking-widest md:px-6 md:py-10">
                     <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Terms and conditions</h2>
                     <div dangerouslySetInnerHTML={{ __html: plan.tandc }} className="text-[13px]  text-justify text-slate-700"></div>

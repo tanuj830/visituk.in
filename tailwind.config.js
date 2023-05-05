@@ -10,12 +10,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        sm:'480px',
+        md:'769px',
+        lg:'976px',
+        xl:'1440px',
+       },
       container:{
         padding:{
           sm:'2vw',
-          md:'4vw',
-          lg:'6vw',
-          xl:'8vw',
+          md:'3vw',
+          lg:'5vw',
+          xl:'7vw',
         }
       }
     },
