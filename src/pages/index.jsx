@@ -133,7 +133,7 @@ export default function Home({ data }) {
         <div className=''>
         <div className=''>
           <h1 className='text-3xl font-semibold'>Uttarakhand Stopover</h1>
-          <h6 className='text-gray-300 text-lg mt-3'>Apply for a free stopover visa when you <br /> fly Saudia or <br /> Flynas and explore Saudi for up to 96 <br /> hours on your way to your final destination.</h6>
+          <h6 className='text-gray-300 text-lg mt-3'>Book your ticket now.</h6>
           <div className='mt-6'>
 
           <Link href="/#plans" className="px-6 hover:bg-bgcol py-2 border-2 rounded-full border-white">Book Now</Link>
