@@ -14,6 +14,8 @@ import { TbBrandBlogger } from "react-icons/tb";
 import axios from "axios";
 import { MdCall, MdModeOfTravel, MdOutlineLocalOffer } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
+import { BsWhatsapp } from "react-icons/bs";
+import { FiPhoneCall} from "react-icons/fi";
 
 
 const DarkNavbar = () => {
@@ -29,9 +31,8 @@ const DarkNavbar = () => {
       <div className="xl:container text-black inline md:hidden ">
         <div className="  flex justify-between items-center gap-4 md:gap-44  py-1 px-3 md:px-1 ">
           <div className="flex items-center  py-4">
-            <Link className="text-xl md:text-2xl text-themecol flex items-center justify-center gap-1" href="/home">
-              <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif" /><h6 className="tracking-wider brightness-200">visituttrakhand.in</h6>
-            </Link>
+          <Link className="" href="/">
+              <img className="w-32" src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/ezgif.com-crop.gif?alt=media&token=81690c70-3732-43a1-9fda-7ae87d3b2215" /></Link>
           </div>
 
           <div className="ml-2">
@@ -56,7 +57,7 @@ const DarkNavbar = () => {
 
           {/* <div> */}
           {showMenu == true ? (
-            <div className="relative w-full tracking-wider  py-1">
+            <div className="relative w-full   py-1">
               <div className=" w-full">
                 <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/about'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
                 <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
@@ -68,19 +69,25 @@ const DarkNavbar = () => {
       </div>
 
       {/* forpc */}
-      <div className="w-full text-black tracking-wider hidden md:inline ">
-        <div className=" py-5   px-10 flex items-center justify-between w-100 ">
-          <div className="flex items-center ">
-            <Link className="text-3xl text-themecol flex items-center justify-center gap-1" href="/">
-              <img className="w-8 h-8 rounded-lg" src="https://res.cloudinary.com/dqfbod03i/image/upload/v1683104823/goal_1_y5bs8h.gif" /><h6 className="text-xl brightness-200">visituttrakhand.in</h6>
-            </Link>
-          </div>
-          <div className="flex items-center justify-center ">
-            <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='/about'> <h3 className="ml-8 text-xl"><AiOutlineContacts /></h3><h3>About Us</h3></Link>
-            <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='/#services'> <h3 className="ml-8 text-xl"><BsFillCarFrontFill /></h3><h3>Services</h3></Link>
-            <Link className="flex items-center gap-1 hover:text-green-800 brightness-200" href='/#plans'> <h3 className="ml-8 text-xl"><MdModeOfTravel /></h3><h3>Plans</h3></Link>
+      <div className="w-full   hidden md:inline justify-between text-black">
+        <div className="py-4 px-10 border-b-2 flex items-center gap-x-8">
+            <Link href="/contact" className="text-xs">Contact us</Link>
+            <Link href="/contact" className="text-xs flex items-center  gap-x-1"><BsWhatsapp/> Start chat</Link>
+            <Link href="/contact" className="text-xs flex items-center  gap-x-1"><FiPhoneCall/> Call us</Link>
+        </div>
+        <div className=" py-5   px-10 flex items-center ">
+            <Link className="" href="/">
+              <img className="w-48" src="https://firebasestorage.googleapis.com/v0/b/artravells.appspot.com/o/ezgif.com-crop.gif?alt=media&token=81690c70-3732-43a1-9fda-7ae87d3b2215" /></Link>
+
+          <div className="flex items-center gap-x-10 justify-center  w-full ">
+            <Link className=" font-medium hover:text-gray-500 tracking-wider title-font" href='/about'>About Us</Link>
+            <Link className=" font-medium hover:text-gray-500 tracking-wider title-font" href='/#services'>Services</Link>
+            <Link className=" hover:text-gray-500 tracking-wider title-font font-medium " href='/#plans'>Plan Your Trip</Link>
             <hr />
           </div>
+        <div className="">
+            <Link className="bgcol px-6 py-2 rounded-full text-sm w-full" href="/blog">Blogs</Link>
+        </div>
         </div>
         <div className="fixed top-64 right-0  z-10 rounded-l-md bg-[rgba(0,0,0,0.3)] drop-shadow-md border">
           <ul className="p-1 font-bold text-lg">

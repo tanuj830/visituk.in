@@ -4,7 +4,6 @@ import Offerings from '@/components/Offerings'
 const index = () => {
   return (
     <>
-        <Header2/>
     <div className='xl:container'>
            <section className=' my-10 rounded-lg drop-shadow-lg shadow-gray-600 px-5 py-5 ' id='about-us'>
           <h1 className='font-bold text-2xl  uppercase ' >Who are we?</h1>

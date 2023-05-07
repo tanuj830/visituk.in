@@ -25,14 +25,14 @@ export default function OffersCard({ plan }) {
         <>
             {
                 plan !== undefined ? <div  className='  rounded-lg border-slate-300 my-3 md:mx-2  duration-500'>
-                    {
+                    {/* {
                         plan.specialoffer === true ? <div className='relative '>
                             <div className='absolute top-0 right-0  px-3 py-2 duration-100 ease-in-out '>
                                 <small className='text-3xl  text-yellow-400 font-semibold'><RiVipCrown2Fill /></small>
                             </div>
                         </div> : null
-                    }
-                    <div  className=' rounded-lg overflow-hidden w-[300px] md:w-full '>
+                    } */}
+                    <div data-aos="zoom-in" className=' rounded-lg overflow-hidden w-[300px] md:w-full '>
                         <div className='overflow-hidden h-32 rounded-3xl mb-1'>
                             <img className='w-full h-[100%] object-cover hover:scale-[1.1]  duration-1000 ease-in-out' src={plan.img} alt="" />
                         </div>

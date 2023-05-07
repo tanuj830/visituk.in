@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Header2 from '@/components/Header2'
 // import Navbar from '@/components/navbar'
 import '@/styles/globals.css'
 import Head from 'next/head'
@@ -26,6 +26,7 @@ export default function App({ Component, pageProps }) {
       <Script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"/>
       {/* <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script> cdn link for accordin */}
     </Head>
+    <Header2/>
     <Component   {...pageProps} />
     <Footer />
   </>
