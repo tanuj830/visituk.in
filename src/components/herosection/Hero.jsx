@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 const Hero = () => {
   return (
-    <div className='md:container md:mt-20'>
+    <div className='md:container px-3 md:px-0 md:mt-20'>
         <div className='flex px-3 md:px-0 gap-y-5 md:gap-y-0 flex-col md:flex-row md:items-center md:justify-between my-2'>
             <div>
             <h2 className=' text-3xl font-semibold tracking-wider'>What to Experience</h2>
@@ -14,7 +14,7 @@ const Hero = () => {
         <div>
         <section class="text-gray-600 body-font">
   <div class="px-6 py-10 ">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-10  -m-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10  -m-4">
       <div data-aos="zoom-in"
       class="shadow-md hover:shadow-2xl transition-all rounded-3xl overflow-hidden ">
           <img class="h-40 rounded w-full object-cover object-center mb-6 overflow-hidden" src="https://tse4.mm.bing.net/th?id=OIP.xdzFk8cbxHLBPQvHYPBlVwHaCt&pid=Api&P=0" alt="content"/>
