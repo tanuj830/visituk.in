@@ -7,7 +7,7 @@ module.exports = nextConfig
 
 module.exports = {
   env: {
-    api_key:"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",
+    api_key:"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",
     mail_endpoint:"https://api.sendinblue.com/v3/smtp/email"
 
   },
