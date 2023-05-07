@@ -3,8 +3,10 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <div className='md:container md:mt-20'>
-        <div className='flex items-center justify-between my-2'>
+        <div className='flex px-3 md:px-0 gap-y-5 md:gap-y-0 flex-col md:flex-row md:items-center md:justify-between my-2'>
+            <div>
             <h2 className=' text-3xl font-semibold tracking-wider'>What to Experience</h2>
+            </div>
             <div>
                 <Link className="bgcol px-6 py-2 rounded-full text-sm w-full" href="/all-plans">View all</Link>
             </div>
@@ -12,7 +14,7 @@ const Hero = () => {
         <div>
         <section class="text-gray-600 body-font">
   <div class="px-6 py-10 ">
-    <div class="grid grid-cols-4 gap-10  -m-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10  -m-4">
       <div data-aos="zoom-in"
       class="shadow-md hover:shadow-2xl transition-all rounded-3xl overflow-hidden ">
           <img class="h-40 rounded w-full object-cover object-center mb-6 overflow-hidden" src="https://tse4.mm.bing.net/th?id=OIP.xdzFk8cbxHLBPQvHYPBlVwHaCt&pid=Api&P=0" alt="content"/>
@@ -22,7 +24,7 @@ const Hero = () => {
           <p class="leading-relaxed text-base">Starting from</p>
           <p class="leading-relaxed text-base font-semibold text-black"> ₹4500 per day</p>
             <div className='border-t py-2 mt-4'>
-            <Link className='col' href="/">Explore Char Dham Packages</Link>
+            <p className='col'>Explore All  Packages</p>
             </div>
         </div>
       </div>
@@ -35,7 +37,7 @@ const Hero = () => {
           <p class="leading-relaxed text-base">Starting from</p>
           <p class="leading-relaxed text-base font-semibold text-black"> ₹4500 per day</p>
             <div className='border-t py-2 mt-4'>
-            <Link className='col' href="/">Explore Do Dham Packages</Link>
+            <p className='col'>Explore All  Packages</p>
             </div>
         </div>
       </div>

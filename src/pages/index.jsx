@@ -125,7 +125,7 @@ export default function Home({ data }) {
         {/* for mobile */}
         <div className="inline md:hidden  ">
         <div className='relative'>
-      <div className='relative tracking-wider object-cover    bg-[rgba(0,0,0,0.3)] bg-no-repeat w-full h-[50vh] py-10'  style={{backgroundImage:"url(https://images.unsplash.com/photo-1626621331169-5f34be280ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80)", backgroundBlendMode:"overlay", backgroundSize:"100%,  100%", filter:"blur(3px)"}}>
+      <div className='relative tracking-wider object-cover    bg-[rgba(0,0,0,0.3)] bg-no-repeat w-full h-[50vh] py-10'  style={{backgroundImage:"url(https://images.unsplash.com/photo-1626621331169-5f34be280ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80)", backgroundBlendMode:"overlay", backgroundSize:"100%,  100%", filter:"blur(2px)"}}>
         {/* <Header/> */}
 
             </div>
