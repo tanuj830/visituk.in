@@ -7,8 +7,8 @@ const Hero1 = () => {
     <div className='flex flex-col md:flex-row   items-center justify-between gap-6'>
         <div className=''>
             <h4 className='text-3xl font-semibold  tracking-wider text-slate-600'>Find The Perfect Package</h4>
-            <div className=' mt-1 w-24 border-b-4 border-green-600 '><hr /></div>
-        <Link className='uppercase  duration-300 ease-in-out rounded-full text-sm text-green-500 hover:text-green-700' href="#plans">Explore All packages</Link>
+            <div className=' mt-1 w-24 border-b-4 border-[#057d8b] '><hr /></div>
+        <Link className='uppercase  duration-300 ease-in-out rounded-full text-sm col tracking-wide' href="#plans">Explore All packages</Link>
         </div>
             <div className=' hidden md:inline-block '>
             <div className='grid grid-cols-1  '>

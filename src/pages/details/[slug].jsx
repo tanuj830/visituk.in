@@ -21,6 +21,7 @@ export default function Slug() {
   const slug = router.query.slug;
   const[persons, setPersons] = React.useState(0)
   const[perPersonPrice, setPerPersonPrice] = React.useState(0)
+  const[personProps, setPersonProps] = React.useState(0)
   const[price, setPrice] = React.useState(0)
   const [subSection, setSubSection] = useState("about")
 
@@ -44,6 +45,8 @@ export default function Slug() {
 
 useEffect(() => {
   
+  setPersonProps(router.query.persons)
+
   data.plans.map((plan) => (
     plan.id == slug ? setPlan(plan) : null))
 }, [slug])
@@ -54,7 +57,6 @@ useEffect(() => {
 
 
       const carData = data.vehicles.filter(v => v.persons === selectedCar);
-      console.log(carData)
       // console.log(carData[0],carData[0].pricePerDay*plan.days,"the selected car");
       if(carData.length > 0)
       {
@@ -66,7 +68,6 @@ useEffect(() => {
 
   return (
     <>
-    <Header2/>
       {plan !== "undefined"
         ? 
             <>
@@ -143,7 +144,7 @@ useEffect(() => {
                       </div>
                     </div>
 
-                    <div className="mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md hover:shadow-lg rounded-lg md:top-20 md:w-[30%] md:right-24  top-0 right-0 bg-white mt-6 md:mt-0">
+                    <div className="mx-3 md:mx-0 overflow-hidden text-black md:absolute  border shadow-md hover:shadow-lg rounded-lg md:top-7 md:w-[30%] md:right-24  top-0 right-0 bg-white mt-6 md:mt-0">
                       <img className="overflow-hidden h-44 w-full object-cover" src={plan.img} alt="" />
                       <div className="py-2 px-3">
                         <h2 className="text-lg font-semibold ">
@@ -161,18 +162,36 @@ useEffect(() => {
                         </div>: <h3 className=' text-sm text-gray-600 mt-4 tracking-wider'>Customize your package & get final calculation</h3>
                            }
                         <div className='w-full mt-2 '>
-                                    <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
-                                        <option value={"2"}>Select number of peoples</option>
-                                        <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
-                                        <option value={"6"}>5 - 6 (Triber)</option>
-                                        <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>
-                                        <option value={"13"}>9 - 13 (Traveller)</option>
-                                    </select>
+                                    {
+                                      personProps === "0" ? 
+                                      <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
+                                      <option value={"2"}>Select number of peoples</option>
+                                      <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
+                                      <option value={"6"}>5 - 6 (Triber)</option>
+                                      <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>
+                                      <option value={"13"}>9 - 13 (Traveller)</option>
+                                  </select>:
+                                  <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
+                                      {
+                                        personProps === "4" ?<option value={"4"}>2 - 4 (Dezire, Xylo)</option> : personProps === "6" ?
+                                        <option value={"6"}>5 - 6 (Triber)</option>: personProps === "8" ?
+                                  <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>: personProps === "13" ?
+                                  <option value={"13"}>9 - 13 (Traveller)</option>:null
+                                  
+                                      }
+                                      <option value={"2"}>Select number of peoples</option>
+                                      <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
+                                      <option value={"6"}>5 - 6 (Triber)</option>
+                                      <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>
+                                      <option value={"13"}>9 - 13 (Traveller)</option>
+                              </select>
+                                    }
                                 </div> 
                         <div className="flex flex-col justify-between mt-4 mb-4">
                           <Link
                             href="tel:7668088539"
-                            className="bg-[#d00000] px-3 py-3 mt-2 border rounded-lg hover:bg-[#ea0000] text-white flex items-center justify-center gap-2"
+                            className="bg-[#d00000] px-3 py-3 mt-2 border rounded-lg hover:bg-[#ea0000
+                            ] text-white flex items-center justify-center gap-2"
                           >
                             <h2 className="text-xl">
                               <FiPhoneCall />
@@ -190,7 +209,7 @@ useEffect(() => {
                 
 
                 <section className="md:container">
-                  <div className="px-3 py-3 md:w-[70%]">
+                  <div className="px-3 py-3 ">
                   <div className="mt-6 md:mt-20 bg-white border px-5 rounded-lg shadow tracking-widest md:px-10 py-6 md:py-10">
                     <div className="">
                       <h2 className="text-xl  uppercase font-semibold border-l-8 border-green-500 px-3  my-3">

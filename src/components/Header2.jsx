@@ -62,6 +62,7 @@ const DarkNavbar = () => {
                 <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/about'> <h3 className="ml-8 text-2xl"><AiOutlineContacts /></h3><h3 className="text-lg">About Us</h3></Link>
                 <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#services'> <h3 className="ml-8 text-2xl"><BsFillCarFrontFill /></h3><h3 className="text-lg">Services</h3></Link>
                 <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/#plans'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Plans</h3></Link>
+                <Link className="flex items-center gap-2 mt-2 hover:text-green-800 brightness-200" href='/gallery'> <h3 className="ml-8 text-2xl"><MdModeOfTravel /></h3><h3 className="text-lg">Gallery</h3></Link>
               </div>
             </div>
           ) : null}
@@ -83,6 +84,7 @@ const DarkNavbar = () => {
             <Link className=" font-medium hover:text-gray-500 tracking-wider title-font" href='/about'>About Us</Link>
             <Link className=" font-medium hover:text-gray-500 tracking-wider title-font" href='/#services'>Services</Link>
             <Link className=" hover:text-gray-500 tracking-wider title-font font-medium " href='/#plans'>Plan Your Trip</Link>
+            <Link className=" hover:text-gray-500 tracking-wider title-font font-medium " href='/gallery'>Gallery</Link>
             <hr />
           </div>
         <div className="">

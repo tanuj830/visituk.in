@@ -129,11 +129,11 @@ export default function Home({ data }) {
         {/* <Header/> */}
 
             </div>
-      <div className='absolute top-[10vw] px-6 text-white'>
+      <div className='absolute bottom-[-40vw] px-6 text-white '>
         <div className=''>
         <div className=''>
           <h1 className='text-3xl font-semibold'>Uttarakhand Stopover</h1>
-          <h6 className='text-gray-300 text-lg mt-3'>Book your ticket now.</h6>
+          <h6 className='text-gray-300 text-lg mt-3'>If you are looking for Religous Yatra Package book your ticket now and experience comfortable, flexible, low budget tour and stay on demand.</h6>
           <div className='mt-6'>
 
           <Link href="/#plans" className="px-6 hover:bg-bgcol py-2 border-2 rounded-full border-white">Book Now</Link>
@@ -142,7 +142,7 @@ export default function Home({ data }) {
       
         </div>
       <div className='overflow-hidden'>
-       <div className='flex flex-nowrap  overflow-scroll  gap-5 px-10 py-3 mt-10 '>
+       <div className='flex flex-nowrap  overflow-scroll  gap-5 px-10  mt-10 '>
           <img className='w-full h-full hover:scale-110 transition-all rounded-2xl' src="https://media.istockphoto.com/id/1209865783/photo/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-background-in-uttarakhand.jpg?b=1&s=612x612&w=0&k=20&c=KgnQGNfOk48s-0WRDmHDtUy-mRyNsLS9h9IYOGP1uws="/>
           <img className='w-full h-full hover:scale-110 transition-all rounded-2xl' src="https://images.pexels.com/photos/11305767/pexels-photo-11305767.jpeg?auto=compress&cs=tinysrgb&w=600"/>
           <img className='w-full h-full hover:scale-110 transition-all rounded-2xl' src="https://media.istockphoto.com/id/825268350/photo/hardiwar.jpg?b=1&s=612x612&w=0&k=20&c=s-sNfgZEZQCOChl9k-cPHPERCXES4SotumIK0kv9Avk="/>
@@ -155,7 +155,7 @@ export default function Home({ data }) {
       </div>
       
 
-          <div className='mt-[40vh]'>
+          <div className='mt-[50%]'>
           <Hero />
           </div>
           <Hero1 />

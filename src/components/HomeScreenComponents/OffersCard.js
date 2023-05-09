@@ -71,7 +71,12 @@ export default function OffersCard({ plan }) {
                                     </select>
                                 </div> 
                                    <div className='mt-3'>
-                                   <Link className=' ' href={`/details/${encodeURIComponent(plan.id)}`}>
+                                   <Link className=' ' 
+                                   href={{
+                                    pathname: `/details/${encodeURIComponent(plan.id)}`,
+                                    query: {persons: selectedCar}, // the data
+                                  }}
+                                  >
                                         <button className='bg-red-600 text-white font-semibold text-sm w-full rounded-md py-2 px-3'>View Details</button>
                                     </Link>
                                    </div>
