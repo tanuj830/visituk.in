@@ -74,7 +74,7 @@ const DarkNavbar = () => {
         <div className="py-4 px-10 border-b-2 flex items-center gap-x-8">
             <Link href="/contact" className="text-xs">Contact us</Link>
             <Link href="/contact" className="text-xs flex items-center  gap-x-1"><BsWhatsapp/> Start chat</Link>
-            <Link href="/contact" className="text-xs flex items-center  gap-x-1"><FiPhoneCall/> Call us</Link>
+            <Link href="tel:8181813626" className="text-xs flex items-center  gap-x-1"><FiPhoneCall/> Call us</Link>
         </div>
         <div className=" py-5   px-10 flex items-center ">
             <Link className="" href="/">
