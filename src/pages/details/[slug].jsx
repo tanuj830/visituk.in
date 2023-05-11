@@ -6,6 +6,7 @@ import { FcOnlineSupport } from "react-icons/fc";
 import { AiTwotoneStar } from "react-icons/ai";
 import { MdLocalConvenienceStore, MdEmojiTransportation } from "react-icons/md";
 import { HiCurrencyRupee} from 'react-icons/hi'
+import { GiSevenPointedStar} from 'react-icons/gi'
 import Header2 from "../../components/Header2"
 import { BiTimeFive } from "react-icons/bi";
 import { BsFillPersonFill, BsStarHalf } from "react-icons/bs";
@@ -165,7 +166,7 @@ useEffect(() => {
                                     {
                                       personProps === "0" ? 
                                       <select onChange={e => setSelectedCar(e.target.value)} className='border-2 rounded-full w-full px-5 py-2 cursor-pointer '>
-                                      <option value={"2"}>Select number of peoples</option>
+                                      
                                       <option value={"4"}>2 - 4 (Dezire, Xylo)</option>
                                       <option value={"6"}>5 - 6 (Triber)</option>
                                       <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>
@@ -176,7 +177,7 @@ useEffect(() => {
                                         personProps === "4" ?<option value={"4"}>2 - 4 (Dezire, Xylo)</option> : personProps === "6" ?
                                         <option value={"6"}>5 - 6 (Triber)</option>: personProps === "8" ?
                                   <option value={"8"}>7 - 8 (Innova, Bolero, Max)</option>: personProps === "13" ?
-                                  <option value={"13"}>9 - 13 (Traveller)</option>:null
+                                  <option value={"13"}>9 - 13 (Traveller)</option>:<option value={"2"}>Select number of peoples</option>
                                   
                                       }
                                       <option value={"2"}>Select number of peoples</option>
@@ -250,46 +251,72 @@ useEffect(() => {
 
                 {/* grid of itenary and  */}
                 <div className="flex flex-col md:flex-row md:container">
-                <section className="px-3 py-3 md:w-[70%]">
+                <section className="px-3 py-3 ">
                   <div className="">
                     <div className=" bg-white border p-5 rounded-lg shadow md:tracking-widest md:px-14 md:py-10">
-                      <div className="flex gap-x-2">
-                        <button className={`text-sm border rounded-full  transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
-                          About Tour
+                      <div className="flex gap-x-3">
+                        <button className={`text-[8px] md:text-sm border rounded-full  transition-all duration-500 border-neutral-300 md:px-4 px-2 py-2 ${subSection === "about" ? "bg-green-500 text-white   " : "bg-white "}    uppercase font-semibold tracking-widest mb-10`} onClick={() => setSubSection("about")}>
+                          About
                         </button>
                         {
                           plan.itenary &&
-                          <button className={`text-sm  border rounded-full transition-all duration-500 border-neutral-300 md:px-4 px-3 py-2 ${subSection === "itinerary" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("itinerary")}>Tour Itineary</button>
+                          <button className={`text-[8px] md:text-sm  border rounded-full transition-all duration-500 border-neutral-300 md:px-4 px-2 py-2 ${subSection === "itinerary" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("itinerary")}>Itineary</button>
+                        }
+                        {
+                          plan.transportation &&
+                          <button className={`text-[8px] md:text-sm  border rounded-full transition-all duration-500 border-neutral-300 md:px-4 px-2 py-2 ${subSection === "transportation" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("transportation")}>Transportation</button>
+                        }
+                        {
+                          
+                          <button className={`text-[8px] md:text-sm  border rounded-full transition-all duration-500 border-neutral-300 md:px-4 px-2 py-2 ${subSection === "policies" ? "bg-green-500 text-white " : "bg-white"}  uppercase font-semibold tracking-widest  mb-10`} onClick={() => setSubSection("policies")}>Policies</button>
                         }
                       </div>
                       {
-                        subSection === "about" && <div dangerouslySetInnerHTML={{ __html: plan.disp }} className="text-sm text-justify text-slate-600"></div>
+                        subSection === "about" && <div className="">
+                          {
+                            plan.about != undefined ?
+                            plan.about.map(ab=>(<div className="flex items-center gap-x-4">
+                              <h2 className="col"><GiSevenPointedStar /></h2>
+                              <h2 className="text-sm text-justify text-slate-600 mt-3 ">{ab}</h2>
+                              </div>)):null
+                          }
+                        </div>
+                      }
+                      
+                      {
+                        subSection === "transportation" && <div className="">
+                          {
+                            plan.transportation.map(ab=>(<div className="flex items-center gap-x-4">
+                            <h2 className="col"><GiSevenPointedStar /></h2>
+                            <h2 className="text-sm text-justify text-slate-600 mt-3 ">{ab}</h2>
+                            </div>))
+                          }
+                        </div>
+                      }
+                      
+                      {
+                        (plan.itenary && subSection === "itinerary") &&<>
+                        {
+                            plan.about != undefined ?
+                            plan.itenary.map(ab=>(<div className="flex items-center gap-x-4">
+                              <h2 className="col"><GiSevenPointedStar /></h2>
+                              <h2 className="text-sm text-justify text-slate-600 mt-3 ">{ab}</h2>
+                              </div>))
+                          :null}</>
                       }
                       {
-                        (plan.itenary && subSection === "itinerary") && <div dangerouslySetInnerHTML={{ __html: plan.itenary }} className="text-sm  text-justify text-slate-700"></div>
+                        (plan.policies && subSection === "policies") &&
+                        <>
+                        {
+                            plan.policies != undefined ?
+                            plan.policies.map((pol,ind)=>(<div className="flex items-center gap-x-4">
+                                  <div dangerouslySetInnerHTML={{ __html: pol }} className="text-sm  text-justify text-slate-700"></div>
+                                   <div/></div>))
+                          :null
+                        }
+                        </>
                       }
                     </div>
-
-                    <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
-                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Payment policy</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.paymentPolicy }} className="text-sm  text-justify text-slate-700"></div>
-                  </div>
-                    <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
-                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Cancelletion policy</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.cancelPolicy }} className="text-sm  text-justify text-slate-700"></div>
-                  </div>
-                    <div className="bg-white mt-6  border p-5 rounded-lg shadow md:tracking-widest md:px-14  md:py-10">
-                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">inclusions and exclusions</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.incAndExe }} className="text-sm  text-justify text-slate-700"></div>
-                  </div>
-
-                  </div>
-                </section >
-
-                <section className=" mt-3 pb-6 md:pb-10 px-3 md:px-0 md:w-[30%]">
-                  <div className="bg-white border p-5 rounded-lg shadow md:tracking-widest md:px-6 md:py-10">
-                    <h2 className="uppercase text-sm  font-semibold  border-l-8 px-2 border-green-500 py-2 ">Terms and conditions</h2>
-                    <div dangerouslySetInnerHTML={{ __html: plan.tandc }} className="text-sm  text-justify text-slate-700"></div>
                   </div>
                 </section >
                 </div>
