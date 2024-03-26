@@ -53,7 +53,7 @@ export default function Home({ data }) {
         <div className='flex justify-center gap-x-10 items-center'>
         <div className='w-[34%] '>
           <h1 className='text-4xl font-bold'>Uttarakhand Stopover</h1>
-          <h6 className='text-gray-300 text-lg mt-6'>Apply for a free stopover visa when you fly Saudia or Flynas and explore Saudi for up to 96 hours on your way to your final destination.</h6>
+          <h6 className='text-gray-300 text-lg mt-6'>Uttarakhand offers limitless opportunities for tourism and adventure. There is something for everyone - Temples, Wildlife tours, Rafting, Trekking, Camping and much more.</h6>
           <div className='mt-6'>
 
           <Link href="/#plans" className="px-6 hover:bg-bgcol py-2 border-2 rounded-full border-white">Book Now</Link>
